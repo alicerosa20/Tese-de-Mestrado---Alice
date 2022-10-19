@@ -1,0 +1,10 @@
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {4.1}{\ignorespaces (a) Example of a 3D crop of a microscopy image of mouse retina; (b) ground truth mask for 2-class task; (c) ground truth mask for 3-class task.}}{\reset@font\mlffont 32}{figure.caption.59}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 32}{figure.caption.59}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 32}{figure.caption.59}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 32}{figure.caption.59}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {4.2}{\ignorespaces CycleGAN schematic for the proposed approach.}}{\reset@font\mlffont 33}{figure.caption.60}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {4.3}{\ignorespaces Implemented CycleGAN generator architecture.}}{\reset@font\mlffont 33}{figure.caption.62}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {4.4}{\ignorespaces Implemented CycleGAN discriminator architecture.}}{\reset@font\mlffont 34}{figure.caption.63}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {4.5}{\ignorespaces Implemented 3D U-Net architecture.}}{\reset@font\mlffont 36}{figure.caption.67}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {4.6}{\ignorespaces Implemented Vox2Vox generator architecture.}}{\reset@font\mlffont 36}{figure.caption.68}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {4.7}{\ignorespaces Implemented Vox2Vox discriminator architecture.}}{\reset@font\mlffont 37}{figure.caption.69}}

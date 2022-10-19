@@ -1,0 +1,45 @@
+% #############################################################################
+% This is Chapter 1
+% !TEX root = ../main.tex
+% #############################################################################
+% Change the Name of the Chapter i the following line
+\fancychapter{Introduction}
+\cleardoublepage
+% The following line allows to ref this chapter
+\label{chap:intro}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Motivation}
+\label{section:motivation}
+
+Digital pathology and microscopic image analysis are widely used for comprehensive studies of cell morphology or tissue structure and play an important role in decision making in disease diagnosis. The extensive information provided by these studies can be used in \ac{CAD}. Computer-assisted methods can improve objectivity and provide accurate characterization of diseases \cite{review:1}. 
+
+Cell detection and segmentation is critical for \ac{CAD} as it supports various quantitative analyses, including calculation of cell morphology, e.g., size, shape, and texture. This information is essential for the analysis, diagnosis, classification and grading of cancer, for example \cite{review:2}.
+
+In recent years, the development of fluorescence microscopy has allowed a better study of cells and its substructures by allowing the acquisition of \ac{3D} image volumes that reach deeper into the tissue \cite{fluorescence} and are therefore very important sources of information for \ac{CAD}.
+
+Manual analysis of large image sets is labor intensive, time consuming, and can be biased by individuals. Therefore, automatic \ac{2D}/\ac{3D} microscopy image analysis methods, especially segmentation, have been intensively studied by researchers \cite{review:2021deep} to achieve more efficiency and accuracy in quantifying and characterizing cells, nuclei, or other biological structures, and thus improving diagnosis.
+
+Recently, \ac{DL} has emerged as a powerful tool that is attracting much interest in microscopic image analysis \cite{review:3} due to its ability to automatically learn features from raw data. This enables the development of more robust and accurate algorithms for microscopic image segmentation. 
+
+However, the performance of these methods is limited by the amount of manually labelled ground truth data available to train the network, and the generation of this data, especially for \ac{3D} volumes, is tedious and very time consuming. Therefore, interest in weakly/fully unsupervised \ac{DL} models that can be trained on data without annotations and still perform well on unseen data has increased greatly in recent years \cite{review:3}.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Objectives}
+\label{section:objectives}
+
+In this work, deep learning methods are implemented for the segmentation of fluorescent microscopic images. Three models are implemented, two of which are supervised, inspired by the \ac{3D} U-Net \cite{Unet:3D} and Vox2Vox \cite{isola2018imagetoimage} architectures, and one of which is unsupervised, inspired by the CycleGAN model \cite{cycleGAN:original}. The dataset used to train, validate, and test these models includes \ac{3D} fluorescence microscopy images of mouse retinas with two cellular components: Golgi and Nuclei and the corresponding manually labeled \ac{3D} segmentation masks. The aim is that these models can predict from the \ac{3D} fluorescence microscopy images the \ac{3D} segmentation mask with $n$ binary segmentation maps, where $n$ is the number of classes we want to classify. There are two goals:
+
+\begin{itemize} 
+
+\item the main goal is to develop an unsupervised deep learning-based algorithm that is able to accurately segment the nucleus and Golgi of cells as well as or better than the supervised methods. For this unsupervised method, synthetic \ac{3D} segmentation masks have to be created for training the model; 
+
+\item the secondary goal is to explore an approach that consists in considering, as in \cite{nuclei&golgi}, three classes: the nuclei, the Golgi, and the nucleus-Golgi pairs, with the goal of studying whether the segmentation of the nuclei and Golgi improves, i.e., whether we can avoid, for example, the detection of noise. This may have many applications, such as counting the number of nucleus-Golgi pairs and estimating the nucleus-Golgi vectors, which are fundamental tasks for detecting the migration process of cells in the formation of blood vessels in the mouse retina \cite{nuclei&golgi}.
+\end{itemize}
+
+%the main one is to develop an unsupervised deep learning-based algorithm that is able to accurately segment the nucleus and Golgi of cells, as well or even better than the supervised methods. For this unsupervised method, synthetic \ac{3D} segmentation masks will also be created for training the model. 
+
+\section{Thesis Outline}
+
+Chapter \ref{chapter:background} introduces the background of deep learning algorithms used for computer vision tasks. It begins with an explanation of how \ac{CNNs} work and then describes the \ac{CNN} architecture for image segmentation in \ac{2D} and \ac{3D}. This chapter also explains how \ac{CNNs} are trained. After that, the \ac{2D} and \ac{3D} U-Net architectures are explained. Then this chapter, ends with an explanation of \ac{GANs} and examples of supervised and unsupervised models. Chapter \ref{chapter:state_of_the_art} reviews the current state-of-the-art in microscopic image segmentation. It begins with the challenges associated with this task, followed by classical approaches, then methods using \ac{CNNs} and U-Nets, and finally methods using \ac{GAN}. Chapter \ref{chapter:methodology} describes the proposed methods to achieve the goals of the dissertation. 
