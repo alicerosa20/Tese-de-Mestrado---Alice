@@ -9,10 +9,9 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Illustration of a \ac {3D} convolution layer}}{10}{figure.caption.33}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces U-Net architecture. Each blue box corresponds to a multi-channel feature map. The number of channels is denoted on top of the box. The x-y-size is provided at the lower left edge of the box. White boxes represent copied feature maps. The arrows denote the different operations.}}{12}{figure.caption.40}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces \ac {3D} U-Net architecture.}}{13}{figure.caption.42}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Schematic of the \ac {GAN} model. Where G and D are usually implemented as neural networks.}}{14}{figure.caption.45}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Pseudo-code to train a \ac {GAN}.}}{15}{figure.caption.48}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Schematic of the \ac {cGAN} model.}}{16}{figure.caption.50}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Example of schematic of the CycleGAN model.}}{18}{figure.caption.53}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Schematic of the \ac {GAN} model. Where G and D are usually implemented as neural networks.}}{14}{figure.caption.44}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Schematic of the \ac {cGAN} model.}}{16}{figure.caption.49}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Example of schematic of the CycleGAN model.}}{18}{figure.caption.52}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{State-of-the-Art on Microscopy Image Segmentation}{21}{chapter.3}%
 \addvspace {10\p@ }

@@ -25,11 +25,11 @@ In recent years, most tasks related to computer vision, such as those mentioned,
 
 \subsection{CNN building blocks}
 
-A Convolutional Neural Network is a class of \ac{NN} that specializes in processing data with a grid-like topology, such as images. Its built-in convolutional layer reduces the high dimensionality of images without losing their information. Therefore, CNNs are best suitable for this use case.
+A Convolutional Neural Network is a class of \ac{NN} that specializes in processing data with a grid-like topology, such as images. Its built-in convolutional layer reduces the high dimensionality of images without losing their information. Therefore, \ac{CNNs} are best suitable for this use case.
 
 A digital image is a binary representation of visual data. It contains a set of pixels arranged in a grid-like fashion and containing pixel values that indicate how bright and what color each pixel should be. 
 
-A CNN is typically composed of three types of layers: convolutional layers, pooling layers and fully connected layers. 
+A \ac{CNN} is typically composed of three types of layers: convolutional layers, pooling layers and fully connected layers. 
 
 \subsubsection*{Convolutional Layer}
 
@@ -76,7 +76,7 @@ There are several commonly used activation functions such as the sigmoid, \ac{Ta
   \label{fig:cnn_class}
 \end{figure}
 
-\subsection{\ac{CNN} architecture for Segmentation}
+\subsection{CNN architecture for Segmentation}
 
 The \ac{CNN} architecture for segmentation uses encoder and decoder models. The encoders are used to downsample the spatial resolution of the input to develop a lower resolution feature mapping. The decoder then takes this feature representation as input and upsamples it to a full resolution segmentation map. The encoders can be convolutional neural networks and the decoders can be based on the deconvolutional or transposed neural networks with the purpose of creating a segmentation map \cite{enconders}. Figure \ref{fig:cnn_seg} shows the basic \ac{CNN} architecture for image segmentation.
 
@@ -89,7 +89,7 @@ The \ac{CNN} architecture for segmentation uses encoder and decoder models. The 
 
 \subsection*{\ac{3D} \ac{CNN}}
 \label{subsection:3dcnn}
-In \ac{3D} \ac{CNN} architectures, the \ac{2D} convolutional and pooling layers are replaced by \ac{3D} convolutional and pooling layers. A \ac{3D} \ac{CNN} can extract more features of the volumes on the three axes X, Y, and Z. Therefore, the use of three-dimensional information in segmentation enables the full exploitation of spatial information.
+In \ac{3D} \ac{CNN} architectures, the \ac{2D} convolutional and pooling layers are replaced by \ac{3D} convolutional and pooling layers. A \ac{3D} \ac{CNN} can extract more features of the volumes on the three axes X, Y, and Z. Therefore, the use of \ac{3D} information in segmentation enables the full exploitation of spatial information.
 
 The \ac{3D} convolution kernel has one more depth than the \ac{2D} convolution kernel, the fourth dimension continues to correspond to the number of channels of the input image. Like the \ac{2D} convolution operation, a value is obtained by sliding the kernel on the height, width, and number of layers on each channel \cite{2018guide}. In figure \ref{fig:cnn_3D} the process of \ac{3D} \ac{CNN} convolution for multichannels is shown.
 
@@ -101,15 +101,15 @@ The \ac{3D} convolution kernel has one more depth than the \ac{2D} convolution k
 \end{figure}
 
 
-\subsection{\ac{CNN} Training}
+\subsection{CNN Training}
 
 For training a neural network, the following steps are usually performed:
 
 \begin{itemize}
     \item define the loss function to be minimized during training. For example, in image segmentation tasks, the most commonly used loss function is a pixel-wise cross entropy loss;
-    \item select the optimizer that minimizes the loss function by defining how the parameters of the \ac{NN} are updated. The most commonly used optimizers are \ac{SGD}, \ac{SGD} with momentum, \ac{AdaGrad}, \ac{AdaDelta}, RMSProp, and \ac{ADAM}. In these optimizers, the learning rate, which controls how fast the model converges, is a hyperparameter that must be selected;
+    \item select the optimizer that minimizes the loss function by defining how the parameters of the \ac{NN} are updated. The most commonly used optimizers are \ac{SGD}, \ac{SGD} with momentum, \ac{AdaGrad}, \ac{AdaDelta}, RMSProp, and \ac{ADAM}. In these optimizers, the learning rate, which controls how much the model should change in response to the estimated error each time the model weights are updated, is a hyperparameter that must be selected;
     \item split our dataset into a training, validation, and testing dataset. Use the training dataset to adjust the parameters of the model (e.g., the weights and bias in an \ac{NN}), use the validation dataset to test the model with the parameters selected during the training phase, and also use it to stop training when it stops improving (early stopping) and to adjust the hyperparameters. The test data set is used to provide an unbiased evaluation of the final fit of the model to the training data set;
-    \item define the number of epochs, one epoch corresponds to one run over the whole training set;
+    \item define the maximum number of epochs, one epoch corresponds to one run over the whole training set;
     \item define batch size, the amount of data included in each sub-epoch weight change is called the batch size. Full-batch learning uses all examples of the training set in an epoch, mini-batch learning uses only a subset of the training set, and online learning uses only one example of the training set. For example, for a training set of 100 examples, a full batch size would be 100, a mini-batch size would be 50 or 20 or 10, and an online batch size would be only 1.
     
 \end{itemize}
@@ -132,7 +132,7 @@ U-Net is a convolutional neural network developed by \citet{Unet:2D} for biomedi
 
 The U-Net model takes its name from the fact that its architecture is in the shape of a 'U'. This architecture consists of three sections: the contraction (encoder), the bottleneck, and the expansion section (decoder). The encoder follows the typical architecture of a convolutional network. It consists of the repeated application of two unpadded 3x3 convolutions, each followed by a rectified linear unit and a 2x2 max-pooling operation with stride 2 for downsampling. At each downsampling step the number of feature channels is doubled. On this contraction path, the model captures the important features of the image and discards the unimportant ones, reducing the resolution of the image at each convolution+maxpool layer. The bottommost layer (bottleneck) mediates between the contraction layer and the expansion layer. It uses two 3x3 \ac{CNN} layers followed by 2x2 up-convolution layer.
 
-In the expansive path, each step consists of: an upsampling of the feature map followed by a 2x2 convolution layer (up-convolution) that reduces the number of feature maps by half to preserve symmetry; a concatenation with the correspondingly cropped feature map from the contracting path; and two 3x3 convolutions, each followed by a \ac{ReLU}. Cropping is necessary because edge pixels are lost in each convolution. In the last layer, a 1x1 convolution is used to assign each 64-component feature vector to the desired number of classes.
+In the expansive path, each step consists of: an upsampling of the feature map, followed by a 2x2 convolutional layer (up-convolution) that reduces the number of feature maps by half to preserve symmetry; a skip-connection and concatenation with the correspondingly cropped feature map from the contracting path, this allows valuable details learned in the encoder part to be used to construct an image in the decoder part; and two 3x3 convolutions, each followed by a \ac{ReLU}. Cropping is necessary because edge pixels are lost with each convolution. In the last layer, a 1x1 convolution is used to assign each 64-component feature vector to the desired number of classes.
 
 
 \subsubsection*{Loss function}
@@ -157,14 +157,10 @@ The authors also introduced \ac{BN} before each \ac{ReLU}. Batch normalization i
 
 In addition, the authors continue to use softmax with weighted cross entropy as the loss function.
 
-\subsubsection*{Application scenarios}
-
-% Escrever melhor esta parte que está uma confusão que ninguém entende 
-The \ac{3D} U-Net can be used in two different ways: either for semi-automatic segmentation, where some slices of the \ac{3D} structure are labeled and the network can help segment the rest. Or for fully-automatic segmentation, where the network can be generalized to new data sets after training with training data.
 
 \section{Generative Adversarial Networks}
 \label{section:GANs}
-In 2014, \citet{GAN_original} introduced Generative Adversarial Networks. \ac{GANs} belong to the set of generative models. This means that they are able to generate realistic samples of the data on which they have been trained. Essentially, \ac{GANs} learn the distribution of the subject of interest.
+In 2014, \citet{GAN_original} introduced Generative Adversarial Networks. \ac{GANs} are an approach to generative modeling using deep learning methods, such as convolutional neural networks. Generative models capture, for a given set of data instances X and a set of labels Y, the joint probability $p(X, Y)$. In \ac{GANs}, a generative model is trained to generate realistic samples of the input data on which they have been trained.
 
 More specifically, \ac{GANs} are algorithmic architectures inspired by game theory in which 2 neural networks, a generator and a discriminator, compete to reinforce each other. 
 
@@ -179,7 +175,7 @@ In a \ac{GAN}, the generator (G) is the neural network that learns the underlyin
 
 \subsection{Training GANs}
 
-The generator and discriminator of \ac{GANs} may have different architectures. However, since \ac{GANs} usually work with image data, they more often use \ac{CNNs} as generator and discriminator models.
+The generator and discriminator of \ac{GANs} may have different architectures. However, since \ac{GANs} usually work with image data, they often use \ac{CNNs} as generator and discriminator models.
 
 \subsubsection*{Loss Function}
 
@@ -194,7 +190,7 @@ To train a \ac{GAN}, we first need to define the loss functions of the generator
     \item $D(x)$: Discriminator Network
 \end{itemize}
 
-Since the discriminator is a binary classifier, we can use the binary cross entropy loss function. As mentioned earlier, the discriminator aims to maximize the probability assigned to real and fake images. In mathematical terms, the discriminator seeks to maximize the average of the log likelihood for real images and the log value of the inverted likelihoods for fake images. Therefore, the loss function of the discriminator over a batch is given by:
+Since the discriminator is a binary classifier, it can be trained using the binary cross entropy loss function. As mentioned earlier, the discriminator aims to maximize the probability assigned to real and fake images. In mathematical terms, the discriminator seeks to maximize the average of the log likelihood for real images and the log value of the inverted likelihoods for fake images. Therefore, the loss function of the discriminator over a batch is given by:
 
 \begin{equation}
     \max [\mathbb{E}_{x\sim p_{data}(x)}[\log{D(x)}]+\mathbb{E}_{z\sim p_{z}(z)}[\log{(1-D(G(z)))}]].
@@ -215,16 +211,46 @@ With this, we can write the final loss function as:
 
 This means that the discriminator parameters (defined by D) maximize the loss function and the generator parameters (defined by G) minimize the loss function.
 
-\subsubsection*{Training steps}
+\subsubsection*{Training steps} 
 
-The original \ac{GAN} paper provides a pseudo-code that shows how a \ac{GAN} is trained, this is shown on Figure \ref{fig:code}.
+The original \ac{GAN} paper provides a pseudo-code that shows how a \ac{GAN} is trained, this is shown in algorithm \ref{alg:GAN}.
 
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.80\textwidth]{Images/code.jpg}
-  \caption[Pseudo-code to train a \ac{GAN}.]{Pseudo-code to train a \ac{GAN}. Retrieved from \cite{GAN_original}.}
-  \label{fig:code}
-\end{figure}
+\begin{algorithm}
+  \scriptsize
+  \caption{Minibatch stochastic gradient descent training of generative adversarial networks. Retrieved from \cite{GAN_original}.}\label{alg:GAN}
+  \For{number of training iterations}{
+
+    \For{$k$ steps}{
+      \begin{itemize}
+        \itemsep0em 
+        \item Sample minibatch of $m$ noise samples $\left\{\boldsymbol{z}^{(1)}, \ldots, \boldsymbol{z}^{(m)}\right\}$ from noise prior $p_g(\boldsymbol{z})$.
+        \item Sample minibatch of $m$ examples $\left\{\boldsymbol{x}^{(1)}, \ldots, \boldsymbol{x}^{(m)}\right\}$ from data generating distribution $p_{\text {data }}(\boldsymbol{x})$.
+        \item Update the discriminator by ascending its stochastic gradient:
+        $$
+        \nabla_{\theta_d} \frac{1}{m} \sum_{i=1}^m\left[\log D\left(\boldsymbol{x}^{(i)}\right)+\log \left(1-D\left(G\left(\boldsymbol{z}^{(i)}\right)\right)\right)\right] .
+        $$
+      \end{itemize}
+    }
+  
+    \begin{itemize}
+      \itemsep0em 
+      \item Sample minibatch of $m$ noise samples $\left\{\boldsymbol{z}^{(1)}, \ldots, \boldsymbol{z}^{(m)}\right\}$ from noise prior $p_g(\boldsymbol{z})$.
+      \item Update the generator by descending its stochastic gradient:
+      $$
+      \nabla_{\theta_g} \frac{1}{m} \sum_{i=1}^m \log \left(1-D\left(G\left(z^{(i)}\right)\right)\right) .
+      $$
+    \end{itemize}
+  }
+\end{algorithm}
+
+
+In the algorithm \ref{alg:GAN} it's evident that the \ac{GAN} training proceeds in alternating periods:
+
+\begin{enumerate}
+  \item The discriminator trains for $k$ steps ($k$=1 in \cite{GAN_original}), and during this period the generator is not trained;
+  \item The generator is updated only after $k$ steps, and during this period the discriminator is not trained; 
+  \item Repeat steps 1 and 2, for a specified number of iterations, to further train the generator and discriminator networks.
+\end{enumerate}
 
 \subsection{Supervised GAN example: Pix2Pix}
 \label{subsection:pix2pix}
@@ -248,18 +274,18 @@ As shown in Figure \ref{fig:cGAN}, the generator model receives a given image as
 
 In \cite{isola2018imagetoimage}, a U-Net model is used for the generator, and, after well trained, it takes as input an image from the source domain and outputs an image in the target domain. 
 
-For the discriminator, the authors chose the PatchGAN discriminator. The PatchGAN, also called the Markov discriminator, classifies individual (N x N) patches in the image as real or fake, rather than classifying the entire image as real or fake. The output of the network is a single feature map of real/fake predictions that can be averaged to give a single classification score.
+For the discriminator, the authors chose the PatchGAN discriminator. The PatchGAN, also called the Markov discriminator, classifies individual (N x N) patches in the image as real or fake, rather than classifying the entire image as real or fake. The output of the network is a single feature map of real/fake predictions that can be averaged to give a single classification score. The advantage of using a PatchGAN over a normal \ac{GAN} discriminator is that it has fewer parameters than a normal discriminator and can work with images of any size.
 
 \subsubsection*{Loss Function}
 
-The conditional adversarial Loss is formatted as follows:
+The conditional adversarial Loss is defined as follows:
 
 \begin{equation}
     \mathcal{L}_{cGAN}(G,D) = \mathbb{E}_{x,y} [\log{D(x,y)}] + \mathbb{E}_{x,z} [\log{(1-D(x,G(x,z)))}],
     \label{eq:1}
 \end{equation}
 
-where x is the input observed image, y is the real target image, z is a random noise vector z and $G(x,z)$ is the output generated image.
+where $x$ is the input observed image, $y$ is the real target image, $z$ is a random noise vector and $G(x,z)$ is the output generated image.
 
 The generator model is trained using both the adversarial loss for the discriminator model and the $L_1$ or mean absolute pixel difference between the generated translation of the source image and the expected target image. The adversarial loss affects whether the generator model can output images that are plausible in the target domain, while the $L_1$ loss regularizes the generator model to output images that are plausible translations of the source image.
 
@@ -273,9 +299,10 @@ The L1 loss function is shown below:
 Combining these functions from \ref{eq:1} and \ref{eq:2}, results in the final objective function:
 
 \begin{equation}
-    G^* = \arg \min_{G}\max_{D} \mathcal{L}_{cGAN}(G,D) + \lambda_1  \mathcal{L}_{1}(G).
+    G^* = \arg \min_{G}\max_{D} \mathcal{L}_{cGAN}(G,D) + \lambda_1  \mathcal{L}_{1}(G)
 \end{equation}
 
+where $\lambda_1$ is a hyperparameter that controls the relative importance of the L1 loss term. 
 
 \subsection{Unsupervised GAN example: CycleGAN}
 \label{subsection:CycleGAN}
@@ -329,13 +356,13 @@ Various metrics are used to validate and test the performance of these segmentat
     Accuracy = \frac{TP+TN}{TP+TN+FP+FN}
 \end{equation}
 
-\textbf{Precision} describes the \textit{purity} of positive predictions with respect to ground truth, i.e., it measures, of all the objects predicted in a given image, how many of those objects actually match with ground truth.
+\textbf{Precision} describes the \textit{purity} of positive predictions with respect to ground truth, i.e., it measures, of all the pixels predicted in a given image, how many of those pixels actually match with ground truth.
 
 \begin{equation}
     Precision = \frac{TP}{TP+FP}
 \end{equation}
 
-\textbf{Recall} describes the \textit{completeness} of positive predictions with respect to the ground truth, i.e., of all objects annotated in the ground truth, it measures how many of these objects were capture as positive predictions.
+\textbf{Recall} describes the \textit{completeness} of positive predictions with respect to the ground truth, i.e., of all pixels annotated in the ground truth, it measures how many of these pixels were capture as positive predictions.
 
 \begin{equation}
     Recall = \frac{TP}{TP+FN}
@@ -350,7 +377,7 @@ Various metrics are used to validate and test the performance of these segmentat
 \textbf{Dice Coefficient (F1 Score)} is also used to measure the similarity between two images. It is equal to two times the overlap area between prediction and ground truth divided by the total number of pixels in both images.
 
 \begin{equation}
-    DICE = \frac{2TP}{2TP+FP+FN}
+    DICE = \frac{2 \ TP}{2 \ TP+FP+FN}
 \end{equation}
 
 % Escrever sobre as métricas
