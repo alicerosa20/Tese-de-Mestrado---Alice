@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.18)  21 OCT 2022 12:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.18)  21 OCT 2022 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1024,6 +1024,9 @@ LaTeX Warning: Label `acro:CNN@cref' multiply defined.
 LaTeX Warning: Label `acro:GAN@cref' multiply defined.
 
 
+LaTeX Warning: Label `acro:ReLU@cref' multiply defined.
+
+
 LaTeX Warning: Label `acro:cGAN@cref' multiply defined.
 
 )
@@ -1258,6 +1261,8 @@ Package acronym Info: Label `acro:GAN' newly defined as it shall be overridden
 although it is yet undefined on input line 12.
 Package acronym Info: Label `acro:cGAN' newly defined as it shall be overridden
 although it is yet undefined on input line 13.
+Package acronym Info: Label `acro:ReLU' newly defined as it shall be overridden
+although it is yet undefined on input line 27.
  [9
 
 
@@ -1343,7 +1348,7 @@ Chapter 2.
 ]
 Package acronym Info: Label `acro:NN' newly defined as it shall be overridden
 although it is yet undefined on input line 28.
-<Images/convlayer.jpg, id=690, 2147.02126pt x 786.5385pt>
+<Images/convlayer.jpg, id=693, 2147.02126pt x 786.5385pt>
 File: Images/convlayer.jpg Graphic file (type jpg)
 <use Images/convlayer.jpg>
 Package pdftex.def Info: Images/convlayer.jpg  used on input line 42.
@@ -1351,27 +1356,26 @@ Package pdftex.def Info: Images/convlayer.jpg  used on input line 42.
  [7]
 Package acronym Info: Label `acro:Tanh' newly defined as it shall be overridden
 although it is yet undefined on input line 61.
-Package acronym Info: Label `acro:ReLU' newly defined as it shall be overridden
-although it is yet undefined on input line 61.
-Package acronym Info: Label `acro:LeakyReLU' newly defined as it shall be overridden
+Package acronym Info: Label `acro:ReLU' overridden on input line 61.
+Package acronym Info: Label `acro:Leaky ReLU' newly defined as it shall be overridden
 although it is yet undefined on input line 61.
 Package acronym Info: Label `acro:ELU' newly defined as it shall be overridden
 although it is yet undefined on input line 61.
  [8 <./Images/convlayer.jpg>]
 Package acronym Info: Label `acro:FC' newly defined as it shall be overridden
 although it is yet undefined on input line 70.
-<Images/cnn_class.jpg, id=725, 144.54pt x 49.6254pt>
+<Images/cnn_class.jpg, id=728, 144.54pt x 49.6254pt>
 File: Images/cnn_class.jpg Graphic file (type jpg)
 <use Images/cnn_class.jpg>
 Package pdftex.def Info: Images/cnn_class.jpg  used on input line 74.
 (pdftex.def)             Requested size: 341.43306pt x 117.23149pt.
-<Images/seg_cnn.jpg, id=734, 943.525pt x 293.095pt>
+<Images/seg_cnn.jpg, id=737, 943.525pt x 293.095pt>
 File: Images/seg_cnn.jpg Graphic file (type jpg)
 <use Images/seg_cnn.jpg>
 Package pdftex.def Info: Images/seg_cnn.jpg  used on input line 85.
 (pdftex.def)             Requested size: 341.43306pt x 106.0642pt.
  [9 <./Images/cnn_class.jpg>]
-<Images/3dconv.jpg, id=767, 490.08093pt x 234.8775pt>
+<Images/3dconv.jpg, id=770, 490.08093pt x 234.8775pt>
 File: Images/3dconv.jpg Graphic file (type jpg)
 <use Images/3dconv.jpg>
 Package pdftex.def Info: Images/3dconv.jpg  used on input line 98.
@@ -1387,13 +1391,13 @@ although it is yet undefined on input line 110.
  [10 <./Images/seg_cnn.jpg (PNG copy)> <./Images/3dconv.jpg>]
 Package acronym Info: Label `acro:FCN' newly defined as it shall be overridden
 although it is yet undefined on input line 122.
-<Images/u-net-architecture.jpg, id=788, 1560.83125pt x 1039.885pt>
+<Images/u-net-architecture.jpg, id=791, 1560.83125pt x 1039.885pt>
 File: Images/u-net-architecture.jpg Graphic file (type jpg)
 <use Images/u-net-architecture.jpg>
 Package pdftex.def Info: Images/u-net-architecture.jpg  used on input line 128.
 (pdftex.def)             Requested size: 386.96024pt x 257.79678pt.
  [11]
-<Images/3dunet.jpg, id=804, 1391.1975pt x 767.86874pt>
+<Images/3dunet.jpg, id=807, 1391.1975pt x 767.86874pt>
 File: Images/3dunet.jpg Graphic file (type jpg)
 <use Images/3dunet.jpg>
 Package pdftex.def Info: Images/3dunet.jpg  used on input line 149.
@@ -1402,7 +1406,7 @@ Package pdftex.def Info: Images/3dunet.jpg  used on input line 149.
 Package acronym Info: Label `acro:BN' newly defined as it shall be overridden
 although it is yet undefined on input line 156.
  [13 <./Images/3dunet.jpg (PNG copy)>]
-<Images/GAN.jpg, id=834, 576.35326pt x 209.583pt>
+<Images/GAN.jpg, id=837, 576.35326pt x 209.583pt>
 File: Images/GAN.jpg Graphic file (type jpg)
 <use Images/GAN.jpg>
 Package pdftex.def Info: Images/GAN.jpg  used on input line 171.
@@ -1414,13 +1418,13 @@ Overfull \hbox (45.80002pt too wide) detected at line 244
 
 [15]
 Package acronym Info: Label `acro:cGAN' overridden on input line 260.
-<Images/Training-a-conditional-GAN-to-map-edgesphoto-The-discriminator-D-learns-to-classify.jpg, id=879, 711.65875pt x 220.825pt>
+<Images/Training-a-conditional-GAN-to-map-edgesphoto-The-discriminator-D-learns-to-classify.jpg, id=882, 711.65875pt x 220.825pt>
 File: Images/Training-a-conditional-GAN-to-map-edgesphoto-The-discriminator-D-learns-to-classify.jpg Graphic file (type jpg)
 <use Images/Training-a-conditional-GAN-to-map-edgesphoto-The-discriminator-D-learns-to-classify.jpg>
 Package pdftex.def Info: Images/Training-a-conditional-GAN-to-map-edgesphoto-The-discriminator-D-learns-to-classify.jpg  used on input line 264.
 (pdftex.def)             Requested size: 318.66946pt x 98.88174pt.
  [16 <./Images/Training-a-conditional-GAN-to-map-edgesphoto-The-discriminator-D-learns-to-classify.jpg>] [17]
-<Images/Data-flow-of-CycleGAN-in-this-research.jpg, id=910, 204.765pt x 85.0377pt>
+<Images/Data-flow-of-CycleGAN-in-this-research.jpg, id=913, 204.765pt x 85.0377pt>
 File: Images/Data-flow-of-CycleGAN-in-this-research.jpg Graphic file (type jpg)
 <use Images/Data-flow-of-CycleGAN-in-this-research.jpg>
 Package pdftex.def Info: Images/Data-flow-of-CycleGAN-in-this-research.jpg  used on input line 318.
@@ -1473,17 +1477,17 @@ Chapter 4.
 ] [30
 
 ]
-<Images/img_crop1.jpg, id=1172, 214.1601pt x 216.0873pt>
+<Images/img_crop1.jpg, id=1175, 214.1601pt x 216.0873pt>
 File: Images/img_crop1.jpg Graphic file (type jpg)
 <use Images/img_crop1.jpg>
 Package pdftex.def Info: Images/img_crop1.jpg  used on input line 26.
 (pdftex.def)             Requested size: 142.26378pt x 143.54457pt.
-<Images/mask2_crop1.jpg, id=1173, 214.1601pt x 216.0873pt>
+<Images/mask2_crop1.jpg, id=1176, 214.1601pt x 216.0873pt>
 File: Images/mask2_crop1.jpg Graphic file (type jpg)
 <use Images/mask2_crop1.jpg>
 Package pdftex.def Info: Images/mask2_crop1.jpg  used on input line 27.
 (pdftex.def)             Requested size: 142.26378pt x 143.54457pt.
-<Images/mask3_crop1.jpg, id=1174, 214.1601pt x 216.0873pt>
+<Images/mask3_crop1.jpg, id=1177, 214.1601pt x 216.0873pt>
 File: Images/mask3_crop1.jpg Graphic file (type jpg)
 <use Images/mask3_crop1.jpg>
 Package pdftex.def Info: Images/mask3_crop1.jpg  used on input line 28.
@@ -1492,12 +1496,12 @@ Package pdftex.def Info: Images/mask3_crop1.jpg  used on input line 28.
 Underfull \vbox (badness 7704) has occurred while \output is active []
 
  [31]
-<Images/2-mask-synthetic.jpg, id=1181, 214.1601pt x 216.0873pt>
+<Images/2-mask-synthetic.jpg, id=1184, 214.1601pt x 216.0873pt>
 File: Images/2-mask-synthetic.jpg Graphic file (type jpg)
 <use Images/2-mask-synthetic.jpg>
 Package pdftex.def Info: Images/2-mask-synthetic.jpg  used on input line 47.
 (pdftex.def)             Requested size: 142.26378pt x 143.54457pt.
-<Images/3-mask-synthetic.jpg, id=1182, 214.1601pt x 216.0873pt>
+<Images/3-mask-synthetic.jpg, id=1185, 214.1601pt x 216.0873pt>
 File: Images/3-mask-synthetic.jpg Graphic file (type jpg)
 <use Images/3-mask-synthetic.jpg>
 Package pdftex.def Info: Images/3-mask-synthetic.jpg  used on input line 48.
@@ -1506,42 +1510,42 @@ Package pdftex.def Info: Images/3-mask-synthetic.jpg  used on input line 48.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32 <./Images/img_crop1.jpg> <./Images/mask2_crop1.jpg> <./Images/mask3_crop1.jpg>]
-<Images/diagrama.jpg, id=1192, 2046.993pt x 552.975pt>
+<Images/diagrama.jpg, id=1195, 2046.993pt x 552.975pt>
 File: Images/diagrama.jpg Graphic file (type jpg)
 <use Images/diagrama.jpg>
 Package pdftex.def Info: Images/diagrama.jpg  used on input line 63.
 (pdftex.def)             Requested size: 450.69414pt x 121.74768pt.
  [33 <./Images/2-mask-synthetic.jpg> <./Images/3-mask-synthetic.jpg> <./Images/diagrama.jpg>]
-<Images/generator_cyclegan.jpg, id=1204, 2247.816pt x 856.509pt>
+<Images/generator_cyclegan.jpg, id=1208, 2247.816pt x 856.509pt>
 File: Images/generator_cyclegan.jpg Graphic file (type jpg)
 <use Images/generator_cyclegan.jpg>
 Package pdftex.def Info: Images/generator_cyclegan.jpg  used on input line 75.
 (pdftex.def)             Requested size: 450.69414pt x 171.73004pt.
-<Images/discriminator_cyclegan.jpg, id=1207, 1119.09pt x 805.263pt>
+<Images/discriminator_cyclegan.jpg, id=1213, 1119.09pt x 805.263pt>
 File: Images/discriminator_cyclegan.jpg Graphic file (type jpg)
 <use Images/discriminator_cyclegan.jpg>
 Package pdftex.def Info: Images/discriminator_cyclegan.jpg  used on input line 82.
 (pdftex.def)             Requested size: 227.62204pt x 163.78981pt.
  [34 <./Images/generator_cyclegan.jpg> <./Images/discriminator_cyclegan.jpg>] [35]
-Package acronym Info: Label `acro:DLoss' newly defined as it shall be overridden
-although it is yet undefined on input line 143.
-<Images/Picture1.jpg, id=1245, 1960.269pt x 817.746pt>
+<Images/Picture1.jpg, id=1244, 1972.314pt x 959.22pt>
 File: Images/Picture1.jpg Graphic file (type jpg)
 <use Images/Picture1.jpg>
-Package pdftex.def Info: Images/Picture1.jpg  used on input line 156.
-(pdftex.def)             Requested size: 432.48048pt x 180.40378pt.
+Package pdftex.def Info: Images/Picture1.jpg  used on input line 147.
+(pdftex.def)             Requested size: 409.71689pt x 199.2613pt.
+Package acronym Info: Label `acro:DLoss' newly defined as it shall be overridden
+although it is yet undefined on input line 154.
  [36 <./Images/Picture1.jpg>]
-<Images/Picture2.jpg, id=1259, 1900.044pt x 845.997pt>
+<Images/Picture2.jpg, id=1262, 1913.622pt x 861.546pt>
 File: Images/Picture2.jpg Graphic file (type jpg)
 <use Images/Picture2.jpg>
-Package pdftex.def Info: Images/Picture2.jpg  used on input line 169.
-(pdftex.def)             Requested size: 432.48048pt x 192.56143pt.
-<Images/discriminator_vox.jpg, id=1260, 1992.9pt x 579.693pt>
+Package pdftex.def Info: Images/Picture2.jpg  used on input line 171.
+(pdftex.def)             Requested size: 409.71689pt x 184.45316pt.
+<Images/discriminator_vox.jpg, id=1263, 2026.626pt x 579.255pt>
 File: Images/discriminator_vox.jpg Graphic file (type jpg)
 <use Images/discriminator_vox.jpg>
-Package pdftex.def Info: Images/discriminator_vox.jpg  used on input line 176.
-(pdftex.def)             Requested size: 432.48048pt x 125.79915pt.
- [37 <./Images/Picture2.jpg> <./Images/discriminator_vox.jpg>] [38]) [39] [40
+Package pdftex.def Info: Images/discriminator_vox.jpg  used on input line 178.
+(pdftex.def)             Requested size: 432.48048pt x 123.60933pt.
+ [37 <./Images/Picture2.jpg>] [38 <./Images/discriminator_vox.jpg>]) [39] [40
 
 ] (Chapters/Thesis-MSc-Chapter_5.tex
 Chapter 5.
@@ -1554,54 +1558,54 @@ Chapter 5.
 ] [42
 
 ]
-<Images/img.jpg, id=1305, 618.675pt x 324.339pt>
+<Images/img.jpg, id=1309, 618.675pt x 324.339pt>
 File: Images/img.jpg Graphic file (type jpg)
 <use Images/img.jpg>
 Package pdftex.def Info: Images/img.jpg  used on input line 34.
 (pdftex.def)             Requested size: 386.96024pt x 202.86478pt.
  [43 <./Images/img.jpg>]
-<Images/pre.jpg, id=1315, 618.675pt x 324.339pt>
+<Images/pre.jpg, id=1319, 618.675pt x 324.339pt>
 File: Images/pre.jpg Graphic file (type jpg)
 <use Images/pre.jpg>
 Package pdftex.def Info: Images/pre.jpg  used on input line 67.
 (pdftex.def)             Requested size: 386.96024pt x 202.86478pt.
  [44 <./Images/pre.jpg>]
-<Images/crop5_img.jpg, id=1328, 223.7961pt x 190.5519pt>
+<Images/crop5_img.jpg, id=1332, 223.7961pt x 190.5519pt>
 File: Images/crop5_img.jpg Graphic file (type jpg)
 <use Images/crop5_img.jpg>
 Package pdftex.def Info: Images/crop5_img.jpg  used on input line 92.
 (pdftex.def)             Requested size: 99.58464pt x 84.79385pt.
-<Images/pre_crop5_image.jpg, id=1329, 223.7961pt x 190.5519pt>
+<Images/pre_crop5_image.jpg, id=1333, 223.7961pt x 190.5519pt>
 File: Images/pre_crop5_image.jpg Graphic file (type jpg)
 <use Images/pre_crop5_image.jpg>
 Package pdftex.def Info: Images/pre_crop5_image.jpg  used on input line 93.
 (pdftex.def)             Requested size: 99.58464pt x 84.79385pt.
-<Images/2-mask-crop5.jpg, id=1330, 223.5552pt x 190.5519pt>
+<Images/2-mask-crop5.jpg, id=1334, 223.5552pt x 190.5519pt>
 File: Images/2-mask-crop5.jpg Graphic file (type jpg)
 <use Images/2-mask-crop5.jpg>
 Package pdftex.def Info: Images/2-mask-crop5.jpg  used on input line 94.
 (pdftex.def)             Requested size: 99.58464pt x 84.88399pt.
-<Images/3-mask-crop5-original.jpg, id=1331, 230.3004pt x 191.7564pt>
+<Images/3-mask-crop5-original.jpg, id=1335, 230.3004pt x 191.7564pt>
 File: Images/3-mask-crop5-original.jpg Graphic file (type jpg)
 <use Images/3-mask-crop5-original.jpg>
 Package pdftex.def Info: Images/3-mask-crop5-original.jpg  used on input line 95.
 (pdftex.def)             Requested size: 99.58464pt x 82.91592pt.
-<Images/crop7_img.jpg, id=1332, 223.7961pt x 210.0648pt>
+<Images/crop7_img.jpg, id=1336, 223.7961pt x 210.0648pt>
 File: Images/crop7_img.jpg Graphic file (type jpg)
 <use Images/crop7_img.jpg>
 Package pdftex.def Info: Images/crop7_img.jpg  used on input line 97.
 (pdftex.def)             Requested size: 99.58464pt x 93.47693pt.
-<Images/pre_crop7_image.jpg, id=1333, 223.7961pt x 210.0648pt>
+<Images/pre_crop7_image.jpg, id=1337, 223.7961pt x 210.0648pt>
 File: Images/pre_crop7_image.jpg Graphic file (type jpg)
 <use Images/pre_crop7_image.jpg>
 Package pdftex.def Info: Images/pre_crop7_image.jpg  used on input line 98.
 (pdftex.def)             Requested size: 99.58464pt x 93.47693pt.
-<Images/2-mask-crop7.jpg, id=1334, 223.5552pt x 210.0648pt>
+<Images/2-mask-crop7.jpg, id=1338, 223.5552pt x 210.0648pt>
 File: Images/2-mask-crop7.jpg Graphic file (type jpg)
 <use Images/2-mask-crop7.jpg>
 Package pdftex.def Info: Images/2-mask-crop7.jpg  used on input line 99.
 (pdftex.def)             Requested size: 99.58464pt x 93.5763pt.
-<Images/3-mask-crop7-original.jpg, id=1335, 230.3004pt x 211.5102pt>
+<Images/3-mask-crop7-original.jpg, id=1339, 230.3004pt x 211.5102pt>
 File: Images/3-mask-crop7-original.jpg Graphic file (type jpg)
 <use Images/3-mask-crop7-original.jpg>
 Package pdftex.def Info: Images/3-mask-crop7-original.jpg  used on input line 100.
@@ -1610,84 +1614,84 @@ Package pdftex.def Info: Images/3-mask-crop7-original.jpg  used on input line 10
 Underfull \vbox (badness 2359) has occurred while \output is active []
 
  [45 <./Images/crop5_img.jpg> <./Images/pre_crop5_image.jpg> <./Images/2-mask-crop5.jpg> <./Images/3-mask-crop5-original.jpg> <./Images/crop7_img.jpg> <./Images/pre_crop7_image.jpg> <./Images/2-mask-crop7.jpg> <./Images/3-mask-crop7-original.jpg>]
-<Images/mask-crop5.jpg, id=1364, 214.1601pt x 174.1707pt>
+<Images/mask-crop5.jpg, id=1368, 214.1601pt x 174.1707pt>
 File: Images/mask-crop5.jpg Graphic file (type jpg)
 <use Images/mask-crop5.jpg>
 Package pdftex.def Info: Images/mask-crop5.jpg  used on input line 148.
 (pdftex.def)             Requested size: 128.0374pt x 104.1285pt.
-<Images/u-net-crop5-not-pre.jpg, id=1365, 214.1601pt x 174.1707pt>
+<Images/u-net-crop5-not-pre.jpg, id=1369, 214.1601pt x 174.1707pt>
 File: Images/u-net-crop5-not-pre.jpg Graphic file (type jpg)
 <use Images/u-net-crop5-not-pre.jpg>
 Package pdftex.def Info: Images/u-net-crop5-not-pre.jpg  used on input line 149.
 (pdftex.def)             Requested size: 128.0374pt x 104.1285pt.
-<Images/u-net-aft-pre-crop5.jpg, id=1366, 214.1601pt x 174.1707pt>
+<Images/u-net-aft-pre-crop5.jpg, id=1370, 214.1601pt x 174.1707pt>
 File: Images/u-net-aft-pre-crop5.jpg Graphic file (type jpg)
 <use Images/u-net-aft-pre-crop5.jpg>
 Package pdftex.def Info: Images/u-net-aft-pre-crop5.jpg  used on input line 150.
 (pdftex.def)             Requested size: 128.0374pt x 104.1285pt.
-<Images/mask-crop7.jpg, id=1367, 214.1601pt x 200.6697pt>
+<Images/mask-crop7.jpg, id=1371, 214.1601pt x 200.6697pt>
 File: Images/mask-crop7.jpg Graphic file (type jpg)
 <use Images/mask-crop7.jpg>
 Package pdftex.def Info: Images/mask-crop7.jpg  used on input line 152.
 (pdftex.def)             Requested size: 128.0374pt x 119.971pt.
-<Images/u-net-crop7-not-pre.jpg, id=1368, 214.1601pt x 200.6697pt>
+<Images/u-net-crop7-not-pre.jpg, id=1372, 214.1601pt x 200.6697pt>
 File: Images/u-net-crop7-not-pre.jpg Graphic file (type jpg)
 <use Images/u-net-crop7-not-pre.jpg>
 Package pdftex.def Info: Images/u-net-crop7-not-pre.jpg  used on input line 153.
 (pdftex.def)             Requested size: 128.0374pt x 119.971pt.
-<Images/u-net-aft-pre-crop7.jpg, id=1369, 214.1601pt x 200.6697pt>
+<Images/u-net-aft-pre-crop7.jpg, id=1373, 214.1601pt x 200.6697pt>
 File: Images/u-net-aft-pre-crop7.jpg Graphic file (type jpg)
 <use Images/u-net-aft-pre-crop7.jpg>
 Package pdftex.def Info: Images/u-net-aft-pre-crop7.jpg  used on input line 154.
 (pdftex.def)             Requested size: 128.0374pt x 119.971pt.
  [46]
-<Images/image_noise.jpg, id=1379, 152.205pt x 142.35pt>
+<Images/image_noise.jpg, id=1383, 152.205pt x 142.35pt>
 File: Images/image_noise.jpg Graphic file (type jpg)
 <use Images/image_noise.jpg>
 Package pdftex.def Info: Images/image_noise.jpg  used on input line 168.
 (pdftex.def)             Requested size: 113.81102pt x 106.44293pt.
-<Images/my_mask_noise.jpg, id=1380, 148.92pt x 142.35pt>
+<Images/my_mask_noise.jpg, id=1384, 148.92pt x 142.35pt>
 File: Images/my_mask_noise.jpg Graphic file (type jpg)
 <use Images/my_mask_noise.jpg>
 Package pdftex.def Info: Images/my_mask_noise.jpg  used on input line 169.
 (pdftex.def)             Requested size: 113.81102pt x 108.79314pt.
-<Images/real_mask_noise.jpg, id=1381, 152.205pt x 142.35pt>
+<Images/real_mask_noise.jpg, id=1385, 152.205pt x 142.35pt>
 File: Images/real_mask_noise.jpg Graphic file (type jpg)
 <use Images/real_mask_noise.jpg>
 Package pdftex.def Info: Images/real_mask_noise.jpg  used on input line 170.
 (pdftex.def)             Requested size: 113.81102pt x 106.44293pt.
-<Images/noise_recall_image.jpg, id=1382, 152.205pt x 171.696pt>
+<Images/noise_recall_image.jpg, id=1386, 152.205pt x 171.696pt>
 File: Images/noise_recall_image.jpg Graphic file (type jpg)
 <use Images/noise_recall_image.jpg>
 Package pdftex.def Info: Images/noise_recall_image.jpg  used on input line 172.
 (pdftex.def)             Requested size: 113.81102pt x 128.38655pt.
-<Images/noise_recall_my_mask.jpg, id=1383, 148.92pt x 171.696pt>
+<Images/noise_recall_my_mask.jpg, id=1387, 148.92pt x 171.696pt>
 File: Images/noise_recall_my_mask.jpg Graphic file (type jpg)
 <use Images/noise_recall_my_mask.jpg>
 Package pdftex.def Info: Images/noise_recall_my_mask.jpg  used on input line 173.
 (pdftex.def)             Requested size: 113.81102pt x 131.22125pt.
-<Images/noise_recall_real_mask.jpg, id=1384, 152.205pt x 171.696pt>
+<Images/noise_recall_real_mask.jpg, id=1388, 152.205pt x 171.696pt>
 File: Images/noise_recall_real_mask.jpg Graphic file (type jpg)
 <use Images/noise_recall_real_mask.jpg>
 Package pdftex.def Info: Images/noise_recall_real_mask.jpg  used on input line 174.
 (pdftex.def)             Requested size: 113.81102pt x 128.38655pt.
  [47 <./Images/mask-crop5.jpg> <./Images/u-net-crop5-not-pre.jpg> <./Images/u-net-aft-pre-crop5.jpg> <./Images/mask-crop7.jpg> <./Images/u-net-crop7-not-pre.jpg> <./Images/u-net-aft-pre-crop7.jpg>]
-<Images/3-mask-crop5.jpg, id=1400, 230.388pt x 191.844pt>
+<Images/3-mask-crop5.jpg, id=1404, 230.388pt x 191.844pt>
 File: Images/3-mask-crop5.jpg Graphic file (type jpg)
 <use Images/3-mask-crop5.jpg>
 Package pdftex.def Info: Images/3-mask-crop5.jpg  used on input line 192.
 (pdftex.def)             Requested size: 142.26378pt x 118.46782pt.
-<Images/u-net-3class-crop5.jpg, id=1401, 230.388pt x 191.844pt>
+<Images/u-net-3class-crop5.jpg, id=1405, 230.388pt x 191.844pt>
 File: Images/u-net-3class-crop5.jpg Graphic file (type jpg)
 <use Images/u-net-3class-crop5.jpg>
 Package pdftex.def Info: Images/u-net-3class-crop5.jpg  used on input line 193.
 (pdftex.def)             Requested size: 142.26378pt x 118.46782pt.
-<Images/3-mask-crop7.jpg, id=1402, 230.388pt x 211.554pt>
+<Images/3-mask-crop7.jpg, id=1406, 230.388pt x 211.554pt>
 File: Images/3-mask-crop7.jpg Graphic file (type jpg)
 <use Images/3-mask-crop7.jpg>
 Package pdftex.def Info: Images/3-mask-crop7.jpg  used on input line 195.
 (pdftex.def)             Requested size: 142.26378pt x 130.63918pt.
-<Images/u-net-3class-crop7.jpg, id=1403, 230.388pt x 211.554pt>
+<Images/u-net-3class-crop7.jpg, id=1407, 230.388pt x 211.554pt>
 File: Images/u-net-3class-crop7.jpg Graphic file (type jpg)
 <use Images/u-net-3class-crop7.jpg>
 Package pdftex.def Info: Images/u-net-3class-crop7.jpg  used on input line 196.
@@ -1700,7 +1704,7 @@ File: Images/2-mask-crop5.jpg Graphic file (type jpg)
 <use Images/2-mask-crop5.jpg>
 Package pdftex.def Info: Images/2-mask-crop5.jpg  used on input line 264.
 (pdftex.def)             Requested size: 142.26378pt x 121.26367pt.
-<Images/vox2vox-2class-crop5.jpg, id=1436, 223.5552pt x 190.5519pt>
+<Images/vox2vox-2class-crop5.jpg, id=1440, 223.5552pt x 190.5519pt>
 File: Images/vox2vox-2class-crop5.jpg Graphic file (type jpg)
 <use Images/vox2vox-2class-crop5.jpg>
 Package pdftex.def Info: Images/vox2vox-2class-crop5.jpg  used on input line 265.
@@ -1709,7 +1713,7 @@ File: Images/2-mask-crop7.jpg Graphic file (type jpg)
 <use Images/2-mask-crop7.jpg>
 Package pdftex.def Info: Images/2-mask-crop7.jpg  used on input line 267.
 (pdftex.def)             Requested size: 142.26378pt x 133.68135pt.
-<Images/vox2vox-2class-crop7.jpg, id=1437, 223.5552pt x 210.0648pt>
+<Images/vox2vox-2class-crop7.jpg, id=1441, 223.5552pt x 210.0648pt>
 File: Images/vox2vox-2class-crop7.jpg Graphic file (type jpg)
 <use Images/vox2vox-2class-crop7.jpg>
 Package pdftex.def Info: Images/vox2vox-2class-crop7.jpg  used on input line 268.
@@ -1722,7 +1726,7 @@ File: Images/3-mask-crop5-original.jpg Graphic file (type jpg)
 <use Images/3-mask-crop5-original.jpg>
 Package pdftex.def Info: Images/3-mask-crop5-original.jpg  used on input line 303.
 (pdftex.def)             Requested size: 142.26378pt x 118.45468pt.
-<Images/vox2vox-3class-crop5.jpg, id=1458, 230.5413pt x 191.7564pt>
+<Images/vox2vox-3class-crop5.jpg, id=1462, 230.5413pt x 191.7564pt>
 File: Images/vox2vox-3class-crop5.jpg Graphic file (type jpg)
 <use Images/vox2vox-3class-crop5.jpg>
 Package pdftex.def Info: Images/vox2vox-3class-crop5.jpg  used on input line 304.
@@ -1731,7 +1735,7 @@ File: Images/3-mask-crop7-original.jpg Graphic file (type jpg)
 <use Images/3-mask-crop7-original.jpg>
 Package pdftex.def Info: Images/3-mask-crop7-original.jpg  used on input line 306.
 (pdftex.def)             Requested size: 142.26378pt x 130.6573pt.
-<Images/vox2vox-3class-crop7.jpg, id=1459, 230.3004pt x 211.5102pt>
+<Images/vox2vox-3class-crop7.jpg, id=1463, 230.3004pt x 211.5102pt>
 File: Images/vox2vox-3class-crop7.jpg Graphic file (type jpg)
 <use Images/vox2vox-3class-crop7.jpg>
 Package pdftex.def Info: Images/vox2vox-3class-crop7.jpg  used on input line 307.
@@ -1741,12 +1745,12 @@ File: Images/2-mask-crop5.jpg Graphic file (type jpg)
 <use Images/2-mask-crop5.jpg>
 Package pdftex.def Info: Images/2-mask-crop5.jpg  used on input line 360.
 (pdftex.def)             Requested size: 142.26378pt x 121.26367pt.
-<Images/cyclegan-2class-crop5-real.jpg, id=1483, 223.7961pt x 190.5519pt>
+<Images/cyclegan-2class-crop5-real.jpg, id=1487, 223.7961pt x 190.5519pt>
 File: Images/cyclegan-2class-crop5-real.jpg Graphic file (type jpg)
 <use Images/cyclegan-2class-crop5-real.jpg>
 Package pdftex.def Info: Images/cyclegan-2class-crop5-real.jpg  used on input line 361.
 (pdftex.def)             Requested size: 142.26378pt x 121.13866pt.
-<Images/cyclegan-2class-crop5.jpg, id=1484, 223.5552pt x 190.5519pt>
+<Images/cyclegan-2class-crop5.jpg, id=1488, 223.5552pt x 190.5519pt>
 File: Images/cyclegan-2class-crop5.jpg Graphic file (type jpg)
 <use Images/cyclegan-2class-crop5.jpg>
 Package pdftex.def Info: Images/cyclegan-2class-crop5.jpg  used on input line 362.
@@ -1755,12 +1759,12 @@ File: Images/2-mask-crop7.jpg Graphic file (type jpg)
 <use Images/2-mask-crop7.jpg>
 Package pdftex.def Info: Images/2-mask-crop7.jpg  used on input line 364.
 (pdftex.def)             Requested size: 142.26378pt x 133.68135pt.
-<Images/cyclegan-2class-crop7-real.jpg, id=1485, 223.7961pt x 210.0648pt>
+<Images/cyclegan-2class-crop7-real.jpg, id=1489, 223.7961pt x 210.0648pt>
 File: Images/cyclegan-2class-crop7-real.jpg Graphic file (type jpg)
 <use Images/cyclegan-2class-crop7-real.jpg>
 Package pdftex.def Info: Images/cyclegan-2class-crop7-real.jpg  used on input line 365.
 (pdftex.def)             Requested size: 142.26378pt x 133.54352pt.
-<Images/cyclegan-2class-crop7.jpg, id=1486, 223.5552pt x 210.0648pt>
+<Images/cyclegan-2class-crop7.jpg, id=1490, 223.5552pt x 210.0648pt>
 File: Images/cyclegan-2class-crop7.jpg Graphic file (type jpg)
 <use Images/cyclegan-2class-crop7.jpg>
 Package pdftex.def Info: Images/cyclegan-2class-crop7.jpg  used on input line 366.
@@ -1770,7 +1774,7 @@ File: Images/3-mask-crop5-original.jpg Graphic file (type jpg)
 <use Images/3-mask-crop5-original.jpg>
 Package pdftex.def Info: Images/3-mask-crop5-original.jpg  used on input line 405.
 (pdftex.def)             Requested size: 142.26378pt x 118.45468pt.
-<Images/cyclegan-3class-crop5.jpg, id=1504, 230.5413pt x 191.7564pt>
+<Images/cyclegan-3class-crop5.jpg, id=1508, 230.5413pt x 191.7564pt>
 File: Images/cyclegan-3class-crop5.jpg Graphic file (type jpg)
 <use Images/cyclegan-3class-crop5.jpg>
 Package pdftex.def Info: Images/cyclegan-3class-crop5.jpg  used on input line 406.
@@ -1779,7 +1783,7 @@ File: Images/3-mask-crop7-original.jpg Graphic file (type jpg)
 <use Images/3-mask-crop7-original.jpg>
 Package pdftex.def Info: Images/3-mask-crop7-original.jpg  used on input line 408.
 (pdftex.def)             Requested size: 142.26378pt x 130.6573pt.
-<Images/cyclegan-3class-crop7.jpg, id=1505, 230.3004pt x 211.5102pt>
+<Images/cyclegan-3class-crop7.jpg, id=1509, 230.3004pt x 211.5102pt>
 File: Images/cyclegan-3class-crop7.jpg Graphic file (type jpg)
 <use Images/cyclegan-3class-crop7.jpg>
 Package pdftex.def Info: Images/cyclegan-3class-crop7.jpg  used on input line 409.
@@ -1857,17 +1861,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: BC1C97BEC18F6668550B06A6A1E70935;10696.
  ) ) 
 Here is how much of TeX's memory you used:
- 39142 strings out of 475385
- 729180 string characters out of 2776906
- 1118515 words of memory out of 3000000
+ 39143 strings out of 475385
+ 729202 string characters out of 2776906
+ 1118522 words of memory out of 3000000
  59068 multiletter control sequences out of 15000+600000
  508331 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  95i,21n,95p,1756b,994s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/urw/bookman/ubkd8a.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (85 pages, 14247279 bytes).
+Output written on main.pdf (85 pages, 15544919 bytes).
 PDF statistics:
- 1763 PDF objects out of 2073 (max. 8388607)
- 409 named destinations out of 1000 (max. 500000)
+ 1767 PDF objects out of 2073 (max. 8388607)
+ 410 named destinations out of 1000 (max. 500000)
  786 words of extra memory for PDF output out of 10000 (max. 10000000)
 

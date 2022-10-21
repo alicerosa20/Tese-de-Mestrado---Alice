@@ -68,12 +68,12 @@ Like the original CycleGAN model \cite{cycleGAN:original}, the architecture of t
 
 \subsection*{Network Architecture}
 
-The generator architecture used in the original CycleGAN model is intended for a 2D image-to-image translation task. Therefore, for our dataset, this approach needs to be adapted to perform a 3D image-to-image translation. This can be achieved by replacing the 2D convolutional layers of the original CycleGAN with a 3D convolutional layers.  The discriminator architecture to be implemented is based on the PatchGAN \cite{isola2018imagetoimage}, which includes LeakyReLU for nonlinearity. The layers of the discriminator architecture must also be converted from 2D to 3D. The detailed architecture of the generator and discriminator used in the CycleGAN model employed in this work are shown in Figures \ref{fig:gencyc} and \ref{fig:disccyc}, respectively.
+The generator architecture used in the original CycleGAN model is intended for a 2D image-to-image translation task. Therefore, for our dataset, this approach needs to be adapted to perform a 3D image-to-image translation. This can be achieved by replacing the 2D convolutional layers of the original CycleGAN with a 3D convolutional layers.  The discriminator architecture to be implemented is based on the PatchGAN \cite{isola2018imagetoimage}, which includes \ac{Leaky ReLU} for nonlinearity. The layers of the discriminator architecture must also be converted from 2D to 3D. The detailed architecture of the generator and discriminator used in the CycleGAN model employed in this work are shown in Figures \ref{fig:gencyc} and \ref{fig:disccyc}, respectively.
 
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.99\textwidth]{Images/generator_cyclegan.jpg}
-  \caption{Implemented CycleGAN generator architecture. The Residual Block consist of a \ac{3D} convolutional layer with instance normalization and ReLU as the activation function, followed by a second convolutional layer also with instance normalization.  The output of this block is the concatenation of the output of the second layer with the input layer of the block.}
+  \caption{Implemented CycleGAN generator architecture. The Residual Block consist of a \ac{3D} convolutional layer with instance normalization and \ac{ReLU} as the activation function, followed by a second convolutional layer also with instance normalization.  The output of this block is the concatenation of the output of the second layer with the input layer of the block.}
   \label{fig:gencyc}
 \end{figure}
 
@@ -84,7 +84,7 @@ The generator architecture used in the original CycleGAN model is intended for a
   \label{fig:disccyc}
 \end{figure}
 
-In the figures \ref{fig:gencyc} and \ref{fig:disccyc} above, each box corresponds to a block in the model. The type of convolutional layer and the normalization and activation function used after each layer are described in the figure legend. The size of the feature map that each layer outputs is listed below the boxes with respect to the size of the input image $k$. In each box, the number of filters, the size of these filters, and the stride used in each convolutional layer are indicated.
+In the figures \ref{fig:gencyc} and \ref{fig:disccyc} above, each box corresponds to a block in the model. The type of convolutional layer and the normalization and activation function used after each layer are described in the figure legend. The size of the feature map that each layer outputs is provided at the bottom of the boxes with respect to the size of the input image $k$. In each box, the number of filters, the size of these filters, and the stride used in each convolutional layer are indicated.
 
 \subsection*{Loss functions}
 
@@ -103,14 +103,14 @@ The adversarial loss for the second GAN ($G_{I}, D_I$), is written as,
     \mathcal{L}_{adv}(G_{I},D_I) = \mathbb{E}_{i \sim p_{data}(i)} [(D_I(i)-1)^2] + \mathbb{E}_{s \sim p_{data}(s)} [(D_I(G_{I}(s)))^2].
 \end{equation}
 
-\textbf{Cycle consistency loss.} The cycle consistency loss, $\mathcal{L}_{cyc}$, was described in section \ref{subsection:CycleGAN} with an expression given by (\ref{eq:CCL}). Transferred to our notation, it has the following form,
+\textbf{Cycle consistency loss.} The cycle consistency loss, $\mathcal{L}_{cyc}$, was described in subsection \ref{subsection:CycleGAN} with an expression given by (\ref{eq:CCL}). Transferred to our notation, it has the following form,
 
 \begin{equation} 
 \mathcal{L}_{cyc} = \mathbb{E}_{i \sim p_{data}(i)} [||G_{I}(G_{S}(i))-i||_1] + \mathbb{E}_{s \sim p_{data}(s)} [||G_{S}(G_{I}(s))-s||_1].
 \label{eq:cly_2}
 \end{equation}
 
-\textbf{Identity mapping loss.} Lastly, the identity mapping loss, $\mathcal{L}_{id}$ has also been described in \ref{subsection:CycleGAN} with an expression given by (\ref{eq:identity}). Transferred to our notation, it has the following form,
+\textbf{Identity mapping loss.} Lastly, the identity mapping loss, $\mathcal{L}_{id}$ has also been described in subsection \ref{subsection:CycleGAN} with an expression given by (\ref{eq:identity}). Transferred to our notation, it has the following form,
 
 \begin{equation}
     \mathcal{L}_{id} = \mathbb{E}_{i \sim p_{data}(i)} [||G_{I}(i)-i||_1] +  \mathbb{E}_{s \sim p_{data}(s)} [||G_{S}(s)-s||_1].
@@ -120,13 +120,13 @@ Finally, the total loss is obtained by combining by combining the 4 terms:
 
 \begin{equation}
 \label{eq:total-cyclegan-loss}
-    \mathcal{L}(G_{IS},G_{SI},D_S,D_I) = \mathcal{L}_{adv}(G_{IS},D_S) + \mathcal{L}_{adv}(G_{SI},D_I) + \lambda_{cyc} \mathcal{L}_{cyc} + \lambda_{id} \mathcal{L}_{id}
+    \mathcal{L}(G_{S},G_{I},D_S,D_I) = \mathcal{L}_{adv}(G_{S},D_S) + \mathcal{L}_{adv}(G_{I},D_I) + \lambda_{cyc} \mathcal{L}_{cyc} + \lambda_{id} \mathcal{L}_{id}
 \end{equation}
 
 \noindent where $\lambda_{cyc}$ and $\lambda_{id}$ are hyperparameters to optimize that control the relative importance of the two objectives. Thus, the objective function is:
 
 \begin{equation}
-    \arg \min_{G_{IS},G_{SI}}\max_{D_S,D_I} \mathcal{L}(G_{IS},G_{SI},D_S,D_I).
+    \arg \min_{G_{S},G_{I}}\max_{D_S,D_I} \mathcal{L}(G_{S},G_{I},D_S,D_I).
 \end{equation}
 
 \section{Comparison between different approaches}
@@ -140,33 +140,35 @@ The following subsections provide information on the implementation of these met
 
 The 3D U-Net architecture is used to predict two binary segmentation maps, one for the nuclei and other for the Golgi.
 
-The \ac{DC} is a widely used metric in the computer vision community to calculate the similarity between two images \cite{diceloss}. Therefore, the dice coefficient has been fitted to a loss function known as \ac{DLoss}.
+The implemented architecture, based on the one described in section \ref{section:CNN&UNET} (figure \ref{fig:3dUnet}), is demonstrated in figure \ref{fig:y-unet-3d}.
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.90\textwidth]{Images/Picture1.jpg}
+  \caption{Implemented 3D U-Net architecture.}
+  \label{fig:y-unet-3d}
+\end{figure}
+
+In the figure above, each blue box corresponds to a multi-channel feature map. The number of channels is indicated at the top of the box. The size of the feature map is provided at the bottom of the box with respect to the size of the input image $k$. Grey boxes represent copied feature maps. The arrows denote the different operations. The $n$ (above the input and output images) is the number of channels of the input and output images, $n$=2 and $n$=3 for the 2-class and 3-class segmentation tasks, respectively. The output image in the figure is an example of the output for the 2-class segmentation task.
+
+The \ac{DC} is a widely used metric in the computer vision community to calculate the similarity between two images \cite{diceloss}. Therefore, the dice coefficient has been fitted to a loss function known as \ac{DLoss}:
 
 \begin{equation}
     DLoss(y,\hat{p}) = 1 - \frac{2y\hat{p}+1}{y+\hat{p}+1}
     \label{eq:dice-loss}
 \end{equation}
 
-Here $y$ is the reference value and $\hat{p}$ is the probability value predicted by the model. Here, 1 is added to both the numerator and denominator to ensure that the function is not undefined in edge case scenarios, e.g., when $y=\hat{p}=0$. Unlike the original 3D U-Net model \cite{Unet:3D} previously described in \ref{section:CNN&UNET}, the loss function used in training the model is the dice loss in \ref{eq:dice-loss}.
-
-The implemented architecture, based on the one described in section \ref{section:CNN&UNET} (figure \ref{fig:3dUnet}), is demonstrated in figure \ref{fig:y-unet-3d}.
-
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.95\textwidth]{Images/Picture1.jpg}
-  \caption[Implemented 3D U-Net architecture.]{Implemented 3D U-Net architecture.}
-  \label{fig:y-unet-3d}
-\end{figure}
+\noindent here $y$ is the reference value, $\hat{p}$ is the probability value predicted by the model and 1 is added to both the numerator and denominator to ensure that the function is not undefined in edge case scenarios, e.g., when $y=\hat{p}=0$. Unlike the original 3D U-Net model \cite{Unet:3D} previously described in section \ref{section:CNN&UNET}, the loss function used in training the model is the dice loss represented in equation \ref{eq:dice-loss}.
 
 \subsection{Vox2Vox}
 
-Pix2Pix is a supervised GAN model designed for image-to-image translation, previously described in \ref{subsection:pix2pix}. However, it is not capable of performing image-to-image  at the 3D level. A 3D volume-to-volume network for segmentation used as an alternative to Pix2Pix is the Vox2Vox network.
+Pix2Pix is a supervised GAN model designed for image-to-image translation, previously described in subsection \ref{subsection:pix2pix}. However, it is not capable of performing image-to-image translation at the 3D level. A 3D volume-to-volume network for segmentation used as an alternative to Pix2Pix is the Vox2Vox network.
 
-\citet{vox2vox} used a Vox2Vox approach in their work. For this work, it will be used a similar architecture. The generator model is built in the style of the U-Net and Res-Net \cite{2015deep} architectures, while the discriminator is built in the style of the PatchGAN \cite{isola2018imagetoimage}  architecture. The implemented architectures are shown in Figures \ref{fig:genvox} and \ref{fig:discvox}.
+\citet{vox2vox} used a Vox2Vox approach in their work. For this work, it will be used a similar architecture. The generator model is built in the style of the U-Net and Res-Net \cite{2015deep} architectures, while the discriminator is built in the style of the PatchGAN \cite{isola2018imagetoimage}  architecture. The implemented architectures are shown in figures \ref{fig:genvox} and \ref{fig:discvox}.
 
 \begin{figure}[!htb]
   \centering
-  \includegraphics[width=0.95\textwidth]{Images/Picture2.jpg}
+  \includegraphics[width=0.90\textwidth]{Images/Picture2.jpg}
   \caption[Implemented Vox2Vox generator architecture.]{Implemented Vox2Vox generator architecture.}
   \label{fig:genvox}
 \end{figure}
@@ -177,6 +179,8 @@ Pix2Pix is a supervised GAN model designed for image-to-image translation, previ
   \caption[Implemented Vox2Vox discriminator architecture.]{Implemented Vox2Vox discriminator architecture.}
   \label{fig:discvox}
 \end{figure}
+
+In the figures \ref{fig:genvox} and \ref{fig:discvox}, each blue box corresponds to a multi-channel feature map. The number of channels is indicated at the top of the box. The size of the feature map is provided at the bottom of the box with respect to the size of the input image $k$. Grey boxes represent copied feature maps. The arrows denote the different operations. The $n$ (above the input and output images in the generator architecture) is the number of channels of the input and output images. The output of the generator architecture is an example of the output for the 2-class segmentation task.
 
 Another important part of the implementation of Vox2Vox model is the loss function. The discriminator loss, $\mathcal{L}_{disc}$, is the sum of the $L_2$ error of the discriminator output between the original image $x$ and the respective ground-truth $y$ with a tensor of ones, and the $L_2$ error of the discriminator output between the original image and the respective segmentation prediction $\hat{y}$ given by the generator with a tensor of zeros. This can be formulated as follows:
 

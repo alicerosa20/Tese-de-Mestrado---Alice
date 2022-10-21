@@ -58,7 +58,7 @@ In most cases, a convolutional layer is followed by a pooling layer. The main go
 
 One of the main parameters in a \ac{CNN} model is the activation function. This nonlinear function can be interpreted as a selection mechanism that decides whether a particular neuron should fire or not given its input. They are often placed directly after the convolutional layer to introduce non-linearity into the feature map.
 
-There are several commonly used activation functions such as the sigmoid, \ac{Tanh}, \ac{ReLU}, \ac{LeakyReLU} and \ac{ELU} functions. The most commonly used function in neural networks is \ac{ReLU} (Equation \ref{eq:relu}) because it is very computationally efficient, activating only a few neurons per time, it does not saturate in the positive domain, and it converges faster than the tanh and sigmoid activation functions \cite{2018activation}.
+There are several commonly used activation functions such as the sigmoid, \ac{Tanh}, \ac{ReLU}, \ac{Leaky ReLU} and \ac{ELU} functions. The most commonly used function in neural networks is \ac{ReLU} (Equation \ref{eq:relu}) because it is very computationally efficient, activating only a few neurons per time, it does not saturate in the positive domain, and it converges faster than the tanh and sigmoid activation functions \cite{2018activation}.
 
 \begin{equation}
     relu(x) = \max{\{0,x\}}

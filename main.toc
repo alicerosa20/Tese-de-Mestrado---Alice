@@ -32,7 +32,7 @@
 \contentsline {subsection}{\numberline {4.3.1}3D U-Net}{36}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Vox2Vox}{37}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}Models Inference}{38}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Segmentation performance metrics}{38}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Segmentation performance metrics}{39}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Execution time}{39}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Experimental Results and Discussion}{41}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Computational Environment}{43}{section.5.1}%
