@@ -41,6 +41,7 @@
 \newlabel{acro:cGAN}{{}{ix}{\listfigurename }{section*.8}{}}
 \newlabel{acro:cGAN@cref}{{}{[i][9][]ix}}
 \acronymused{cGAN}
+\acronymused{3D}
 \@writefile{@@@}{\chapterbegin }
 \@writefile{@@@}{\chapterbegin }
 \newacro{ACMs}[\AC@hyperlink{ACMs}{ACMs}]{Active Contour Models}
@@ -562,208 +563,213 @@
 \newlabel{section:dataset}{{4.1}{31}{Dataset}{section.4.1}{}}
 \newlabel{section:dataset@cref}{{[section][1][4]4.1}{[1][31][]31}}
 \acronymused{3D}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Synthetic segmentation masks}{31}{subsection.4.1.1}\protected@file@percent }
-\newlabel{subsection:synthetic_masks}{{4.1.1}{31}{Synthetic segmentation masks}{subsection.4.1.1}{}}
-\newlabel{subsection:synthetic_masks@cref}{{[subsection][1][4,1]4.1.1}{[1][31][]31}}
-\citation{cycleGAN:original}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Example of a 3D crop of a microscopy image of mouse retina; (b) ground truth mask for 2-class task; (c) ground truth mask for 3-class task.}}{32}{figure.caption.61}\protected@file@percent }
-\newlabel{fig:dataset}{{4.1}{32}{(a) Example of a 3D crop of a microscopy image of mouse retina; (b) ground truth mask for 2-class task; (c) ground truth mask for 3-class task}{figure.caption.61}{}}
-\newlabel{fig:dataset@cref}{{[figure][1][4]4.1}{[1][31][]32}}
+\newlabel{fig:dataset_original}{{4.1}{32}{(a) Example of a 3D crop of a microscopy image of mouse retina; (b) ground truth mask for 2-class task; (c) ground truth mask for 3-class task}{figure.caption.61}{}}
+\newlabel{fig:dataset_original@cref}{{[figure][1][4]4.1}{[1][31][]32}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{32}{figure.caption.61}\protected@file@percent }
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{32}{figure.caption.61}\protected@file@percent }
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{32}{figure.caption.61}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Proposed Approach}{32}{section.4.2}\protected@file@percent }
-\newlabel{section:proposed}{{4.2}{32}{Proposed Approach}{section.4.2}{}}
-\newlabel{section:proposed@cref}{{[section][2][4]4.2}{[1][32][]32}}
-\citation{isola2018imagetoimage}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces CycleGAN schematic for the proposed approach.}}{33}{figure.caption.62}\protected@file@percent }
-\newlabel{fig:diagrama}{{4.2}{33}{CycleGAN schematic for the proposed approach}{figure.caption.62}{}}
-\newlabel{fig:diagrama@cref}{{[figure][2][4]4.2}{[1][33][]33}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Implemented CycleGAN generator architecture.}}{33}{figure.caption.64}\protected@file@percent }
-\newlabel{fig:gencyc}{{4.3}{33}{Implemented CycleGAN generator architecture}{figure.caption.64}{}}
-\newlabel{fig:gencyc@cref}{{[figure][3][4]4.3}{[1][33][]33}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Synthetic segmentation masks}{32}{subsection.4.1.1}\protected@file@percent }
+\newlabel{subsection:synthetic_masks}{{4.1.1}{32}{Synthetic segmentation masks}{subsection.4.1.1}{}}
+\newlabel{subsection:synthetic_masks@cref}{{[subsection][1][4,1]4.1.1}{[1][31][]32}}
 \citation{cycleGAN:original}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Implemented CycleGAN discriminator architecture.}}{34}{figure.caption.65}\protected@file@percent }
-\newlabel{fig:disccyc}{{4.4}{34}{Implemented CycleGAN discriminator architecture}{figure.caption.65}{}}
-\newlabel{fig:disccyc@cref}{{[figure][4][4]4.4}{[1][33][]34}}
+\citation{isola2018imagetoimage}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Example of a synthetic 3D segmentation masks (a) 2-class segmentation task; (b)3-class segmentation task.\relax }}{33}{figure.caption.62}\protected@file@percent }
+\newlabel{fig:sintetica}{{4.2}{33}{Example of a synthetic 3D segmentation masks (a) 2-class segmentation task; (b)3-class segmentation task.\relax }{figure.caption.62}{}}
+\newlabel{fig:sintetica@cref}{{[figure][2][4]4.2}{[1][32][]33}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{33}{figure.caption.62}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{33}{figure.caption.62}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Proposed Approach}{33}{section.4.2}\protected@file@percent }
+\newlabel{section:proposed}{{4.2}{33}{Proposed Approach}{section.4.2}{}}
+\newlabel{section:proposed@cref}{{[section][2][4]4.2}{[1][32][]33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces CycleGAN schematic for the proposed approach.}}{33}{figure.caption.63}\protected@file@percent }
+\newlabel{fig:diagrama}{{4.3}{33}{CycleGAN schematic for the proposed approach}{figure.caption.63}{}}
+\newlabel{fig:diagrama@cref}{{[figure][3][4]4.3}{[1][33][]33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Implemented CycleGAN generator architecture. The Residual Block consist of a \ac {3D} convolutional layer with instance normalization and ReLU as the activation function, followed by a second convolutional layer also with instance normalization. The output of this block is the concatenation of the output of the second layer with the input layer of the block.\relax }}{34}{figure.caption.65}\protected@file@percent }
 \acronymused{3D}
-\newlabel{eq:cly_2}{{4.3}{34}{Loss functions}{equation.4.2.3}{}}
-\newlabel{eq:cly_2@cref}{{[equation][3][4]4.3}{[1][34][]34}}
+\newlabel{fig:gencyc}{{4.4}{34}{Implemented CycleGAN generator architecture. The Residual Block consist of a \ac {3D} convolutional layer with instance normalization and ReLU as the activation function, followed by a second convolutional layer also with instance normalization. The output of this block is the concatenation of the output of the second layer with the input layer of the block.\relax }{figure.caption.65}{}}
+\newlabel{fig:gencyc@cref}{{[figure][4][4]4.4}{[1][34][]34}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Implemented CycleGAN PatchGAN discriminator architecture.\relax }}{34}{figure.caption.66}\protected@file@percent }
+\newlabel{fig:disccyc}{{4.5}{34}{Implemented CycleGAN PatchGAN discriminator architecture.\relax }{figure.caption.66}{}}
+\newlabel{fig:disccyc@cref}{{[figure][5][4]4.5}{[1][34][]34}}
+\citation{cycleGAN:original}
 \citation{Unet:3D}
 \citation{isola2018imagetoimage}
-\citation{diceloss}
-\citation{Unet:3D}
+\newlabel{eq:cly_2}{{4.3}{35}{Loss functions}{equation.4.2.3}{}}
+\newlabel{eq:cly_2@cref}{{[equation][3][4]4.3}{[1][35][]35}}
 \newlabel{eq:total-cyclegan-loss}{{4.5}{35}{Loss functions}{equation.4.2.5}{}}
 \newlabel{eq:total-cyclegan-loss@cref}{{[equation][5][4]4.5}{[1][35][]35}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Comparison between different approaches}{35}{section.4.3}\protected@file@percent }
-\newlabel{section:comparison}{{4.3}{35}{Comparison between different approaches}{section.4.3}{}}
-\newlabel{section:comparison@cref}{{[section][3][4]4.3}{[1][35][]35}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}3D U-Net}{35}{subsection.4.3.1}\protected@file@percent }
+\citation{diceloss}
+\citation{Unet:3D}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Comparison between different approaches}{36}{section.4.3}\protected@file@percent }
+\newlabel{section:comparison}{{4.3}{36}{Comparison between different approaches}{section.4.3}{}}
+\newlabel{section:comparison@cref}{{[section][3][4]4.3}{[1][35][]36}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}3D U-Net}{36}{subsection.4.3.1}\protected@file@percent }
 \acronymused{DC}
 \AC@undonewlabel{acro:DLoss}
-\newlabel{acro:DLoss}{{4.3.1}{35}{3D U-Net}{section*.67}{}}
-\newlabel{acro:DLoss@cref}{{[subsection][1][4,3]4.3.1}{[1][35][]35}}
+\newlabel{acro:DLoss}{{4.3.1}{36}{3D U-Net}{section*.68}{}}
+\newlabel{acro:DLoss@cref}{{[subsection][1][4,3]4.3.1}{[1][36][]36}}
 \acronymused{DLoss}
-\newlabel{eq:dice-loss}{{4.7}{35}{3D U-Net}{equation.4.3.7}{}}
-\newlabel{eq:dice-loss@cref}{{[equation][7][4]4.7}{[1][35][]35}}
+\newlabel{eq:dice-loss}{{4.7}{36}{3D U-Net}{equation.4.3.7}{}}
+\newlabel{eq:dice-loss@cref}{{[equation][7][4]4.7}{[1][36][]36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Implemented 3D U-Net architecture.}}{36}{figure.caption.69}\protected@file@percent }
+\newlabel{fig:y-unet-3d}{{4.6}{36}{Implemented 3D U-Net architecture}{figure.caption.69}{}}
+\newlabel{fig:y-unet-3d@cref}{{[figure][6][4]4.6}{[1][36][]36}}
 \citation{vox2vox}
 \citation{2015deep}
 \citation{isola2018imagetoimage}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Implemented 3D U-Net architecture.}}{36}{figure.caption.68}\protected@file@percent }
-\newlabel{fig:y-unet-3d}{{4.5}{36}{Implemented 3D U-Net architecture}{figure.caption.68}{}}
-\newlabel{fig:y-unet-3d@cref}{{[figure][5][4]4.5}{[1][35][]36}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Vox2Vox}{36}{subsection.4.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Vox2Vox}{37}{subsection.4.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Implemented Vox2Vox generator architecture.}}{37}{figure.caption.70}\protected@file@percent }
+\newlabel{fig:genvox}{{4.7}{37}{Implemented Vox2Vox generator architecture}{figure.caption.70}{}}
+\newlabel{fig:genvox@cref}{{[figure][7][4]4.7}{[1][37][]37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Implemented Vox2Vox discriminator architecture.}}{37}{figure.caption.71}\protected@file@percent }
+\newlabel{fig:discvox}{{4.8}{37}{Implemented Vox2Vox discriminator architecture}{figure.caption.71}{}}
+\newlabel{fig:discvox@cref}{{[figure][8][4]4.8}{[1][37][]37}}
 \acronymused{DLoss}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Implemented Vox2Vox generator architecture.}}{37}{figure.caption.69}\protected@file@percent }
-\newlabel{fig:genvox}{{4.6}{37}{Implemented Vox2Vox generator architecture}{figure.caption.69}{}}
-\newlabel{fig:genvox@cref}{{[figure][6][4]4.6}{[1][36][]37}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Implemented Vox2Vox discriminator architecture.}}{37}{figure.caption.70}\protected@file@percent }
-\newlabel{fig:discvox}{{4.7}{37}{Implemented Vox2Vox discriminator architecture}{figure.caption.70}{}}
-\newlabel{fig:discvox@cref}{{[figure][7][4]4.7}{[1][36][]37}}
-\newlabel{eq:vox2vox-generator-loss}{{4.9}{37}{Vox2Vox}{equation.4.3.9}{}}
-\newlabel{eq:vox2vox-generator-loss@cref}{{[equation][9][4]4.9}{[1][36][]37}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Models Inference}{37}{section.4.4}\protected@file@percent }
-\newlabel{section:models_inference}{{4.4}{37}{Models Inference}{section.4.4}{}}
-\newlabel{section:models_inference@cref}{{[section][4][4]4.4}{[1][37][]37}}
+\newlabel{eq:vox2vox-generator-loss}{{4.9}{38}{Vox2Vox}{equation.4.3.9}{}}
+\newlabel{eq:vox2vox-generator-loss@cref}{{[equation][9][4]4.9}{[1][38][]38}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Models Inference}{38}{section.4.4}\protected@file@percent }
+\newlabel{section:models_inference}{{4.4}{38}{Models Inference}{section.4.4}{}}
+\newlabel{section:models_inference@cref}{{[section][4][4]4.4}{[1][38][]38}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.5}Segmentation performance metrics}{38}{section.4.5}\protected@file@percent }
 \newlabel{section:metrics}{{4.5}{38}{Segmentation performance metrics}{section.4.5}{}}
 \newlabel{section:metrics@cref}{{[section][5][4]4.5}{[1][38][]38}}
 \acronymused{DC}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Execution time}{38}{section.4.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Experimental Results and Discussion}{39}{chapter.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Execution time}{39}{section.4.6}\protected@file@percent }
+\newlabel{section:execution_time}{{4.6}{39}{Execution time}{section.4.6}{}}
+\newlabel{section:execution_time@cref}{{[section][6][4]4.6}{[1][39][]39}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Experimental Results and Discussion}{41}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {xchapter}{Experimental Results and Discussion}{39}{chapter.5}\protected@file@percent }
-\@writefile{lot}{\contentsline {xchapter}{Experimental Results and Discussion}{39}{chapter.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {xchapter}{Experimental Results and Discussion}{41}{chapter.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {xchapter}{Experimental Results and Discussion}{41}{chapter.5}\protected@file@percent }
 \citation{tensorflow,keras}
 \citation{contrast_strect}
-\newlabel{chap:results}{{5}{41}{Experimental Results and Discussion}{chapter.5}{}}
-\newlabel{chap:results@cref}{{[chapter][5][]5}{[1][41][]41}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Computational Environment}{41}{section.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Data Pre-Processing}{41}{section.5.2}\protected@file@percent }
-\newlabel{section:pre}{{5.2}{41}{Data Pre-Processing}{section.5.2}{}}
-\newlabel{section:pre@cref}{{[section][2][5]5.2}{[1][41][]41}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Slice of microscopic image from the dataset.}}{41}{figure.caption.71}\protected@file@percent }
-\newlabel{fig:micro}{{5.1}{41}{Slice of microscopic image from the dataset}{figure.caption.71}{}}
-\newlabel{fig:micro@cref}{{[figure][1][5]5.1}{[1][41][]41}}
-\newlabel{eq:contrast}{{5.1}{42}{Data Pre-Processing}{equation.5.2.1}{}}
-\newlabel{eq:contrast@cref}{{[equation][1][5]5.1}{[1][42][]42}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Same image slice of figure \ref {fig:micro} after percentile contrast stretching.}}{42}{figure.caption.72}\protected@file@percent }
-\newlabel{fig:micro_pre}{{5.2}{42}{Same image slice of figure \ref {fig:micro} after percentile contrast stretching}{figure.caption.72}{}}
-\newlabel{fig:micro_pre@cref}{{[figure][2][5]5.2}{[1][42][]42}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Implementation Details, Results and Discussion}{42}{section.5.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces 3D visualization of crops used for testing the models: (a) $I^{orig}_1$; (b) $I^{Pre}_1$; (c) $I^{gt}_{21}$; (d) $I^{gt}_{31}$; (e) $I^{orig}_2$; (f) $I^{Pre}_2$; (g) $I^{gt}_{22}$; (h) $I^{gt}_{32}$.\relax }}{43}{figure.caption.73}\protected@file@percent }
-\newlabel{fig:dataset}{{5.3}{43}{3D visualization of crops used for testing the models: (a) $I^{orig}_1$; (b) $I^{Pre}_1$; (c) $I^{gt}_{21}$; (d) $I^{gt}_{31}$; (e) $I^{orig}_2$; (f) $I^{Pre}_2$; (g) $I^{gt}_{22}$; (h) $I^{gt}_{32}$.\relax }{figure.caption.73}{}}
-\newlabel{fig:dataset@cref}{{[figure][3][5]5.3}{[1][43][]43}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{43}{figure.caption.73}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{43}{figure.caption.73}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{43}{figure.caption.73}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{43}{figure.caption.73}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{43}{figure.caption.73}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{43}{figure.caption.73}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(g)}{\ignorespaces {}}}{43}{figure.caption.73}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(h)}{\ignorespaces {}}}{43}{figure.caption.73}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}3D U-Net}{43}{subsection.5.3.1}\protected@file@percent }
+\newlabel{chap:results}{{5}{43}{Experimental Results and Discussion}{chapter.5}{}}
+\newlabel{chap:results@cref}{{[chapter][5][]5}{[1][43][]43}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Computational Environment}{43}{section.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Data Pre-Processing}{43}{section.5.2}\protected@file@percent }
+\newlabel{section:pre}{{5.2}{43}{Data Pre-Processing}{section.5.2}{}}
+\newlabel{section:pre@cref}{{[section][2][5]5.2}{[1][43][]43}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Slice of microscopic image from the dataset.}}{43}{figure.caption.72}\protected@file@percent }
+\newlabel{fig:micro}{{5.1}{43}{Slice of microscopic image from the dataset}{figure.caption.72}{}}
+\newlabel{fig:micro@cref}{{[figure][1][5]5.1}{[1][43][]43}}
+\newlabel{eq:contrast}{{5.1}{44}{Data Pre-Processing}{equation.5.2.1}{}}
+\newlabel{eq:contrast@cref}{{[equation][1][5]5.1}{[1][44][]44}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Same image slice of figure \ref {fig:micro} after percentile contrast stretching.}}{44}{figure.caption.73}\protected@file@percent }
+\newlabel{fig:micro_pre}{{5.2}{44}{Same image slice of figure \ref {fig:micro} after percentile contrast stretching}{figure.caption.73}{}}
+\newlabel{fig:micro_pre@cref}{{[figure][2][5]5.2}{[1][44][]44}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Implementation Details, Results and Discussion}{44}{section.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces 3D visualization of crops used for testing the models: (a) $I^{orig}_1$; (b) $I^{Pre}_1$; (c) $I^{gt}_{21}$; (d) $I^{gt}_{31}$; (e) $I^{orig}_2$; (f) $I^{Pre}_2$; (g) $I^{gt}_{22}$; (h) $I^{gt}_{32}$.\relax }}{45}{figure.caption.74}\protected@file@percent }
+\newlabel{fig:dataset}{{5.3}{45}{3D visualization of crops used for testing the models: (a) $I^{orig}_1$; (b) $I^{Pre}_1$; (c) $I^{gt}_{21}$; (d) $I^{gt}_{31}$; (e) $I^{orig}_2$; (f) $I^{Pre}_2$; (g) $I^{gt}_{22}$; (h) $I^{gt}_{32}$.\relax }{figure.caption.74}{}}
+\newlabel{fig:dataset@cref}{{[figure][3][5]5.3}{[1][45][]45}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{45}{figure.caption.74}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{45}{figure.caption.74}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{45}{figure.caption.74}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{45}{figure.caption.74}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{45}{figure.caption.74}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{45}{figure.caption.74}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(g)}{\ignorespaces {}}}{45}{figure.caption.74}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(h)}{\ignorespaces {}}}{45}{figure.caption.74}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}3D U-Net}{45}{subsection.5.3.1}\protected@file@percent }
 \acronymused{3D}
 \acronymused{ReLU}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Average metric values after testing the 3D U-Net model with two microscopic images for a model trained with the original microscopic images (U-Net) and with the pre-processed microscopic images (U-Net + Pre)\relax }}{44}{table.caption.76}\protected@file@percent }
-\newlabel{tab:u-net-results}{{5.1}{44}{Average metric values after testing the 3D U-Net model with two microscopic images for a model trained with the original microscopic images (U-Net) and with the pre-processed microscopic images (U-Net + Pre)\relax }{table.caption.76}{}}
-\newlabel{tab:u-net-results@cref}{{[table][1][5]5.1}{[1][44][]44}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Average metric values after testing the 3D U-Net model with two microscopic images for a model trained with the original microscopic images (U-Net) and with the pre-processed microscopic images (U-Net + Pre)\relax }}{46}{table.caption.77}\protected@file@percent }
+\newlabel{tab:u-net-results}{{5.1}{46}{Average metric values after testing the 3D U-Net model with two microscopic images for a model trained with the original microscopic images (U-Net) and with the pre-processed microscopic images (U-Net + Pre)\relax }{table.caption.77}{}}
+\newlabel{tab:u-net-results@cref}{{[table][1][5]5.1}{[1][46][]46}}
 \citation{focal_loss}
-\newlabel{fig:results-unet}{{\caption@xref {fig:results-unet}{ on input line 146}}{45}{2 Class}{figure.caption.77}{}}
-\newlabel{fig:results-unet@cref}{{[subsection][1][5,3]5.3.1}{[1][44][]45}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 3D U-Net model with input $I^{orig}_1$; (c) 3D U-Net model with input $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 3D U-Net model with input $I^{orig}_2$; (f) 3D U-Net model with input $I^{Pre}_2$.\relax }}{45}{figure.caption.77}\protected@file@percent }
-\newlabel{fig:results-unet}{{5.4}{45}{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 3D U-Net model with input $I^{orig}_1$; (c) 3D U-Net model with input $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 3D U-Net model with input $I^{orig}_2$; (f) 3D U-Net model with input $I^{Pre}_2$.\relax }{figure.caption.77}{}}
-\newlabel{fig:results-unet@cref}{{[figure][4][5]5.4}{[1][44][]45}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{45}{figure.caption.77}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{45}{figure.caption.77}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{45}{figure.caption.77}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{45}{figure.caption.77}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{45}{figure.caption.77}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{45}{figure.caption.77}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Example of ground truth mask imperfection highlighted by white circle; Example of digital noise highlighted by blue circles; and example of nondetection by 3D U-Net model highlighted by orange circle; (a) and (d) 3D microscopic section; (b) and (e) 3D U-Net segmentation mask; (c) and (f) 3D ground truth segmentation mask.\relax }}{46}{figure.caption.78}\protected@file@percent }
-\newlabel{fig:errors-unet}{{5.5}{46}{Example of ground truth mask imperfection highlighted by white circle; Example of digital noise highlighted by blue circles; and example of nondetection by 3D U-Net model highlighted by orange circle; (a) and (d) 3D microscopic section; (b) and (e) 3D U-Net segmentation mask; (c) and (f) 3D ground truth segmentation mask.\relax }{figure.caption.78}{}}
-\newlabel{fig:errors-unet@cref}{{[figure][5][5]5.5}{[1][45][]46}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{46}{figure.caption.78}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{46}{figure.caption.78}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{46}{figure.caption.78}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{46}{figure.caption.78}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{46}{figure.caption.78}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{46}{figure.caption.78}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Average metric values after testing the 3 class 3D U-Net model with two microscopic images\relax }}{46}{table.caption.81}\protected@file@percent }
-\newlabel{tab:results-3class-u-net}{{5.2}{46}{Average metric values after testing the 3 class 3D U-Net model with two microscopic images\relax }{table.caption.81}{}}
-\newlabel{tab:results-3class-u-net@cref}{{[table][2][5]5.2}{[1][46][]46}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class 3D U-Net model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class 3D U-Net model with input $I^{Pre}_2$.\relax }}{47}{figure.caption.80}\protected@file@percent }
-\newlabel{fig:results-unet-3channel}{{5.6}{47}{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class 3D U-Net model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class 3D U-Net model with input $I^{Pre}_2$.\relax }{figure.caption.80}{}}
-\newlabel{fig:results-unet-3channel@cref}{{[figure][6][5]5.6}{[1][46][]47}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{47}{figure.caption.80}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{47}{figure.caption.80}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{47}{figure.caption.80}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{47}{figure.caption.80}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Vox2Vox}{48}{subsection.5.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 3D U-Net model with input $I^{orig}_1$; (c) 3D U-Net model with input $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 3D U-Net model with input $I^{orig}_2$; (f) 3D U-Net model with input $I^{Pre}_2$.\relax }}{47}{figure.caption.78}\protected@file@percent }
+\newlabel{fig:results-unet}{{5.4}{47}{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 3D U-Net model with input $I^{orig}_1$; (c) 3D U-Net model with input $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 3D U-Net model with input $I^{orig}_2$; (f) 3D U-Net model with input $I^{Pre}_2$.\relax }{figure.caption.78}{}}
+\newlabel{fig:results-unet@cref}{{[figure][4][5]5.4}{[1][46][]47}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{47}{figure.caption.78}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{47}{figure.caption.78}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{47}{figure.caption.78}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{47}{figure.caption.78}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{47}{figure.caption.78}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{47}{figure.caption.78}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Example of ground truth mask imperfection highlighted by white circle; Example of digital noise highlighted by blue circles; and example of nondetection by 3D U-Net model highlighted by orange circle; (a) and (d) 3D microscopic section; (b) and (e) 3D U-Net segmentation mask; (c) and (f) 3D ground truth segmentation mask.\relax }}{48}{figure.caption.79}\protected@file@percent }
+\newlabel{fig:errors-unet}{{5.5}{48}{Example of ground truth mask imperfection highlighted by white circle; Example of digital noise highlighted by blue circles; and example of nondetection by 3D U-Net model highlighted by orange circle; (a) and (d) 3D microscopic section; (b) and (e) 3D U-Net segmentation mask; (c) and (f) 3D ground truth segmentation mask.\relax }{figure.caption.79}{}}
+\newlabel{fig:errors-unet@cref}{{[figure][5][5]5.5}{[1][47][]48}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{48}{figure.caption.79}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{48}{figure.caption.79}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{48}{figure.caption.79}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{48}{figure.caption.79}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{48}{figure.caption.79}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{48}{figure.caption.79}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Average metric values after testing the 3 class 3D U-Net model with two microscopic images\relax }}{48}{table.caption.82}\protected@file@percent }
+\newlabel{tab:results-3class-u-net}{{5.2}{48}{Average metric values after testing the 3 class 3D U-Net model with two microscopic images\relax }{table.caption.82}{}}
+\newlabel{tab:results-3class-u-net@cref}{{[table][2][5]5.2}{[1][48][]48}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class 3D U-Net model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class 3D U-Net model with input $I^{Pre}_2$.\relax }}{49}{figure.caption.81}\protected@file@percent }
+\newlabel{fig:results-unet-3channel}{{5.6}{49}{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class 3D U-Net model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class 3D U-Net model with input $I^{Pre}_2$.\relax }{figure.caption.81}{}}
+\newlabel{fig:results-unet-3channel@cref}{{[figure][6][5]5.6}{[1][48][]49}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{49}{figure.caption.81}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{49}{figure.caption.81}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{49}{figure.caption.81}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{49}{figure.caption.81}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Vox2Vox}{50}{subsection.5.3.2}\protected@file@percent }
 \acronymused{DLoss}
-\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Average metric values obtained from testing the 2 class Vox2Vox model with two microscopic images\relax }}{49}{table.caption.84}\protected@file@percent }
-\newlabel{tab:results-2class-vox2vox}{{5.3}{49}{Average metric values obtained from testing the 2 class Vox2Vox model with two microscopic images\relax }{table.caption.84}{}}
-\newlabel{tab:results-2class-vox2vox@cref}{{[table][3][5]5.3}{[1][48][]49}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 2 class Vox2Vox model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{22}$; (d) 2 class Vox2Vox model with input $I^{Pre}_2$.\relax }}{49}{figure.caption.85}\protected@file@percent }
-\newlabel{fig:results-vox2vox-2channel}{{5.7}{49}{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 2 class Vox2Vox model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{22}$; (d) 2 class Vox2Vox model with input $I^{Pre}_2$.\relax }{figure.caption.85}{}}
-\newlabel{fig:results-vox2vox-2channel@cref}{{[figure][7][5]5.7}{[1][48][]49}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{49}{figure.caption.85}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{49}{figure.caption.85}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{49}{figure.caption.85}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{49}{figure.caption.85}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Average metric values obtained from testing the 3 class Vox2Vox model with two microscopic images\relax }}{50}{table.caption.87}\protected@file@percent }
-\newlabel{tab:results-3class-vox2vox}{{5.4}{50}{Average metric values obtained from testing the 3 class Vox2Vox model with two microscopic images\relax }{table.caption.87}{}}
-\newlabel{tab:results-3class-vox2vox@cref}{{[table][4][5]5.4}{[1][50][]50}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class Vox2Vox model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class Vox2Vox model with input $I^{Pre}_2$.\relax }}{50}{figure.caption.88}\protected@file@percent }
-\newlabel{fig:results-vox2vox-3channel}{{5.8}{50}{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class Vox2Vox model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class Vox2Vox model with input $I^{Pre}_2$.\relax }{figure.caption.88}{}}
-\newlabel{fig:results-vox2vox-3channel@cref}{{[figure][8][5]5.8}{[1][50][]50}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{50}{figure.caption.88}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{50}{figure.caption.88}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{50}{figure.caption.88}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{50}{figure.caption.88}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Proposed Approach - CycleGAN}{51}{subsection.5.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Average metric values obtained from testing the 2 class Vox2Vox model with two microscopic images\relax }}{51}{table.caption.85}\protected@file@percent }
+\newlabel{tab:results-2class-vox2vox}{{5.3}{51}{Average metric values obtained from testing the 2 class Vox2Vox model with two microscopic images\relax }{table.caption.85}{}}
+\newlabel{tab:results-2class-vox2vox@cref}{{[table][3][5]5.3}{[1][50][]51}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 2 class Vox2Vox model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{22}$; (d) 2 class Vox2Vox model with input $I^{Pre}_2$.\relax }}{51}{figure.caption.86}\protected@file@percent }
+\newlabel{fig:results-vox2vox-2channel}{{5.7}{51}{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 2 class Vox2Vox model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{22}$; (d) 2 class Vox2Vox model with input $I^{Pre}_2$.\relax }{figure.caption.86}{}}
+\newlabel{fig:results-vox2vox-2channel@cref}{{[figure][7][5]5.7}{[1][50][]51}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{51}{figure.caption.86}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{51}{figure.caption.86}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{51}{figure.caption.86}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{51}{figure.caption.86}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Average metric values obtained from testing the 3 class Vox2Vox model with two microscopic images\relax }}{52}{table.caption.88}\protected@file@percent }
+\newlabel{tab:results-3class-vox2vox}{{5.4}{52}{Average metric values obtained from testing the 3 class Vox2Vox model with two microscopic images\relax }{table.caption.88}{}}
+\newlabel{tab:results-3class-vox2vox@cref}{{[table][4][5]5.4}{[1][52][]52}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class Vox2Vox model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class Vox2Vox model with input $I^{Pre}_2$.\relax }}{52}{figure.caption.89}\protected@file@percent }
+\newlabel{fig:results-vox2vox-3channel}{{5.8}{52}{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class Vox2Vox model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class Vox2Vox model with input $I^{Pre}_2$.\relax }{figure.caption.89}{}}
+\newlabel{fig:results-vox2vox-3channel@cref}{{[figure][8][5]5.8}{[1][52][]52}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{52}{figure.caption.89}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{52}{figure.caption.89}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{52}{figure.caption.89}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{52}{figure.caption.89}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Proposed Approach - CycleGAN}{53}{subsection.5.3.3}\protected@file@percent }
 \acronymused{Tanh}
-\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces Average metric values obtained from training the 2 class CycleGAN model in an supervised and unsupervised way and testing these models with two microscopic images\relax }}{52}{table.caption.91}\protected@file@percent }
-\newlabel{tab:results-2class-cyclegan}{{5.5}{52}{Average metric values obtained from training the 2 class CycleGAN model in an supervised and unsupervised way and testing these models with two microscopic images\relax }{table.caption.91}{}}
-\newlabel{tab:results-2class-cyclegan@cref}{{[table][5][5]5.5}{[1][52][]52}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 2 class supervised CycleGAN model with input $I^{Pre}_1$; (c) 2 class unsupervised CycleGAN model with input $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 2 class supervised CycleGAN model with input $I^{Pre}_2$; (f) 2 class unsupervised CycleGAN model with input $I^{Pre}_2$.\relax }}{52}{figure.caption.92}\protected@file@percent }
-\newlabel{fig:results-cyclegan-2channel}{{5.9}{52}{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 2 class supervised CycleGAN model with input $I^{Pre}_1$; (c) 2 class unsupervised CycleGAN model with input $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 2 class supervised CycleGAN model with input $I^{Pre}_2$; (f) 2 class unsupervised CycleGAN model with input $I^{Pre}_2$.\relax }{figure.caption.92}{}}
-\newlabel{fig:results-cyclegan-2channel@cref}{{[figure][9][5]5.9}{[1][52][]52}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{52}{figure.caption.92}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{52}{figure.caption.92}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{52}{figure.caption.92}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{52}{figure.caption.92}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{52}{figure.caption.92}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{52}{figure.caption.92}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces Average metric values obtained from testing the 3 class unsupervised CycleGAN model with two microscopic images\relax }}{53}{table.caption.94}\protected@file@percent }
-\newlabel{tab:results-3class-cycleGAN}{{5.6}{53}{Average metric values obtained from testing the 3 class unsupervised CycleGAN model with two microscopic images\relax }{table.caption.94}{}}
-\newlabel{tab:results-3class-cycleGAN@cref}{{[table][6][5]5.6}{[1][53][]53}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class unsupervised CycleGAN model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class unsupervised CycleGAN model with input $I^{Pre}_2$.\relax }}{54}{figure.caption.95}\protected@file@percent }
-\newlabel{fig:results-cycleGAN-3channel}{{5.10}{54}{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class unsupervised CycleGAN model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class unsupervised CycleGAN model with input $I^{Pre}_2$.\relax }{figure.caption.95}{}}
-\newlabel{fig:results-cycleGAN-3channel@cref}{{[figure][10][5]5.10}{[1][53][]54}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{54}{figure.caption.95}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{54}{figure.caption.95}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{54}{figure.caption.95}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{54}{figure.caption.95}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.4}Execution time}{54}{subsection.5.3.4}\protected@file@percent }
-\newlabel{subsection:execution-time}{{5.3.4}{54}{Execution time}{subsection.5.3.4}{}}
-\newlabel{subsection:execution-time@cref}{{[subsection][4][5,3]5.3.4}{[1][54][]54}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.7}{\ignorespaces Time needed to train and test the models\relax }}{55}{table.caption.96}\protected@file@percent }
-\newlabel{tab:time}{{5.7}{55}{Time needed to train and test the models\relax }{table.caption.96}{}}
-\newlabel{tab:time@cref}{{[table][7][5]5.7}{[1][54][]55}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.5}Comparison between approaches}{55}{subsection.5.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{57}{chapter.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces Average metric values obtained from training the 2 class CycleGAN model in an supervised and unsupervised way and testing these models with two microscopic images\relax }}{54}{table.caption.92}\protected@file@percent }
+\newlabel{tab:results-2class-cyclegan}{{5.5}{54}{Average metric values obtained from training the 2 class CycleGAN model in an supervised and unsupervised way and testing these models with two microscopic images\relax }{table.caption.92}{}}
+\newlabel{tab:results-2class-cyclegan@cref}{{[table][5][5]5.5}{[1][54][]54}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 2 class supervised CycleGAN model with input $I^{Pre}_1$; (c) 2 class unsupervised CycleGAN model with input $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 2 class supervised CycleGAN model with input $I^{Pre}_2$; (f) 2 class unsupervised CycleGAN model with input $I^{Pre}_2$.\relax }}{54}{figure.caption.93}\protected@file@percent }
+\newlabel{fig:results-cyclegan-2channel}{{5.9}{54}{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 2 class supervised CycleGAN model with input $I^{Pre}_1$; (c) 2 class unsupervised CycleGAN model with input $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 2 class supervised CycleGAN model with input $I^{Pre}_2$; (f) 2 class unsupervised CycleGAN model with input $I^{Pre}_2$.\relax }{figure.caption.93}{}}
+\newlabel{fig:results-cyclegan-2channel@cref}{{[figure][9][5]5.9}{[1][54][]54}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{54}{figure.caption.93}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{54}{figure.caption.93}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{54}{figure.caption.93}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{54}{figure.caption.93}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{54}{figure.caption.93}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{54}{figure.caption.93}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces Average metric values obtained from testing the 3 class unsupervised CycleGAN model with two microscopic images\relax }}{55}{table.caption.95}\protected@file@percent }
+\newlabel{tab:results-3class-cycleGAN}{{5.6}{55}{Average metric values obtained from testing the 3 class unsupervised CycleGAN model with two microscopic images\relax }{table.caption.95}{}}
+\newlabel{tab:results-3class-cycleGAN@cref}{{[table][6][5]5.6}{[1][55][]55}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class unsupervised CycleGAN model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class unsupervised CycleGAN model with input $I^{Pre}_2$.\relax }}{56}{figure.caption.96}\protected@file@percent }
+\newlabel{fig:results-cycleGAN-3channel}{{5.10}{56}{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class unsupervised CycleGAN model with input $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class unsupervised CycleGAN model with input $I^{Pre}_2$.\relax }{figure.caption.96}{}}
+\newlabel{fig:results-cycleGAN-3channel@cref}{{[figure][10][5]5.10}{[1][55][]56}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{56}{figure.caption.96}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{56}{figure.caption.96}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{56}{figure.caption.96}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{56}{figure.caption.96}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.4}Execution time}{56}{subsection.5.3.4}\protected@file@percent }
+\newlabel{subsection:execution-time}{{5.3.4}{56}{Execution time}{subsection.5.3.4}{}}
+\newlabel{subsection:execution-time@cref}{{[subsection][4][5,3]5.3.4}{[1][56][]56}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.7}{\ignorespaces Time needed to train and test the models\relax }}{57}{table.caption.97}\protected@file@percent }
+\newlabel{tab:time}{{5.7}{57}{Time needed to train and test the models\relax }{table.caption.97}{}}
+\newlabel{tab:time@cref}{{[table][7][5]5.7}{[1][56][]57}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.5}Comparison between approaches}{57}{subsection.5.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{59}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {xchapter}{Conclusion}{57}{chapter.6}\protected@file@percent }
-\@writefile{lot}{\contentsline {xchapter}{Conclusion}{57}{chapter.6}\protected@file@percent }
-\newlabel{chap:conclusion}{{6}{59}{Conclusion}{chapter.6}{}}
-\newlabel{chap:conclusion@cref}{{[chapter][6][]6}{[1][59][]59}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Conclusions}{59}{section.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Model Limitations and Future Work}{59}{section.6.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {xchapter}{Conclusion}{59}{chapter.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {xchapter}{Conclusion}{59}{chapter.6}\protected@file@percent }
+\newlabel{chap:conclusion}{{6}{61}{Conclusion}{chapter.6}{}}
+\newlabel{chap:conclusion@cref}{{[chapter][6][]6}{[1][61][]61}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Conclusions}{61}{section.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Model Limitations and Future Work}{61}{section.6.2}\protected@file@percent }
 \bibstyle{IEEEtranN}
 \bibdata{./Thesis-MSc-Bibliography}
 \bibcite{review:1}{{1}{2016{}}{{Xing and Yang}}{{}}}
@@ -775,7 +781,7 @@
 \bibcite{isola2018imagetoimage}{{7}{2017}{{Isola et~al.}}{{Isola, Zhu, Zhou, and Efros}}}
 \bibcite{cycleGAN:original}{{8}{2017}{{Zhu et~al.}}{{Zhu, Park, Isola, and Efros}}}
 \bibcite{nuclei&golgi}{{9}{2021}{{Narotamo et~al.}}{{Narotamo, Ouarné, Franco, and Silveira}}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{61}{section.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{63}{section.6.2}\protected@file@percent }
 \@writefile{@@@}{\chapterbegin }
 \bibcite{review:CV}{{10}{2021}{{Chai et~al.}}{{Chai, Zeng, Li, and Ngai}}}
 \bibcite{2018guide}{{11}{2016}{{Dumoulin and Visin}}{{}}}
@@ -828,4 +834,4 @@
 \bibcite{contrast_strect}{{58}{2014}{{Kim}}{{}}}
 \bibcite{focal_loss}{{59}{2017}{{Lin et~al.}}{{Lin, Goyal, Girshick, He, and Dollár}}}
 \global\mtcsecondpartfalse
-\gdef \@abspage@last{83}
+\gdef \@abspage@last{85}

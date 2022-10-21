@@ -12,24 +12,22 @@
 
 As mentioned earlier, the goal of this work is to segment fluorescent microscopic images using Deep Learning methods. The first phase is to implement supervised models to accomplish this task of segmenting the nuclei and Golgi of these images. Then we focus on the main goal, which is to implement an unsupervised model that can perform the same task as well or better than the supervised models. And finally, we add a third class to detect the nucleus-Golgi pairs.
 
-This chapter begins by presenting the dataset used to train, validate, and test these models. The proposed approach to semantic segmentation using an unsupervised model is described in section \ref{section:proposed}. The performance of this approach is compared to the supervised models, which are described in detail in section \ref{section:comparison}. Then, section \ref{section:models_inference} describes how the models are used for inference after training. Finally, section \ref{section:metrics} describes the metrics used to measure the performance of these models.
-
-%As mentioned earlier, the goal of this work is to segment fluorescent microscopic images using Deep Learning methods. The first goal is to implement supervised models to accomplish this task. The second and final goal is to implement an unsupervised model that can perform the same task as well or better than the supervised models. This chapter begins by introducing the dataset that will be used to train, validate, and test these models. The proposed approach for semantic segmentation of cell nuclei and Golgi using an unsupervised model is described in section \ref{section:proposed}. The performance of this approach is compared with the supervised models, which are described in detail in \ref{section:comparison}. Finally, the metrics used to measure the performance of these models are described in section \ref{section:metrics}.
+This chapter begins by presenting the dataset used to train, validate, and test these models. The proposed approach to semantic segmentation using an unsupervised model is described in section \ref{section:proposed}. The performance of this approach is compared to the supervised models, which are described in detail in section \ref{section:comparison}. Then, section \ref{section:models_inference} describes how the models are used for inference after training. Section \ref{section:metrics} describes the metrics used to measure the performance of these models. Finally, section \ref{section:execution_time} describes how the execution time for the trained and tested models is determined to use as a measure of the performance of the different approaches.
 
 \section{Dataset}
 \label{section:dataset}
 
 The dataset used in this work consists of eight crops extracted from \ac{3D} fluorescence microscopy images of mouse retinas. These crops range in size from 257x505x55 to 627x818x61. In these crops, the nuclei are labeled with green fluorescent protein (GFP) and the Golgi are labeled with mCherry. In addition, manually labeled segmentation masks are used for training the proposed supervised methods and evaluating their performance. These masks are RGB, with the red channel containing the segmentation mask of the Golgi and the green channel containing the segmentation mask of the nuclei. The blue channel contains the segmentation mask of the nucleus-Golgi pairs, but only for the task of the 3-class segmentation problem. In this case, the input images and the output masks have 3 channels. For the 2-class segmentation problem, the blue channel is not considered, so the input images and the output masks have only two channels (these masks are converted to RGB for visualization but the blue channel is all zeros).
 
-An example of a 3D crop and its corresponding manually labelled segmentation masks for the 2-class task and 3-class task can be found in \ref{fig:dataset}.
+An example of a 3D crop and its corresponding manually labelled segmentation masks for the 2-class task and 3-class task can be found in figure \ref{fig:dataset_original}.
 
 \begin{figure}[!htb]
 	\centering
 	\subfigure[]{\includegraphics[width=5cm]{Images/img_crop1.jpg}}\hfil
-\subfigure[]{\includegraphics[width=5cm]{Images/mask2_crop1.jpg}}\hfil 
-\subfigure[]{\includegraphics[width=5cm]{Images/mask3_crop1.jpg}} 
+  \subfigure[]{\includegraphics[width=5cm]{Images/mask2_crop1.jpg}}\hfil 
+  \subfigure[]{\includegraphics[width=5cm]{Images/mask3_crop1.jpg}} 
 	\caption[(a) Example of a 3D crop of a microscopy image of mouse retina; (b) ground truth mask for 2-class task; (c) ground truth mask for 3-class task.]{(a) Example of a 3D crop of a microscopy image of mouse retina; (b) ground truth mask for 2-class task; (c) ground truth mask for 3-class task.}
-	\label{fig:dataset}
+	\label{fig:dataset_original}
 \end{figure}
 
 To use these crops to train the models, its necessary to divide them into equal sized patches. If the volumes are too small, not enough information can be learned. If the volumes are too large, training will take longer and could exceed GPU memory. Therefore, we set the size of these patches to 64x64x64. Since the $z$-axis of the original images has a size between 55 and 61, the crops had to be padded to get the 64 slices in the $z$-axis for the input images, for this purpose a reflection padding was applied.
@@ -39,22 +37,24 @@ To use these crops to train the models, its necessary to divide them into equal 
 
 As mentioned earlier, the manually labelled segmentation masks are used for training the implemented supervised models. However, in order to train the proposed model in a non-supervised way, synthetic segmentation masks had to be created. 
 
-For this purpose, ellipsoids are created to represent the nuclei and spheres for the Golgi at random positions. For each nucleus-Golgi pair created, the radius of the speres (nucleus) and the size of the principal and secondary axis of the ellipsoids (Golgi), the distance between the nucleus and Golgi (relative to the center of the Golgi), and the rotation of each pair are selected randomly from the intervals [5,9] pixels, [[17,30],[8,13],[8,13]] pixels, [-6,6] pixels and [0,180] degrees, respectively. For each crop created, a random number of nucleus-Golgi pairs were selected (between 45 and 70 pairs). To make the images more realistic, an elastic transformation was applied to each nucleus-Golgi pair. Six crops were created with the same size of the six microscopic image crops used for training the model. An example of a synthetically created segmentation mask can be found in figure X (a).
+For this purpose, ellipsoids are created to represent the nuclei and spheres for the Golgi at random positions. For each nucleus-Golgi pair created, the radius of the speres (nucleus) and the size of the principal and secondary axis of the ellipsoids (Golgi), the distance between the nucleus and Golgi (relative to the center of the Golgi), and the rotation of each pair are selected randomly from the intervals [5,9] pixels, [[17,30],[8,13],[8,13]] pixels, [-6,6] pixels and [0,180] degrees, respectively. For each crop created, a random number of nucleus-Golgi pairs were selected (between 45 and 70 pairs). To make the images more realistic, an elastic transformation was applied to each nucleus-Golgi pair. Six crops were created with the same size of the six microscopic image crops used for training the model. An example of a synthetically created segmentation mask can be found in figure \ref{fig:sintetica} (a).
 
-For the 3-class segmentation problem the blue channel 
+For the 3-class segmentation problem, another six synthetic segmentation masks were created to train the models for this task. Here, the nuclei and Golgi are generated in the same way as described previously. In this case, a third segmentation mask is added in the blue channel corresponding to the class of the nucleus-Golgi pair that corresponds to the union of the nuclei and Golgi generated for the green and red channels, respectively. To make the images more realistic, isolated nuclei and Golgi are added to the segmentation mask and are not included in the segmentation mask of the nucleus-Golgi pairs (blue channel). An example of a synthetically generated segmentation mask can be found in figure \ref{fig:sintetica} (b).
 
-% \begin{figure}[!htb]
-% \centering
-% \includegraphics[width=0.50\textwidth]{Images/synthetic.jpg}
-% \caption[Example of a synthetic 3D segmentation mask.]{Example of a synthetic 3D segmentation mask.}
-% \label{fig:sintetica}
-% \end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\subfigure[]{\includegraphics[width=5cm]{Images/2-mask-synthetic.jpg}}\hfil
+  \subfigure[]{\includegraphics[width=5cm]{Images/3-mask-synthetic.jpg}}
+	\caption{Example of a synthetic 3D segmentation masks (a) 2-class segmentation task; (b)3-class segmentation task.}
+	\label{fig:sintetica}
+\end{figure}
 
 
 \section{Proposed Approach}
 \label{section:proposed}
 
-For this work, cell nuclei and Golgi semantic segmentation will be performed using the cycle-consistent GAN (CycleGAN) model. Two different domain images will be considered, the fluorescence microscopy images domain $I$ and the synthetic segmentation mask domain $S$. Moreover, let $i$ and $s$ denote training examples where $i \in I$ and $s \in S$.
+For this work, cell nuclei and Golgi semantic segmentation will be performed using the cycle-consistent GAN (CycleGAN) model. Two different domain images will be considered, the fluorescence microscopy images (domain $I$) and the synthetic segmentation mask (domain $S$). Moreover, let $i$ and $s$ denote training examples where $i \in I$ and $s \in S$.
 
 Like the original CycleGAN model \cite{cycleGAN:original}, the architecture of this segmentation model will be composed of four interconnected networks, two generators and two discriminators. A representation of this network can be found in Figure \ref{fig:diagrama}. The first generator ($G_S$), corresponding to the segmentation network we wish to obtain, learns a mapping from the domain $I$ to $S$. The first discriminator ($D_S$) takes the segmentation masks as input and tries to predict whether they are real or generated, according to the domain $S$. In contrast, the second generator ($G_I$) learns a mapping from the domain $S$ to $I$, and is used only to improve the training. Furthermore, the second discriminator ($D_I$) receives an image as input and predicts whether this image is real or generated, according to domain $I$.
 
@@ -73,18 +73,18 @@ The generator architecture used in the original CycleGAN model is intended for a
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.99\textwidth]{Images/generator_cyclegan.jpg}
-  \caption[Implemented CycleGAN generator architecture.]{Implemented CycleGAN generator architecture.}
+  \caption{Implemented CycleGAN generator architecture. The Residual Block consist of a \ac{3D} convolutional layer with instance normalization and ReLU as the activation function, followed by a second convolutional layer also with instance normalization.  The output of this block is the concatenation of the output of the second layer with the input layer of the block.}
   \label{fig:gencyc}
 \end{figure}
 
 \begin{figure}[!htb]
   \centering
-  \includegraphics[width=0.60\textwidth]{Images/discriminator_cyclegan.jpg}
-  \caption[Implemented CycleGAN discriminator architecture.]{Implemented CycleGAN discriminator architecture.}
+  \includegraphics[width=0.50\textwidth]{Images/discriminator_cyclegan.jpg}
+  \caption{Implemented CycleGAN PatchGAN discriminator architecture.}
   \label{fig:disccyc}
 \end{figure}
 
-In the generator, the residual blocks consist of an \ac{3D} convolutional layer with instance normalization and ReLU as the activation function, followed by a second convolutional layer also with instance normalization.  The output of this block is the concatenation of the output of the second layer with the input layer of the block.
+In the figures \ref{fig:gencyc} and \ref{fig:disccyc} above, each box corresponds to a block in the model. The type of convolutional layer and the normalization and activation function used after each layer are described in the figure legend. The size of the feature map that each layer outputs is listed below the boxes with respect to the size of the input image $k$. In each box, the number of filters, the size of these filters, and the stride used in each convolutional layer are indicated.
 
 \subsection*{Loss functions}
 
@@ -217,5 +217,6 @@ Pixel-based metrics are used to evaluate the performance of the different models
 \noindent where $n_{TP}$ , $n_{FP}$ and $n_{FN}$ are defined as the number of true-positive, false-positive, and false-negative segmentation result pixels in an image, respectively. These metrics are calculated separately for the objects to be segmented: nuclei, Golgi and nucleus-Golgi pair. A higher \ac{DC} indicates better intersection between the ground truth and the predicted segmentation masks. Low precision may indicate over segmentation and low recall may indicate under segmentation.
 
 \section{Execution time}
+\label{section:execution_time}
 
 The execution time of a deep neural network model can be divided into two intervals: the training time and the testing time. Here, the training time corresponds to the time it takes for a model to learn a particular task. The test time is the time required for a model to make a segmentation prediction for an image. In this work, the execution time is also considered as a measure of the performance of the different approaches. For supervised methods that require manual annotations, the time required to create these masks is also considered.

@@ -26,24 +26,24 @@
 \contentsline {subsection}{\numberline {3.4.2}Weakly Supervised / Unsupervised models}{27}{subsection.3.4.2}%
 \contentsline {chapter}{\numberline {4}Methodology}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Dataset}{31}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Synthetic segmentation masks}{31}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Proposed Approach}{32}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Comparison between different approaches}{35}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}3D U-Net}{35}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Vox2Vox}{36}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Models Inference}{37}{section.4.4}%
+\contentsline {subsection}{\numberline {4.1.1}Synthetic segmentation masks}{32}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Proposed Approach}{33}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Comparison between different approaches}{36}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}3D U-Net}{36}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Vox2Vox}{37}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Models Inference}{38}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Segmentation performance metrics}{38}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Execution time}{38}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Experimental Results and Discussion}{39}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Computational Environment}{41}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Data Pre-Processing}{41}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Implementation Details, Results and Discussion}{42}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}3D U-Net}{43}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Vox2Vox}{48}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Proposed Approach - CycleGAN}{51}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Execution time}{54}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}Comparison between approaches}{55}{subsection.5.3.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{57}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Conclusions}{59}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Model Limitations and Future Work}{59}{section.6.2}%
-\contentsline {chapter}{Bibliography}{61}{section.6.2}%
+\contentsline {section}{\numberline {4.6}Execution time}{39}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Experimental Results and Discussion}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Computational Environment}{43}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Data Pre-Processing}{43}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Implementation Details, Results and Discussion}{44}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}3D U-Net}{45}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Vox2Vox}{50}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Proposed Approach - CycleGAN}{53}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Execution time}{56}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Comparison between approaches}{57}{subsection.5.3.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{59}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Conclusions}{61}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Model Limitations and Future Work}{61}{section.6.2}%
+\contentsline {chapter}{Bibliography}{63}{section.6.2}%

@@ -1,8 +1,8 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Computational Environment}{\reset@font\mtcSfont 41}{section.5.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Data Pre-Processing}{\reset@font\mtcSfont 41}{section.5.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Implementation Details, Results and Discussion}{\reset@font\mtcSfont 42}{section.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.1}3D U-Net}{\reset@font\mtcSSfont 43}{subsection.5.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.2}Vox2Vox}{\reset@font\mtcSSfont 48}{subsection.5.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.3}Proposed Approach - CycleGAN}{\reset@font\mtcSSfont 51}{subsection.5.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.4}Execution time}{\reset@font\mtcSSfont 54}{subsection.5.3.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.5}Comparison between approaches}{\reset@font\mtcSSfont 55}{subsection.5.3.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Computational Environment}{\reset@font\mtcSfont 43}{section.5.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Data Pre-Processing}{\reset@font\mtcSfont 43}{section.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Implementation Details, Results and Discussion}{\reset@font\mtcSfont 44}{section.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.1}3D U-Net}{\reset@font\mtcSSfont 45}{subsection.5.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.2}Vox2Vox}{\reset@font\mtcSSfont 50}{subsection.5.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.3}Proposed Approach - CycleGAN}{\reset@font\mtcSSfont 53}{subsection.5.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.4}Execution time}{\reset@font\mtcSSfont 56}{subsection.5.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.5}Comparison between approaches}{\reset@font\mtcSSfont 57}{subsection.5.3.5}}
