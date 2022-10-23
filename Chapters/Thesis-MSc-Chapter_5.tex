@@ -427,25 +427,27 @@ In this section, we present the time needed to train and test the models. As men
 
 \subsection{Comparison between approaches}
 
-In this section, the segmentation results obtained with the supervised models U-Net and Vox2Vox are compared with the proposed unsupervised model CycleGAN. The results obtained for each class nuclei, Golgi and nucleus-Golgi pair are analysed separately.
+In this section, the segmentation results obtained with the supervised models U-Net and Vox2Vox are compared with the proposed unsupervised model CycleGAN. The results obtained for each class nuclei, Golgi and nucleus-Golgi pair are analysed separately. The table \ref{tab:results-all} shows the results obtained for the 3 classes with the 3 models implemented. The results for the nuclei and Golgi classes are those obtained with the 2-class models, and the results for the nucleus-Golgi pairs are those obtained with the 3-class models. The best results for each class are highlighted in bold.
 
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
 \begin{table}[!htb]
   \centering
-  \caption{Average results obtained for the three different models tested}
+  \caption{Average metric values obtained for the three different models implemented}
   \label{tab:results-all}
   \renewcommand\arraystretch{1.4}
   \resizebox{\columnwidth}{!}{%
-  \begin{tabular}{l|c|c|c|c|c|c|}
-  \cline{2-7}
-                                 & DC Nuclei & DC Golgi & Precision Nuclei & Precision Golgi & Recall Nuclei & Recall Golgi \\ \hline
-  \multicolumn{1}{|l|}{U-Net}    & 0,7775    & 0,6938   & 0,7067           & 0,6500          & 0,8692        & 0,7683       \\ \hline
-  \multicolumn{1}{|l|}{Vox2Vox}  & 0,7539    & 0,6883   & 0,6529           & 0,7078          & 0,8933        & 0,6917       \\ \hline
-  \multicolumn{1}{|l|}{CycleGAN} & 0,7664    & 0,6427   & 0,6903           & 0,5468          & 0,8629        & 0,8038       \\ \hline
+  \begin{tabular}{l|c|c|c|c|c|c|c|c|c|}
+  \cline{2-10}
+                                 & DC Nuclei       & DC Golgi        & DC Pair         & Precision Nuclei & Precision Golgi & Precision Pair  & Recall Nuclei   & Recall Golgi    & Recall Pair     \\ \hline
+  \multicolumn{1}{|l|}{U-Net}    & \textbf{0,7775} & \textbf{0,6938} & \textbf{0,7601} & \textbf{0,7067}  & 0,6500          & \textbf{0,6941} & 0,8692          & 0,7683          & \textbf{0,8403} \\ \hline
+  \multicolumn{1}{|l|}{Vox2Vox}  & 0,7539          & 0,6883          & 0,7198          & 0,6529           & \textbf{0,7078} & 0,6763          & \textbf{0,8933} & 0,6917          & 0,7721          \\ \hline
+  \multicolumn{1}{|l|}{CycleGAN} & 0,7664          & 0,6427          & 0,6999          & 0,6903           & 0,5468          & 0,6711          & 0,8629          & \textbf{0,8038} & 0,7314          \\ \hline
   \end{tabular}%
   }
-\end{table}
+  \end{table}
 
-Segmentation of the nuclei class is challenging because the microscopic images have some background clutter and some of the nuclei have low contrast in the images. For this class, the best dice coefficient was obtained for the U-Net model with 0,7775, but CycleGAN obtained a similar result with 0,7612 and then Vox2Vox with 0,7464. The precision and recall values for the CycleGAN and U-Net models are also very close, with the CycleGAN model only being inferior by less than one percent. The lower dice coefficient of Vox2Vox is due to its high sensitivity to digital noise, which explains its relatively low precision of 0,6529. However, it is the best of the 3 models at detecting Golgi, as it can detect and segment nuclei even when they have low contrast.
+Segmentation of the nuclei class is challenging because the microscopic images have some background clutter and some of the nuclei have low contrast in the images. For this class, the best dice coefficient was obtained for the U-Net model with 0,7775, but CycleGAN obtained a similar result with 0,7664 and then Vox2Vox with 0,7539. The precision and recall values for the CycleGAN and U-Net models are also very close, with the CycleGAN model only being inferior by less than one percent. The lower dice coefficient of Vox2Vox is due to its high sensitivity to digital noise, which explains its relatively low precision of 0,6529. However, it is the best of the 3 models at detecting Golgi, as it can detect and segment nuclei even when they have low contrast.
 
 The challenges in classifying the Golgi class are mainly: the digital noise coming from particles such as dust entering the analysed sample and producing blurs (due to their autofluorescence) with high contrast in the red channel of the microscopic images, which can be mistaken for Golgi; and the small size of the Golgi, which makes detection and boundary segmentation difficult. For this class, the best dice coefficient was obtained for the U-Net model with 0,6938, followed by the Vox2Vox model with 0,6883 and the CycleGAN model with 0,6427. Although the U-Net model had the best Dice Coefficient, because it was able to detect and segment the Golgi best on average, the Vox2Vox model obtained the best precision with 0,7078 and CycleGAN the best recall with 0,8038. Analysing the segmentation masks obtained for these models, we can conclude that the Vox2Vox model best segments the boundaries of the nuclei it detects and CycleGAN is the model that detects the most Golgi on the images.
 
