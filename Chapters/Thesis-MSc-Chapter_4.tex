@@ -8,9 +8,7 @@
 % The following line allows to ref this chapter
 \label{chapter:methodology}
 
-% Deixar para o final, mas inserir aqui uma pequena introdução do que vais falar neste capitulo
-
-As mentioned earlier, the goal of this work is to segment fluorescent microscopic images using Deep Learning methods. The first phase is to implement supervised models to accomplish this task of segmenting the nuclei and Golgi of these images. Then we focus on the main goal, which is to implement an unsupervised model that can perform the same task as well or better than the supervised models. And finally, we add a third class to detect the nucleus-Golgi pairs.
+As mentioned earlier, in this work \ac{DL} methods are used to segment fluorescent microscopic images. The first phase is to implement supervised models to accomplish this task of segmenting the nuclei and Golgi of these images. Then we focus on the main goal, which is to implement an unsupervised model that can perform the same task as well or better than the supervised models. And finally, we add a third class to detect the nucleus-Golgi pairs.
 
 This chapter begins by presenting the dataset used to train, validate, and test these models. The proposed approach to semantic segmentation using an unsupervised model is described in section \ref{section:proposed}. The performance of this approach is compared to the supervised models, which are described in detail in section \ref{section:comparison}. Then, section \ref{section:models_inference} describes how the models are used for inference after training. Section \ref{section:metrics} describes the metrics used to measure the performance of these models. Finally, section \ref{section:execution_time} describes how the execution time for the trained and tested models is determined to use as a measure of the performance of the different approaches.
 
@@ -84,7 +82,7 @@ The generator architecture used in the original CycleGAN model is intended for a
   \label{fig:disccyc}
 \end{figure}
 
-In the figures \ref{fig:gencyc} and \ref{fig:disccyc} above, each box corresponds to a block in the model. The type of convolutional layer and the normalization and activation function used after each layer are described in the figure legend. The size of the feature map that each layer outputs is provided at the bottom of the boxes with respect to the size of the input image $k$. In each box, the number of filters, the size of these filters, and the stride used in each convolutional layer are indicated.
+In the figures \ref{fig:gencyc} and \ref{fig:disccyc} above, each box corresponds to a block in the model. For each block, the type of convolutional layer and the normalization and activation function used after each layer are described in the figure legend. The size of the feature map that each layer outputs is provided at the bottom of the boxes with respect to the size of the input image $k$. In each box, the number of filters, the size of these filters, and the stride used in each convolutional layer are indicated.
 
 \subsection*{Loss functions}
 

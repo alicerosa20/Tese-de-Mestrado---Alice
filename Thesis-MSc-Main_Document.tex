@@ -59,6 +59,14 @@
                    %               -18pt for 1 1/2 spacing
                    %               -24pt for double spacing
 % -----------------------------------------------------------------------------
+% DECLARATION
+\pdfbookmark[0]{Declaration}{declaration}
+
+\input{./Chapters/Thesis-MSc-Declaration.tex}
+\cleardoublepage
+
+
+% -----------------------------------------------------------------------------
 % THE ACKNOWLEGMENTS
 \pdfbookmark[0]{Acknowledgments}{acknowledgments}
 \begin{acknowledgments}
@@ -67,7 +75,7 @@
 %
 % -----------------------------------------------------------------------------
 % THE ABSTRACT
-\pdfbookmark[0]{Abstract}{Abstract}
+\pdfbookmark[0]{Abstract}{abstract}
 \begin{abstract}
 	\input{./Chapters/Thesis-MSc-Abstract-EN-Abstract.tex}
 \end{abstract}
@@ -82,7 +90,7 @@
 %
 % -----------------------------------------------------------------------------
 % O RESUMO
-\pdfbookmark[0]{Resumo}{Resumo}
+\pdfbookmark[0]{Resumo}{resumo}
 \begin{resumo}
 	\input{./Chapters/Thesis-MSc-Abstract-PT-Resumo.tex}
 \end{resumo}
@@ -131,8 +139,8 @@
 % List of Algorithms
 % If not used, comments the lines!
 % Requires packages algorithmic, algorithm
-%\pdfbookmark[1]{List of Algorithms}{loa}
-%\listofalgorithms
+\pdfbookmark[1]{List of Algorithms}{loa}
+\listofalgorithms
 % If Printing on DOUBLE SIDED pages, the second page should be white.
 \endgroup
 % Otherwise, comment the following command:
