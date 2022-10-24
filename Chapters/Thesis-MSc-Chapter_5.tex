@@ -142,7 +142,7 @@ The segmentation masks obtained for the pre-processed microscopic images are sho
 
 \end{figure}
 
-There are two things that have been identified in the dataset that may lead to decreased precision of the model. The microscopic images have digital noise, which causes the model to classify this noise as Golgi/Nuclei. This has been verified specifically for the Golgi, and an example of this noise can be seen in figures \ref{fig:errors-unet} (d) to (f) highlighted by the blue circles. Another reason that leads to lower precision is that the manual segmentation masks contain annotation/segmentation errors. In figures \ref{fig:errors-unet} (a) to (c), we see that a Golgi is not identified in the segmentation mask  of our dataset, even though it is present in the microscopic image along with the nucleus and is identified correctly by the U-Net model.
+There are two things that have been identified in the dataset that may lead to decreased precision of the model. The microscopic images have digital noise, which causes the model to classify this noise as Golgi/Nuclei. This has been verified specifically for the Golgi, and an example of this noise can be seen in figures \ref{fig:errors-unet} (d) to (f) highlighted by the blue circles. Another reason that leads to lower precision is that the manual segmentation masks contain annotation/segmentation errors. In figures \ref{fig:errors-unet} (a) to (c), we see that a Golgi and nuclei are not identified in the segmentation mask  of our dataset, even though they are present in the microscopic image and are identified correctly by the U-Net model.
 
 The low recall can be explained by the fact that the microscopic images have low contrast in certain areas, even after applying the pre-processing method to the images. This causes the model to fail to recognise some Golgi/nuclei, which lowers the recall. This case is illustrated in figure \ref{fig:errors-unet} (d) to (e) by the orange circle.
 
@@ -359,7 +359,20 @@ Based on figures \ref{fig:results-cyclegan-2channel} (b) and (e), we can verify 
 
 From figures \ref{fig:results-cyclegan-2channel} (b) and (e), we can also observe that the supervised CycleGAN model for the class of nuclei has difficulty detecting some nuclei that have low contrast in the microscopic images, which affects recall, and that it is very sensitive to digital noise, which affects the value of the precision. The same problems occur with the Golgi class, but are intensified due to the small size of the Golgi, which makes it difficult for the model to learn to detect it correctly and especially to segment well the borders.
 
-If we now analyse the results of the unsupervised CycleGAN model, we find that, like the supervised model, it correctly detects almost all nuclei and Golgi in the images. From table \ref{tab:results-2class-cyclegan}, we verified that the results for the supervised and unsupervised CycleGAN models are very close. This suggests that the problems exhibited by the CycleGAN model are due only to the limitations of the model and not to the use of synthetic masks instead of the real ones to train the model. Actually, it has been verified that the model does not learn to generate masks with low resolution, as is the case with the supervised model, because the synthetic masks have better resolution than the manually labelled masks.
+If we now analyse the results of the unsupervised CycleGAN model, we find that, like the supervised model, it correctly detects almost all nuclei and Golgi in the images. From table \ref{tab:results-2class-cyclegan}, we verified that the results for the supervised and unsupervised CycleGAN models are very close. This suggests that the problems exhibited by the CycleGAN model are due only to the limitations of the model and not to the use of synthetic masks instead of the real ones to train the model. Actually, it has been verified that the model does not learn to generate masks with low resolution, as is the case with the supervised model, because the synthetic masks have better resolution than the manually labelled masks. This effect is highlighted in figure \ref{fig:lowresolution-cycleGAN}.
+
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{\includegraphics[width=4.5cm]{Images/low_resolution_real_mask.jpg}}\hfil
+  \subfigure[]{\includegraphics[width=4.5cm]{Images/low_resolution_cyclegan_real.jpg}}\hfil 
+  \subfigure[]{\includegraphics[width=4.5cm]{Images/low_resolution_my_cyclegan.jpg}} 
+ 
+  \caption{(a) Example of ground truth masks low resolution; (b) Supervised CycleGAN segmentation mask; (c) unsupervised CycleGAN segmentation mask.}
+  
+  \label{fig:lowresolution-cycleGAN}
+  
+  \end{figure}
 
 
 \subsubsection*{3 Channel}

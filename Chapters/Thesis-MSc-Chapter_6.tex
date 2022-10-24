@@ -8,9 +8,22 @@
 % The following line allows to ref this chapter
 \label{chap:conclusion}
 
-Introductory text
-
+In this section conclusions and topics for future studies are presented.
 % #############################################################################
-\section{Conclusions}
+\section{Conclusions and Model Limitations}
 
-\section{Model Limitations and Future Work}
+This thesis had two goals: the main goal was to implement an unsupervised end-to-end \ac{DL} model that is able to accurately segment the nucleus and Golgi of cells in \ac{3D} fluorescence microscopy images as well or better than the implemented supervised models. A secondary goal was to add a third class, nucleus-Golgi pairs, with the aim of improving nuclei and Golgi segmentation. Both goals were achieved, but both have some limitations.
+
+In this work, we address the problem that training supervised methods for deep neural networks requires a large amount of pixel-wise annotated data, which takes a long time to obtain and it can contain annotation/segmentation errors, which then affects the results of the supervised models. To this end, the implementation of a CycleGAN model for unsupervised end-to-end segmentation of cell nuclei and Golgi has been proposed. This model is trained with synthetic masks created using ellipsoids and spheres to represent the nuclei and Golgi, respectively. To better measure the performance of this approach compared to the supervised techniques, two well-known supervised models were implemented: \ac{3D} U-Net and a version of \ac{cGAN}, Vox2Vox. 
+
+From the experimental results, we concluded that with our CycleGAN model, we were able to obtain similar results to the supervised models in less than half the execution time (which is the sum of training and testing time). It also has the advantage of being more transferable, i.e., it does not depend so much on the data on which it is trained, but learns better the actual distribution of the data. However, it has the limitation that it has greater difficulty segmenting small objects such as Golgi, and tends to over-segment because it has difficulty distinguishing background noise from actual nuclei and Golgi.
+
+A second approach was tested in this work with the aim of better segment the nuclei and Golgi by segmenting only the nucleus-Golgi pairs and in this way ignoring the digital noise in the microscopic images. From the experimental results for this class, we concluded that while all models are able to detect most of the nucleus-Golgi pairs, they still detect a lot of digital noise because they are not able to distinguish isolated nuclei or Golgi from a nucleus-Golgi pair.
+
+The proposed and implemented approaches have the limitation that they can only be used for semantic segmentation. Therefore, we are not able to distinguish between the different nuclei, Golgi, and nucleus-Golgi pairs, and consequently, we are not able to count, for example, the different nucleus-Golgi pairs in a microscopic image, which could then be applied in studies such as \cite{nuclei&golgi}.
+
+\section{Future Work}
+
+To achieve better results with CycleGAN model, a pre-processing method can be used in future work that can better filter out the background clutter from the images.
+
+To better delineate the different nuclei and Golgi in the image during semantic segmentation, future work could add a class in the nuclei and Golgi channels that represents the bourders of these cell substructures in the images. However, this work can also be extended for instance segmentation, to distinguish the different nucleus-Golgi pairs and in this form have more applications in the analysis of microscopic images.
