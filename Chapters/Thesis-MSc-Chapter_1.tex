@@ -4,7 +4,7 @@
 % #############################################################################
 % Change the Name of the Chapter i the following line
 \fancychapter{Introduction}
-\cleardoublepage
+%\cleardoublepage
 % The following line allows to ref this chapter
 \label{chap:intro}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,7 +29,7 @@ However, the performance of these methods is limited by the amount of manually l
 \section{Objectives}
 \label{section:objectives}
 
-In this work, deep learning methods are implemented for the segmentation of fluorescent microscopic images. Three models are implemented, two supervised, inspired by the \ac{3D} U-Net \cite{Unet:3D} and Vox2Vox \cite{isola2018imagetoimage} architectures, and one unsupervised, inspired by the CycleGAN model \cite{cycleGAN:original}. The dataset used to train, validate, and test these models includes \ac{3D} fluorescence microscopy images of mouse retinas with two cellular components: Golgi and Nuclei and the corresponding manually labeled \ac{3D} segmentation masks. The aim is that these models can predict from the \ac{3D} fluorescence microscopy images the \ac{3D} segmentation masks with $n$ binary segmentation maps, where $n$ is the number of classes we want to classify. This work has two goals:
+In this work, deep learning methods are implemented for the segmentation of fluorescent microscopic images. Three models are implemented, two supervised, inspired by the \ac{3D} U-Net \cite{Unet:3D} and Vox2Vox \cite{isola2018imagetoimage} architectures, and one unsupervised, inspired by the CycleGAN model \cite{cycleGAN:original}. The dataset used to train, validate, and test these models includes \ac{3D} fluorescence microscopy images of mouse retinas with two cellular components: Golgi and Nuclei and the corresponding manually labeled \ac{3D} segmentation masks. The aim is for these models to receive the \ac{3D} fluorescence microscopy images as input and return a \ac{3D} segmentation mask with $n$ binary segmentation maps, where $n$ is the number of classes we want to classify. This work has two goals:
 
 \begin{itemize} 
 
