@@ -25,6 +25,24 @@ In this work, all deep learning implementations are based on the open-source dee
     \item Graphics Processing Unit (GPU): NVIDIA GeForce GTX 1070 with 8 GB of VRAM.
 \end{itemize}
 
+\section{Segmentation performance metrics}
+\label{section:metrics}
+
+Pixel-based metrics are used to evaluate the performance of the different models. Specifically, precision, recall, and Dice coefficient are used to evaluate these different approaches. The equations for these metrics are as follows:
+
+\begin{equation}
+    Precision = \frac{n_{TP}}{n_{TP}+n_{FP}},
+\end{equation}
+
+\begin{equation}
+    Recall = \frac{n_{TP}}{n_{TP}+n_{FN}},
+\end{equation}
+
+\begin{equation}
+ DICE =\frac{2 \times n_{TP}}{(n_{TP}+n_{FP})+(n_{TP}+n_{FN})}
+\end{equation}
+
+\noindent where $n_{TP}$ , $n_{FP}$ and $n_{FN}$ are defined as the number of true-positive, false-positive, and false-negative segmentation result pixels in an image, respectively. These metrics are calculated separately for the objects to be segmented: nuclei, Golgi and nucleus-Golgi pair. A higher \ac{DC} indicates better intersection between the ground truth and the predicted segmentation masks. Low precision may indicate over segmentation and low recall may indicate under segmentation.
 
 \section{Data Pre-Processing}
 \label{section:pre}
@@ -34,8 +52,8 @@ From the histogram of intensity values in figure \ref{fig:micro} of one of the m
 
 \begin{figure}[!htb]
   \centering
-  \includegraphics[width=0.75\textwidth]{Images/img.jpg}
-  \caption[Slice of microscopic image from the dataset.]{Slice of microscopic image from the dataset.}
+  \includegraphics[width=0.70\textwidth]{Images/img.jpg}
+  \caption{Slice of a microscopic image from the dataset and corresponding intensity histograms of the red and green channels.}
   \label{fig:micro}
 \end{figure}
 
@@ -57,8 +75,8 @@ The results of this process can be found in figure \ref{fig:micro_pre} and, toge
 
 \begin{figure}[!htb]
   \centering
-  \includegraphics[width=0.75\textwidth]{Images/pre.jpg}
-  \caption[Same image slice of figure \ref{fig:micro} after percentile contrast stretching.]{Same image slice of figure \ref{fig:micro} after percentile contrast stretching.}
+  \includegraphics[width=0.70\textwidth]{Images/pre.jpg}
+  \caption{Same image slice of figure \ref{fig:micro} after percentile contrast stretching and corresponding intensity histograms of the red and green channels.}
   \label{fig:micro_pre}
 \end{figure}
 
@@ -105,9 +123,9 @@ In all experiments, using the \ac{3D} U-Net model: Early stopping was applied to
 
 The U-Net model was first trained with the original dataset (figure \ref{fig:micro}). The obtained segmentation masks for the experiment are shown in figures \ref{fig:results-unet} (b) and \ref{fig:results-unet} (e), and table \ref{tab:u-net-results} lists the values obtained for the metrics used to evaluate the model which were described in section \ref{section:metrics}.
 
-From the results, it can be concluded that in the original dataset the precision of the nuclei and especially the Golgi is very low, which indicates over-segmentation and can be verified by looking at the obtained images. This also leads to a very low dice coefficient. Therefore, to improve these results, the pre-processing method described in the previous section \ref{section:pre} was applied to the microscopic images and the U-Net model was re-trained with patches extracted from the pre-processed images.
+From the results, it can be concluded that in the original dataset the precision of the nuclei and especially the Golgi is very low, which indicates over-segmentation and can be verified by looking at the obtained images. This also leads to a very low Dice coefficient. Therefore, to improve these results, the pre-processing method described in the previous section \ref{section:pre} was applied to the microscopic images and the U-Net model was re-trained with patches extracted from the pre-processed images.
 
-The segmentation masks obtained for the pre-processed microscopic images are shown in figures \ref{fig:results-unet} (c) and \ref{fig:results-unet} (f) and table \ref{tab:u-net-results} provides the values of the metrics used to evaluate the model. Compared to the previous results, the pre-processing method improved the results significantly, especially the precision and Dice Coefficient. However, it still tends to over-segment, especially the Golgi.
+The segmentation masks obtained for the pre-processed microscopic images are shown in figures \ref{fig:results-unet} (c) and \ref{fig:results-unet} (f) and table \ref{tab:u-net-results} provides the values of the metrics used to evaluate the model. Compared to the previous results, the pre-processing method improved the results significantly, especially the precision and Dice coefficient. However, it still tends to over-segment, especially the Golgi.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{graphicx}
@@ -120,8 +138,8 @@ The segmentation masks obtained for the pre-processed microscopic images are sho
 \begin{tabular}{c|c|c|c|c|c|c|}
 \cline{2-7}
                                   & \multicolumn{1}{l|}{DC   Nuclei} & \multicolumn{1}{l|}{DC Golgi} & \multicolumn{1}{l|}{Precision Nuclei} & \multicolumn{1}{l|}{Precision Golgi} & \multicolumn{1}{l|}{Recall Nuclei} & \multicolumn{1}{l|}{Recall Golgi} \\ \hline
-\multicolumn{1}{|c|}{U-Net}       & 0,4497                           & 0,3054                        & 0,2912                                & 0,1842                               & 0,9895                             & 0,9186                            \\ \hline
-\multicolumn{1}{|l|}{U-Net + Pre} & 0,7775                           & 0,6938                        & 0,7067                                & 0,6500                               & 0,8692                             & 0,7683                            \\ \hline
+\multicolumn{1}{|c|}{U-Net}       & 0.4497                           & 0.3054                        & 0.2912                                & 0.1842                               & 0.9895                             & 0.9186                            \\ \hline
+\multicolumn{1}{|l|}{U-Net + Pre} & 0.7775                           & 0.6938                        & 0.7067                                & 0.6500                               & 0.8692                             & 0.7683                            \\ \hline
 \end{tabular}%
 }
 \end{table}
@@ -129,11 +147,11 @@ The segmentation masks obtained for the pre-processed microscopic images are sho
 \begin{figure}[!htb]
   
 \centering
-\subfigure[]{\includegraphics[width=4.5cm]{Images/mask-crop5.jpg}}\hfil
+\subfigure[]{\includegraphics[width=4.5cm]{Images/2-mask-crop5.jpg}}\hfil
 \subfigure[]{\includegraphics[width=4.5cm]{Images/u-net-crop5-not-pre.jpg}}\hfil 
 \subfigure[]{\includegraphics[width=4.5cm]{Images/u-net-aft-pre-crop5.jpg}} 
 
-\subfigure[]{\includegraphics[width=4.5cm]{Images/mask-crop7.jpg}}\hfil 
+\subfigure[]{\includegraphics[width=4.5cm]{Images/2-mask-crop7.jpg}}\hfil 
 \subfigure[]{\includegraphics[width=4.5cm]{Images/u-net-crop7-not-pre.jpg}}\hfil
 \subfigure[]{\includegraphics[width=4.5cm]{Images/u-net-aft-pre-crop7.jpg}}
 \caption{3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 3D U-Net model tested on $I^{orig}_1$; (c) 3D U-Net model tested on $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 3D U-Net model tested on $I^{orig}_2$; (f) 3D U-Net model tested on $I^{Pre}_2$.}
@@ -196,12 +214,12 @@ After training, the performance of the model is tested with the two microscopic 
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
 DC Nuclei & DC Golgi & DC Pair & Precision Nuclei & Precision Golgi & Precision Pair & Recall Nuclei & Recall Golgi & Recall Pair \\ \hline
-0,7916    & 0,6752   & 0,7601  & 0,7589           & 0,5935          & 0,6941         & 0,8278        & 0,8206       & 0,8403      \\ \hline
+0.7916    & 0.6752   & 0.7601  & 0.7589           & 0.5935          & 0.6941         & 0.8278        & 0.8206       & 0.8403      \\ \hline
 \end{tabular}%
 }
 \end{table}
 
-From Table \ref{tab:results-3class-u-net} we can see that, as expected, the Dice Coefficient, precision, and recall for the nuclei and Golgi classes are comparable to the values obtained previously. Looking at the results for the nucleus-Golgi pairs class, we can see from the segmentation masks in figure \ref{fig:results-unet-3channel} that the model is generally able to correctly identify this class, as reflected by a recall of 0.8403. However, the yellow circles in figure \ref{fig:results-unet-3channel} mark cases where the model is apparently unable to distinguish that an isolated nucleus or Golgi are not part of a pair and therefore should not be identified in the segmentation mask for the nucleus-Golgi pairs. Therefore, it also detects a lot of digital noise, which is reflected in the lower precision of 0.6941. The reason the model cannot learn these cases could be that these cases of isolated nuclei and Golgi are relatively rare and do not occur often enough in the dataset for the model to distinguish them.
+From Table \ref{tab:results-3class-u-net} we can see that, as expected, the Dice coefficient, precision, and recall for the nuclei and Golgi classes are comparable to the values obtained previously. Looking at the results for the nucleus-Golgi pairs class, we can see from the segmentation masks in figure \ref{fig:results-unet-3channel} that the model is generally able to correctly identify this class, as reflected by a recall of 0.8403. However, the yellow circles in figure \ref{fig:results-unet-3channel} mark cases where the model is apparently unable to distinguish that an isolated nucleus or Golgi are not part of a pair and therefore should not be identified in the segmentation mask for the nucleus-Golgi pairs. Therefore, it also detects a lot of digital noise, which is reflected in the lower precision of 0.6941. The reason the model cannot learn these cases could be that these cases of isolated nuclei and Golgi are relatively rare and do not occur often enough in the dataset for the model to distinguish them.
 
 As mentioned above, the ground truth mask for the Golgi and the nuclei has some imperfections. The main one is the fact that in the cases where the nuclei and the Golgi pairs do not overlap, no connection is made between them, which makes it difficult for the model to distinguish, for example, an isolated Golgi from a paired one. An example of this case is highlighted by the white circle in figure \ref{fig:results-unet-3channel}. Additionally, some of the nucleus-Golgi pairs are not annotated in the ground truth masks, but are correctly identified by the model, which also affects the precision results for the nucleus-Golgi pairs class. An example of this case is highlighted by a green circle in figure \ref{fig:results-unet-3channel}.
 
@@ -215,7 +233,7 @@ As mentioned earlier, the Vox2Vox model consists of two networks, a generator an
 
 Specifically for the Vox2Vox generator, the sigmoid activation function was used in the last layer so that the output has $n$-probability maps (where $n$ is the number of classes). A threshold of 0.5 is then applied to each probability map of the output of Vox2Vox to obtain the final segmentation mask volume. The hyper-parameter $\alpha$ from the generator loss defined previously in equation \ref{eq:vox2vox-generator-loss} is set to $\alpha = 5$ as proposed in \cite{vox2vox}.
 
-In a first phase, the model was trained with a loss function for the generator that gave the same weight to the nuclei and Golgi. However, with this loss function, the model had great difficulty detecting the Golgi on the images. This is likely due to the fact that many of the patches used to train the model do not contain Golgi, making it difficult for the model to learn how to detect and segment this class. To improve the results, the loss function of the generator was modified to give more weight to the Golgi dice coefficient loss. The term \ac{DLoss} in the equation \ref{eq:vox2vox-generator-loss} was changed to
+In a first phase, the model was trained with a loss function for the generator that gave the same weight to the nuclei and Golgi classes. However, with this loss function, the model had great difficulty detecting the Golgi on the images. This is likely due to the small dimension of the Golgi, making it difficult for the model to learn how to detect and segment this class. To improve the results, the loss function of the generator was modified to give more weight to the Golgi Dice coefficient loss. The term \ac{DLoss} in the equation \ref{eq:vox2vox-generator-loss} was changed to
 
 \begin{equation}
     DLoss_{total} = \beta_1 DLoss(y_N,\hat{y}_N) + \beta_2 DLoss(y_G,\hat{y}_G)
@@ -238,7 +256,7 @@ The Vox2Vox model was trained with the pre-processed dataset and tested with the
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
 DC  Nuclei & DC Golgi & Precision Nuclei & Precision Golgi & Recall Nuclei & Recall Golgi \\ \hline
-0,7539     & 0,6883   & 0,6529           & 0,7078          & 0,8933        & 0,6917       \\ \hline
+0.7539     & 0.6883   & 0.6529           & 0.7078          & 0.8933        & 0.6917       \\ \hline
 \end{tabular}%
 
 \end{table}
@@ -257,14 +275,14 @@ DC  Nuclei & DC Golgi & Precision Nuclei & Precision Golgi & Recall Nuclei & Rec
 
 \end{figure}
 
-From the results for the dice coefficient, we can conclude that the model is successful in identifying most of the nuclei and Golgi in the microscopic image volumes. For the Golgi segmentation mask, we verified in figure \ref{fig:results-vox2vox-2channel} that the model correctly identifies all Golgi. However, the margins for all Golgi are smaller than the ground truth segmentation mask, resulting in lower recall. This is likely due to the fact that the ground truth segmentation masks have low resolution, as shown in Figure \ref{fig:errors-unet} (c), and also to discontinuities in \ac{3D}, since these masks are created slide by slide in 2D. Consequently, the Vox2Vox model learns to generate images with this low resolution, which makes it difficult to segment the margins, especially of small objects like Golgi.
+From the results for the Dice coefficient, we can conclude that the model is successful in identifying most of the nuclei and Golgi in the microscopic image volumes. For the Golgi segmentation mask, we verified in figure \ref{fig:results-vox2vox-2channel} that the model correctly identifies all Golgi. However, the margins for all Golgi are smaller than the ground truth segmentation mask, resulting in lower recall. This is likely due to the fact that the ground truth segmentation masks have low resolution, as shown in Figure \ref{fig:errors-unet} (c), and also to discontinuities in \ac{3D}, since these masks are created slide by slide in 2D. Consequently, the Vox2Vox model learns to generate images with this low resolution, which makes it difficult to segment the margins, especially of small objects like Golgi.
 
 For the cell nuclei, we found that the model is very sensitive to noise in this class. This is particularly evident in the $I^{Pre}_1$ image test, as part of this image contains a lot of background noise for the nucleus channel and this noise is detected by the model, resulting in lower precision. However, this also results in the model being able to detect Golgi that are difficult to classify, i.e., Golgi with low contrast in the segmentation mask.
 
 
 \subsubsection*{3 Class}
 
-In this method, the number of output probability maps of Vox2Vox generator model is three, so we can classify the nuclei, Golgi and nucleus-Golgi pairs of the input images. All other parameters described in the implementation details are retained, except for the generator loss function, where we add another term to account for the Dice Loss of the nucleus-Golgi pairs class and set a gain $\beta_3$ = 1. The model was then trained using the pre-processed dataset and respective ground truth masks.
+In this method, the number of output probability maps of Vox2Vox generator model is three, so we can classify the nuclei, Golgi and nucleus-Golgi pairs of the input images. All other parameters described in the implementation details are retained, except for the generator loss function, where we add another term to account for the Dice loss of the nucleus-Golgi pairs class and set a gain $\beta_3$ = 1. The model was then trained using the pre-processed dataset and respective ground truth masks.
 
 After training, the performance of the model is tested on the two microscopic image volumes $I^{Pre}_1$ and $I^{Pre}_2$. Figure \ref{fig:results-vox2vox-3channel} is a 3D visualization of the segmentation results for these volumes and table \ref{tab:results-3class-vox2vox} shows the average quantitative results.
 
@@ -277,7 +295,7 @@ After training, the performance of the model is tested on the two microscopic im
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
 DC Nuclei & DC Golgi & DC Pair & Precision Nuclei & Precision Golgi & Precision Pair & Recall Nuclei & Recall Golgi & Recall Pair \\ \hline
-0,7464    & 0,6720    & 0,7198 & 0,7170          & 0,6596          & 0,6763         & 0,7784        & 0,7204     & 0,7721      \\ \hline
+0.7464    & 0.6720    & 0.7198 & 0.7170          & 0.6596          & 0.6763         & 0.7784        & 0.7204     & 0.7721      \\ \hline
 \end{tabular}%
 }
 \end{table}
@@ -311,7 +329,7 @@ As mentioned in section \ref{section:proposed}, the CycleGAN model consists of f
 
 For training the CycleGAN we used: an initializer that generates weights with a normal distribution; the ADAM optimizer with a learning rate of 1e-3 and 5e-3 for the generators and discriminators, respectively; $\lambda_{cyc} = 10$ and $\lambda_{id} = 5$ in equation \ref{eq:total-cyclegan-loss} as proposed in \cite{cycleGAN:original} and a batch size of 2.
 
-Specifically for the generators, the activation function \ac{Tanh} was used in the last layer so that the output has $n$-probability maps (where $n$ is the number of classes). Therefore, for these experiments, the input images had to be normalized to be in the range [-1,1]. Then the output images are normalized again to a range between [0,1]. For the segmentation network output ($G_S$), a threshold of 0.5 is then applied to each probability map to obtain the final segmentation mask volume.
+Specifically for the generators, the activation function \ac{Tanh} was used in the last layer so that the output has $n$-probability maps (where $n$ is the number of classes). Therefore, for these experiments, the input images had to be normalized to be in the range [-1,1]. Then the output images are normalized again to a range between [0,1]. For the segmentation network ($G_S$) output, a threshold of 0.5 is then applied to each probability map to obtain the final segmentation mask volume.
 
 During training, the performance of the model is tracked by using the generator models to generate translated versions of a few randomly selected images at the end of each epoch. The model is stopped when it reaches collapse mode, i.e., when it produces exactly the same output image for different input images. After training, we visually analyse the results obtained by CycleGAN for different epochs and select the model from the epoch that gives better results for the validation dataset.
 
@@ -333,8 +351,8 @@ The CycleGAN was trained in two different ways: first in a supervised manner usi
 \begin{tabular}{c|c|c|c|c|c|c|}
 \cline{2-7}
                                               & DC Nuclei & DC Golgi & Precision Nuclei & Precision Golgi & Recall Nuclei & Recall Golgi \\ \hline
-\multicolumn{1}{|c|}{CycleGAN (Supervised)}   & 0,7612   & 0,6545  & 0,6894           & 0,6004        & 0,8528        & 0,7450     \\ \hline
-\multicolumn{1}{|c|}{CycleGAN (Unsupervised)} & 0,7664    & 0,6427   & 0,6903           & 0,5468          & 0,8629        & 0,8038       \\ \hline
+\multicolumn{1}{|c|}{CycleGAN (Supervised)}   & 0.7612   & 0.6545  & 0.6894           & 0.6004        & 0.8528        & 0.7450     \\ \hline
+\multicolumn{1}{|c|}{CycleGAN (Unsupervised)} & 0.7664    & 0.6427   & 0.6903           & 0.5468          & 0.8629        & 0.8038       \\ \hline
 \end{tabular}%
 }
 \end{table}
@@ -368,7 +386,7 @@ If we now analyse the results of the unsupervised CycleGAN model, we find that, 
   \subfigure[]{\includegraphics[width=4.5cm]{Images/low_resolution_cyclegan_real.jpg}}\hfil 
   \subfigure[]{\includegraphics[width=4.5cm]{Images/low_resolution_my_cyclegan.jpg}} 
  
-  \caption{(a) Example of ground truth masks low resolution; (b) Supervised CycleGAN segmentation mask; (c) unsupervised CycleGAN segmentation mask.}
+  \caption{(a) Example of ground truth masks low resolution; (b) Supervised CycleGAN segmentation mask; (c) Unsupervised CycleGAN segmentation mask.}
   
   \label{fig:lowresolution-cycleGAN}
   
@@ -392,7 +410,7 @@ After training, the performance of the model is tested on the two microscopic im
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
 DC Nuclei & DC Golgi & DC Pair & Precision Nuclei & Precision Golgi & Precision Pair & Recall Nuclei & Recall Golgi & Recall Pair \\ \hline
-0,7261    & 0,5942   & 0,6999  & 0,7174           & 0,5874          & 0,6711         & 0,7366        & 0,6133       & 0,7314      \\ \hline
+0.7261    & 0.5942   & 0.6999  & 0.7174           & 0.5874          & 0.6711         & 0.7366        & 0.6133       & 0.7314      \\ \hline
 \end{tabular}%
 }
 \end{table}
@@ -415,12 +433,12 @@ DC Nuclei & DC Golgi & DC Pair & Precision Nuclei & Precision Golgi & Precision 
 
 From figure \ref{fig:results-cyclegan-2channel} and \ref{fig:results-cycleGAN-3channel}, we can observe that the model is less sensitive to digital noise and background clutter which is reflected in an improvement in precision for the nuclei and Golgi classes. However, it has more difficulty in detecting all nuclei and Golgi in the images 
 
-For the nuclei-Golgi pairs class, we can also see in figure \ref{fig:results-cycleGAN-3channel} that, as with the previous U-Net and Vox2Vox models, the model is unable to distinguish isolated nuclei and Golgi from paired ones, but it can detect most pairs in the image. An effect that was also confirmed is that for some isolated nuclei, the model generates a Golgi inside the nucleus instead of simply not classifying it as a pair.
+For the nucleus-Golgi pairs class, we can also see in figure \ref{fig:results-cycleGAN-3channel} that, as with the previous U-Net and Vox2Vox models, the model is unable to distinguish isolated nuclei and Golgi from paired ones, but it can detect most pairs in the image. An effect that was also confirmed is that for some isolated nuclei, the model generates a Golgi inside the nucleus instead of simply not classifying it as a pair.
 
 \subsection{Execution time}
 \label{subsection:execution-time}
 
-In this section, we present the time needed to train and test the models. As mentioned earlier, we have a total of 8 crops for training and testing the models. Where 6 of these crops are used to train the models and 2 of them are used for testing. It was estimated how long it takes to manually label nuclei and Golgi in a crop. The estimate was 28 hours. For training and testing time, the time needed to obtain these crops was considered. In the case of CycleGAN, the training time was added to the time needed to create the synthetic masks (40 minutes). The final values are presented in table \ref{tab:time}.
+In this section, we present the time needed to train and test the models. As mentioned earlier, we have a total of 8 crops for training and testing the models. Where 6 of these crops are used to train the models and 2 of them are used for testing. It was estimated how long it takes to manually label nuclei and Golgi in a crop. The estimate was 28 hours. For training and testing time, the time needed to obtain these crops was considered. In the case of the CycleGAN model, the time needed to create the synthetic masks (40 minutes) was added to the training time. The final values are presented in table \ref{tab:time}.
 
 \begin{table}[!htb]
 \centering
@@ -440,7 +458,7 @@ In this section, we present the time needed to train and test the models. As men
 
 \subsection{Comparison between approaches}
 
-In this section, the segmentation results obtained with the supervised models U-Net and Vox2Vox are compared with the proposed unsupervised model CycleGAN. The results obtained for each class nuclei, Golgi and nucleus-Golgi pair are analysed separately. The table \ref{tab:results-all} shows the results obtained for the 3 classes with the 3 models implemented. The results for the nuclei and Golgi classes are those obtained with the 2-class models, and the results for the nucleus-Golgi pairs are those obtained with the 3-class models. The best results for each class are highlighted in bold.
+In this section, the segmentation results obtained with the supervised models U-Net and Vox2Vox are compared with the proposed unsupervised model CycleGAN. The results obtained for each class nuclei, Golgi and nucleus-Golgi pairs are analysed separately. The table \ref{tab:results-all} shows the results obtained for the 3 classes with the 3 models implemented. The results for the nuclei and Golgi classes are those obtained with the 2-class models, and the results for the nucleus-Golgi pairs are those obtained with the 3-class models. The best results for each class are highlighted in bold.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{graphicx}
@@ -453,19 +471,17 @@ In this section, the segmentation results obtained with the supervised models U-
   \begin{tabular}{l|c|c|c|c|c|c|c|c|c|}
   \cline{2-10}
                                  & DC Nuclei       & DC Golgi        & DC Pair         & Precision Nuclei & Precision Golgi & Precision Pair  & Recall Nuclei   & Recall Golgi    & Recall Pair     \\ \hline
-  \multicolumn{1}{|l|}{U-Net}    & \textbf{0,7775} & \textbf{0,6938} & \textbf{0,7601} & \textbf{0,7067}  & 0,6500          & \textbf{0,6941} & 0,8692          & 0,7683          & \textbf{0,8403} \\ \hline
-  \multicolumn{1}{|l|}{Vox2Vox}  & 0,7539          & 0,6883          & 0,7198          & 0,6529           & \textbf{0,7078} & 0,6763          & \textbf{0,8933} & 0,6917          & 0,7721          \\ \hline
-  \multicolumn{1}{|l|}{CycleGAN} & 0,7664          & 0,6427          & 0,6999          & 0,6903           & 0,5468          & 0,6711          & 0,8629          & \textbf{0,8038} & 0,7314          \\ \hline
+  \multicolumn{1}{|l|}{U-Net}    & \textbf{0.7775} & \textbf{0.6938} & \textbf{0.7601} & \textbf{0.7067}  & 0.6500          & \textbf{0.6941} & 0.8692          & 0.7683          & \textbf{0.8403} \\ \hline
+  \multicolumn{1}{|l|}{Vox2Vox}  & 0.7539          & 0.6883          & 0.7198          & 0.6529           & \textbf{0.7078} & 0.6763          & \textbf{0.8933} & 0.6917          & 0.7721          \\ \hline
+  \multicolumn{1}{|l|}{CycleGAN} & 0.7664          & 0.6427          & 0.6999          & 0.6903           & 0.5468          & 0.6711          & 0.8629          & \textbf{0.8038} & 0.7314          \\ \hline
   \end{tabular}%
   }
   \end{table}
 
-Segmentation of the nuclei class is challenging because the microscopic images have some background clutter and some of the nuclei have low contrast in the images. For this class, the best dice coefficient was obtained for the U-Net model with 0,7775, but CycleGAN obtained a similar result with 0,7664 and then Vox2Vox with 0,7539. The precision and recall values for the CycleGAN and U-Net models are also very close, with the CycleGAN model only being inferior by less than one percent. The lower dice coefficient of Vox2Vox is due to its high sensitivity to digital noise, which explains its relatively low precision of 0,6529. However, it is the best of the 3 models at detecting Golgi, as it can detect and segment nuclei even when they have low contrast.
+Segmentation of the nuclei class is challenging because the microscopic images have some background clutter and some of the nuclei have low contrast in the images. For this class, the best Dice coefficient was obtained for the U-Net model with 0.7775, but CycleGAN obtained a similar result with 0.7664 and then Vox2Vox with 0.7539. The precision and recall values for the CycleGAN and U-Net models are also very close, with the CycleGAN model only being inferior by less than one percent. The lower Dice coefficient of Vox2Vox is due to its high sensitivity to digital noise, which explains its relatively low precision of 0.6529. However, it is the best of the 3 models at detecting Golgi, as it can detect and segment nuclei even when they have low contrast.
 
-The challenges in classifying the Golgi class are mainly: the digital noise coming from particles such as dust entering the analysed sample and producing blurs (due to their autofluorescence) with high contrast in the red channel of the microscopic images, which can be mistaken for Golgi; and the small size of the Golgi, which makes detection and boundary segmentation difficult. For this class, the best dice coefficient was obtained for the U-Net model with 0,6938, followed by the Vox2Vox model with 0,6883 and the CycleGAN model with 0,6427. Although the U-Net model had the best Dice Coefficient, because it was able to detect and segment the Golgi best on average, the Vox2Vox model obtained the best precision with 0,7078 and CycleGAN the best recall with 0,8038. Analysing the segmentation masks obtained for these models, we can conclude that the Vox2Vox model best segments the boundaries of the nuclei it detects and CycleGAN is the model that detects the most Golgi on the images.
+The challenges in classifying the Golgi class are mainly: the digital noise coming from particles such as dust entering the analysed sample and producing blurs (due to their autofluorescence) with high contrast in the red channel of the microscopic images, which can be mistaken for Golgi; and the small size of the Golgi, which makes detection and boundary segmentation difficult. For this class, the best Dice coefficient was obtained for the U-Net model with 0.6938, followed by the Vox2Vox model with 0.6883 and the CycleGAN model with 0.6427. Although the U-Net model had the best Dice coefficient, because it was able to detect and segment the Golgi best on average, the Vox2Vox model obtained the best precision with 0.7078 and CycleGAN the best recall with 0.8038. Analysing the segmentation masks obtained for these models, we can conclude that Vox2Vox is the best model for segmenting the boundaries of the nuclei it detects and CycleGAN is the model that detects the most Golgi on the images.
 
-
-
-For the nucleus-Golgi pair class, the main classification challenge is that some nuclei and Golgi do not form a pair and not all nucleus and Golgi of a pair overlap. For this class, the best dice coefficient was obtained for the U-Net with 0,7601, followed by the Vox2Vox model with 0,7198 and then CycleGAN with 0,6999. In terms of accuracy, all the models are very close to each other as they all have the same problem of incorrectly detecting individual nuclei and Golgi as being paired. However, the best model at detecting the pairs on the image is the U-Net. Probably the Vox2Vox model and CycleGAN should be more complex (more kernels or more layers) to be able to better segment this class.
+For the nucleus-Golgi pairs class, the main classification challenge is that some nuclei and Golgi do not form a pair and not all nucleus and Golgi of a pair overlap. For this class, the best Dice coefficient was obtained for the U-Net with 0.7601, followed by the Vox2Vox model with 0.7198 and then CycleGAN with 0.6999. In terms of accuracy, all the models are very close to each other as they all have the same problem of incorrectly detecting individual nuclei and Golgi as being paired. However, the best model at detecting the pairs on the image is the U-Net. Probably the Vox2Vox model and CycleGAN should be more complex (more kernels or more layers) to be able to better segment this class.
 
 As mentioned earlier, supervised models are highly dependent on the data on which they are trained. If these data have errors or are imperfect, these imperfections are propagated to the models. We have found that the ground-truth masks have problems, such as not all objects are segmented and the masks have low resolution. Also, it is very difficult to obtain these masks. With the CycleGAN model, we were able to obtain comparable results to the supervised models in less than half the time, as demonstrated in section \ref{subsection:execution-time}. Since this model does not require extensive manual work and also has the advantage of being more transferable, i.e., it does not depend so much on the data on which it is trained, it learns better the actual distribution of the data.

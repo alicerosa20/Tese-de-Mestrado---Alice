@@ -3,89 +3,89 @@
 \contentsline {xchapter}{Introduction}{1}{chapter.1}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Theoretical Background}{5}{chapter.2}%
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of the convolution process.}}{7}{figure.caption.25}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Basic \ac {CNN} architecture for image classification.}}{8}{figure.caption.34}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of \ac {CNN} architecture for image segmentation.}}{9}{figure.caption.35}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Illustration of a \ac {3D} convolution layer}}{9}{figure.caption.37}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces U-Net architecture. Each blue box corresponds to a multi-channel feature map. The number of channels is denoted on top of the box. The x-y-size is provided at the lower left edge of the box. White boxes represent copied feature maps. The arrows denote the different operations.}}{11}{figure.caption.44}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces \ac {3D} U-Net architecture.}}{12}{figure.caption.46}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Schematic of the \ac {GAN} model. Where G and D are usually implemented as neural networks.}}{13}{figure.caption.48}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Schematic of the \ac {cGAN} model.}}{15}{figure.caption.53}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Example of schematic of the CycleGAN model.}}{17}{figure.caption.56}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of the convolution process.}}{7}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Basic \ac {CNN} architecture for image classification.}}{8}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of \ac {CNN} architecture for image segmentation.}}{9}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Illustration of a \ac {3D} convolution layer}}{9}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces U-Net architecture. Each blue box corresponds to a multi-channel feature map. The number of channels is denoted on top of the box. The x-y-size is provided at the lower left edge of the box. White boxes represent copied feature maps. The arrows denote the different operations.}}{11}{figure.caption.42}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces \ac {3D} U-Net architecture.}}{12}{figure.caption.44}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Schematic of the \ac {GAN} model, where G and D are usually implemented as neural networks.}}{13}{figure.caption.46}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Schematic of the \ac {cGAN} model.}}{15}{figure.caption.51}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Example of schematic of the CycleGAN model.}}{17}{figure.caption.54}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{State-of-the-Art on Microscopy Image Segmentation}{19}{chapter.3}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Methodology}{27}{chapter.4}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Example of a 3D crop of a microscopy image of mouse retina; (b) ground truth mask for 2-class task; (c) ground truth mask for 3-class task.}}{29}{figure.caption.65}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{29}{figure.caption.65}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{29}{figure.caption.65}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{29}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Example of a synthetic 3D segmentation masks (a) 2-class segmentation task; (b)3-class segmentation task.\relax }}{30}{figure.caption.66}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{30}{figure.caption.66}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{30}{figure.caption.66}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces CycleGAN schematic for the proposed approach.}}{30}{figure.caption.67}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Implemented CycleGAN generator architecture. The Residual Block consist of a \ac {3D} convolutional layer with instance normalization and \ac {ReLU} as the activation function, followed by a second convolutional layer also with instance normalization. The output of this block is the concatenation of the output of the second layer with the input layer of the block.\relax }}{31}{figure.caption.69}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Implemented CycleGAN PatchGAN discriminator architecture.\relax }}{31}{figure.caption.70}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Implemented 3D U-Net architecture.\relax }}{33}{figure.caption.72}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Implemented Vox2Vox generator architecture.}}{34}{figure.caption.74}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Implemented Vox2Vox discriminator architecture.}}{35}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Example of a 3D crop of a microscopy image of mouse retina; (b) 3D ground truth mask for 2-class task; (c) 3D ground truth mask for 3-class task.}}{29}{figure.caption.63}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{29}{figure.caption.63}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{29}{figure.caption.63}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{29}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Example of synthetic 3D segmentation masks for: (a) 2-class segmentation task; (b) 3-class segmentation task.}}{30}{figure.caption.64}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{30}{figure.caption.64}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{30}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces CycleGAN schematic for the proposed approach.}}{30}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Implemented CycleGAN generator architecture. The Residual Block consist of a 3D convolutional layer with instance normalization and ReLU as the activation function, followed by a second convolutional layer also with instance normalization. The output of this block is the concatenation of the output of the second layer with the input layer of the block.}}{31}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Implemented CycleGAN PatchGAN discriminator architecture.\relax }}{31}{figure.caption.68}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Implemented \ac {3D} U-Net architecture.\relax }}{33}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Implemented Vox2Vox generator architecture.}}{34}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Implemented Vox2Vox discriminator architecture.}}{35}{figure.caption.73}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Experimental Results and Discussion}{37}{chapter.5}%
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Slice of microscopic image from the dataset.}}{39}{figure.caption.76}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Same image slice of figure \ref {fig:micro} after percentile contrast stretching.}}{39}{figure.caption.77}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces 3D visualization of crops used for testing the models: (a) $I^{orig}_1$; (b) $I^{Pre}_1$; (c) $I^{gt}_{21}$; (d) $I^{gt}_{31}$; (e) $I^{orig}_2$; (f) $I^{Pre}_2$; (g) $I^{gt}_{22}$; (h) $I^{gt}_{32}$.\relax }}{40}{figure.caption.78}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{40}{figure.caption.78}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{40}{figure.caption.78}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{40}{figure.caption.78}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{40}{figure.caption.78}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{40}{figure.caption.78}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{40}{figure.caption.78}%
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {}}}{40}{figure.caption.78}%
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {}}}{40}{figure.caption.78}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 3D U-Net model tested on $I^{orig}_1$; (c) 3D U-Net model tested on $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 3D U-Net model tested on $I^{orig}_2$; (f) 3D U-Net model tested on $I^{Pre}_2$.\relax }}{42}{figure.caption.82}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{42}{figure.caption.82}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{42}{figure.caption.82}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{42}{figure.caption.82}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{42}{figure.caption.82}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{42}{figure.caption.82}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{42}{figure.caption.82}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Example of ground truth mask imperfection highlighted by white circle; Example of digital noise highlighted by blue circles; and example of nondetection by 3D U-Net model highlighted by orange circle; (a) and (d) 3D microscopic section; (b) and (e) 3D U-Net segmentation mask; (c) and (f) 3D ground truth segmentation mask.\relax }}{43}{figure.caption.83}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{figure.caption.83}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{figure.caption.83}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{43}{figure.caption.83}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{43}{figure.caption.83}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{43}{figure.caption.83}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{43}{figure.caption.83}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class 3D U-Net model tested on $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class 3D U-Net model tested on $I^{Pre}_2$.\relax }}{44}{figure.caption.85}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{figure.caption.85}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{figure.caption.85}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{44}{figure.caption.85}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{44}{figure.caption.85}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 2 class Vox2Vox model tested on $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{22}$; (d) 2 class Vox2Vox model tested on $I^{Pre}_2$.\relax }}{46}{figure.caption.90}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{46}{figure.caption.90}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{46}{figure.caption.90}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{46}{figure.caption.90}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{46}{figure.caption.90}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class Vox2Vox model tested on $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class Vox2Vox model tested on $I^{Pre}_2$.\relax }}{48}{figure.caption.93}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{48}{figure.caption.93}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{48}{figure.caption.93}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{48}{figure.caption.93}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{48}{figure.caption.93}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 2 class supervised CycleGAN model tested on $I^{Pre}_1$; (c) 2 class unsupervised CycleGAN model tested on $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 2 class supervised CycleGAN model tested on $I^{Pre}_2$; (f) 2 class unsupervised CycleGAN model tested on $I^{Pre}_2$.\relax }}{50}{figure.caption.97}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{50}{figure.caption.97}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{50}{figure.caption.97}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{50}{figure.caption.97}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{50}{figure.caption.97}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{50}{figure.caption.97}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{50}{figure.caption.97}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces (a) Example of ground truth masks low resolution; (b) Supervised CycleGAN segmentation mask; (c) unsupervised CycleGAN segmentation mask.\relax }}{51}{figure.caption.98}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{51}{figure.caption.98}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{51}{figure.caption.98}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{51}{figure.caption.98}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class unsupervised CycleGAN model tested on $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class unsupervised CycleGAN model tested on $I^{Pre}_2$.\relax }}{52}{figure.caption.101}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{52}{figure.caption.101}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{52}{figure.caption.101}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{52}{figure.caption.101}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{52}{figure.caption.101}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Slice of a microscopic image from the dataset and corresponding intensity histograms of the red and green channels.\relax }}{39}{figure.caption.74}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Same image slice of figure \ref {fig:micro} after percentile contrast stretching and corresponding intensity histograms of the red and green channels.\relax }}{40}{figure.caption.75}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces 3D visualization of crops used for testing the models: (a) $I^{orig}_1$; (b) $I^{Pre}_1$; (c) $I^{gt}_{21}$; (d) $I^{gt}_{31}$; (e) $I^{orig}_2$; (f) $I^{Pre}_2$; (g) $I^{gt}_{22}$; (h) $I^{gt}_{32}$.\relax }}{41}{figure.caption.76}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{41}{figure.caption.76}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{41}{figure.caption.76}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{41}{figure.caption.76}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{41}{figure.caption.76}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{41}{figure.caption.76}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{41}{figure.caption.76}%
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {}}}{41}{figure.caption.76}%
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {}}}{41}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 3D U-Net model tested on $I^{orig}_1$; (c) 3D U-Net model tested on $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 3D U-Net model tested on $I^{orig}_2$; (f) 3D U-Net model tested on $I^{Pre}_2$.\relax }}{43}{figure.caption.80}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{figure.caption.80}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{figure.caption.80}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{43}{figure.caption.80}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{43}{figure.caption.80}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{43}{figure.caption.80}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{43}{figure.caption.80}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Example of ground truth mask imperfection highlighted by white circle; Example of digital noise highlighted by blue circles; and example of nondetection by 3D U-Net model highlighted by orange circle; (a) and (d) 3D microscopic section; (b) and (e) 3D U-Net segmentation mask; (c) and (f) 3D ground truth segmentation mask.\relax }}{44}{figure.caption.81}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{figure.caption.81}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{figure.caption.81}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{44}{figure.caption.81}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{44}{figure.caption.81}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{44}{figure.caption.81}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{44}{figure.caption.81}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class 3D U-Net model tested on $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class 3D U-Net model tested on $I^{Pre}_2$.\relax }}{45}{figure.caption.83}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{45}{figure.caption.83}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{45}{figure.caption.83}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{45}{figure.caption.83}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{45}{figure.caption.83}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 2 class Vox2Vox model tested on $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{22}$; (d) 2 class Vox2Vox model tested on $I^{Pre}_2$.\relax }}{47}{figure.caption.88}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{47}{figure.caption.88}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{47}{figure.caption.88}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{47}{figure.caption.88}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{47}{figure.caption.88}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class Vox2Vox model tested on $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class Vox2Vox model tested on $I^{Pre}_2$.\relax }}{48}{figure.caption.91}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{48}{figure.caption.91}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{48}{figure.caption.91}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{48}{figure.caption.91}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{48}{figure.caption.91}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{21}$; (b) 2 class supervised CycleGAN model tested on $I^{Pre}_1$; (c) 2 class unsupervised CycleGAN model tested on $I^{Pre}_1$; (d) 3D ground truth $I^{gt}_{22}$; (e) 2 class supervised CycleGAN model tested on $I^{Pre}_2$; (f) 2 class unsupervised CycleGAN model tested on $I^{Pre}_2$.\relax }}{50}{figure.caption.95}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{50}{figure.caption.95}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{50}{figure.caption.95}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{50}{figure.caption.95}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{50}{figure.caption.95}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{50}{figure.caption.95}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{50}{figure.caption.95}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces (a) Example of ground truth masks low resolution; (b) Supervised CycleGAN segmentation mask; (c) Unsupervised CycleGAN segmentation mask.\relax }}{51}{figure.caption.96}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{51}{figure.caption.96}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{51}{figure.caption.96}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{51}{figure.caption.96}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces 3D visualization of segmentation masks: (a) 3D ground truth $I^{gt}_{31}$; (b) 3 class unsupervised CycleGAN model tested on $I^{Pre}_1$; (c) 3D ground truth $I^{gt}_{32}$; (d) 3 class unsupervised CycleGAN model tested on $I^{Pre}_2$.\relax }}{52}{figure.caption.99}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{52}{figure.caption.99}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{52}{figure.caption.99}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{52}{figure.caption.99}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{52}{figure.caption.99}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Conclusion}{55}{chapter.6}%
