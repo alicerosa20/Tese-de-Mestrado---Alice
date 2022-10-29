@@ -91,7 +91,7 @@ The \ac{CNN} architecture for segmentation uses encoder and decoder models. The 
 \label{subsection:3dcnn}
 In \ac{3D} \ac{CNN} architectures, the \ac{2D} convolutional and pooling layers are replaced by \ac{3D} convolutional and pooling layers. A \ac{3D} \ac{CNN} can extract more features of the volumes on the three axes X, Y, and Z. Therefore, the use of \ac{3D} information in segmentation enables the full exploitation of spatial information.
 
-The \ac{3D} convolution kernel has one more depth than the \ac{2D} convolution kernel, the fourth dimension continues to correspond to the number of channels of the input image. Like the \ac{2D} convolution operation, a value is obtained by sliding the kernel on the height, width, and number of layers on each channel \cite{2018guide}. In figure \ref{fig:cnn_3D} the process of \ac{3D} \ac{CNN} convolution for multichannels is shown.
+The \ac{3D} convolution kernel has one more depth than the \ac{2D} convolution kernel, the fourth dimension continues to correspond to the number of channels of the input image. Like the \ac{2D} convolution operation, a value is obtained by sliding the kernel on the height, width, and number of layers on each channel \cite{2018guide}. In Figure \ref{fig:cnn_3D} the process of \ac{3D} \ac{CNN} convolution for multichannels is shown.
 
 \begin{figure}[!htb]
   \centering
@@ -142,7 +142,7 @@ The loss function is computed by a pixel-wise softmax over the final feature map
 \subsection{3D U-Net}
 \label{subsection:3dunet}
 
-\citet{Unet:3D} proposed a \ac{3D} U-Net model, as an extension of the original U-Net \cite{Unet:2D}, with the objective of making the U-Net structure have richer spatial information. The network structure is shown in figure \ref{fig:3dUnet}. 
+\citet{Unet:3D} proposed a \ac{3D} U-Net model, as an extension of the original U-Net \cite{Unet:2D}, with the objective of making the U-Net structure have richer spatial information. The network structure is shown in Figure \ref{fig:3dUnet}. 
 
 \begin{figure}[!htb]
   \centering

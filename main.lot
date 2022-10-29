@@ -5,17 +5,18 @@
 \contentsline {xchapter}{Theoretical Background}{5}{chapter.2}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{State-of-the-Art on Microscopy Image Segmentation}{19}{chapter.3}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Deep Learning state-of-the-art for microscopic image segmentation.\relax }}{26}{table.3.1}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Methodology}{27}{chapter.4}%
+\contentsline {xchapter}{Methodology}{31}{chapter.4}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Experimental Results and Discussion}{37}{chapter.5}%
-\contentsline {table}{\numberline {5.1}{\ignorespaces Average metric values after testing the 3D U-Net model on two microscopic images for a model trained with the original microscopic images (U-Net) and with the pre-processed microscopic images (U-Net + Pre)\relax }}{42}{table.caption.79}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Average metric values after testing the 3 class 3D U-Net model on two pre-processed microscopic images\relax }}{43}{table.caption.84}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Average metric values obtained from testing the 2 class Vox2Vox model on two pre-processed microscopic images\relax }}{46}{table.caption.87}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Average metric values obtained from testing the 3 class Vox2Vox model on two pre-processed microscopic images\relax }}{48}{table.caption.90}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Average metric values obtained from training the 2 class CycleGAN model in supervised and unsupervised way and testing these models on two pre-processed microscopic images\relax }}{50}{table.caption.94}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces Average metric values obtained from testing the 3 class unsupervised CycleGAN model on two pre-processed microscopic images\relax }}{52}{table.caption.98}%
-\contentsline {table}{\numberline {5.7}{\ignorespaces Time needed to train and test the models\relax }}{53}{table.caption.100}%
-\contentsline {table}{\numberline {5.8}{\ignorespaces Average metric values obtained for the three different models implemented\relax }}{53}{table.caption.101}%
+\contentsline {xchapter}{Experimental Results and Discussion}{41}{chapter.5}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Average metric values after testing the \ac {3D} U-Net model on two microscopic images for a model trained with the original microscopic images (U-Net) and with the pre-processed microscopic images (U-Net + Pre)\relax }}{46}{table.caption.79}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Average metric values after testing the 3 class \ac {3D} U-Net model on two pre-processed microscopic images\relax }}{49}{table.caption.84}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Average metric values obtained from testing the 2 class Vox2Vox model on two pre-processed microscopic images\relax }}{50}{table.caption.87}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Average metric values obtained from testing the 3 class Vox2Vox model on two pre-processed microscopic images\relax }}{52}{table.caption.90}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Average metric values obtained from training the 2 class CycleGAN model in supervised and unsupervised way and testing these models on two pre-processed microscopic images\relax }}{54}{table.caption.94}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Average metric values obtained from testing the 3 class unsupervised CycleGAN model on two pre-processed microscopic images\relax }}{56}{table.caption.98}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Time needed to train and test the models\relax }}{57}{table.caption.100}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Average metric values obtained for the three different models implemented\relax }}{57}{table.caption.101}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusion}{55}{chapter.6}%
+\contentsline {xchapter}{Conclusion}{59}{chapter.6}%

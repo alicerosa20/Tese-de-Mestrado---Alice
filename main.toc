@@ -24,26 +24,26 @@
 \contentsline {section}{\numberline {3.4}Generative Adversarial Networks}{23}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Supervised models}{24}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Weakly Supervised / Unsupervised models}{24}{subsection.3.4.2}%
-\contentsline {chapter}{\numberline {4}Methodology}{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Dataset}{28}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Synthetic segmentation masks}{29}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Proposed Approach}{30}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Comparison between different approaches}{33}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}3D U-Net}{33}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Vox2Vox}{34}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Models Inference}{35}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Execution time}{36}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Experimental Results and Discussion}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Computational Environment}{38}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Segmentation performance metrics}{38}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Data Pre-Processing}{39}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Implementation Details, Results and Discussion}{40}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}3D U-Net}{41}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Vox2Vox}{45}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Proposed Approach - CycleGAN}{49}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Execution time}{53}{subsection.5.4.4}%
-\contentsline {subsection}{\numberline {5.4.5}Comparison between approaches}{53}{subsection.5.4.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{55}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Conclusions and Model Limitations}{56}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Future Work}{57}{section.6.2}%
-\contentsline {chapter}{Bibliography}{59}{section.6.2}%
+\contentsline {chapter}{\numberline {4}Methodology}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dataset}{32}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Synthetic segmentation masks}{33}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Proposed Approach}{34}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Comparison between different approaches}{37}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}3D U-Net}{37}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Vox2Vox}{38}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Models Inference}{39}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Execution time}{40}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Experimental Results and Discussion}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Computational Environment}{42}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Segmentation performance metrics}{42}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Data Pre-Processing}{43}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Implementation Details, Results and Discussion}{44}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}3D U-Net}{45}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Vox2Vox}{49}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Proposed Approach - CycleGAN}{53}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Execution time}{56}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.5}Comparison between approaches}{57}{subsection.5.4.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{59}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Conclusions and Model Limitations}{60}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Future Work}{61}{section.6.2}%
+\contentsline {chapter}{Bibliography}{63}{section.6.2}%
