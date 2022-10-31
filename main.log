@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.18)  30 OCT 2022 19:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.18)  31 OCT 2022 10:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1123,7 +1123,9 @@ File: ./Images/IST_A_RGB_POS.png Graphic file (type png)
 Package pdftex.def Info: ./Images/IST_A_RGB_POS.png  used on input line 51.
 (pdftex.def)             Requested size: 142.26378pt x 55.4504pt.
 TextBlockOrigin set to 0pt x 0pt
-[1{C:/Users/alice/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+(C:\Users\alice\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-0.def
+File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
+) [1{C:/Users/alice/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
  <./Images/IST_A_RGB_POS.png>]
 TextBlockOrigin set to 0pt x 0pt
@@ -1133,9 +1135,7 @@ TextBlockOrigin set to 0pt x 0pt
 
 ] (Chapters/Thesis-MSc-Declaration.tex) [1] [2
 
-] (Chapters/Thesis-MSc-Acknowledgments.tex (C:\Users\alice\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-0.def
-File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
-)) [3] [4
+] (Chapters/Thesis-MSc-Acknowledgments.tex) [3] [4
 
 
 ] (Chapters/Thesis-MSc-Abstract-EN-Abstract.tex
@@ -1884,7 +1884,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  95i,21n,95p,1764b,994s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/urw/bookman/ubkd8a.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/alice/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (85 pages, 13933500 bytes).
+Output written on main.pdf (85 pages, 13933560 bytes).
 PDF statistics:
  1952 PDF objects out of 2073 (max. 8388607)
  421 named destinations out of 1000 (max. 500000)
