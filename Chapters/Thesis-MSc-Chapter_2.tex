@@ -58,7 +58,7 @@ In most cases, a convolutional layer is followed by a pooling layer. The main go
 
 One of the main parameters in a \ac{CNN} model is the activation function. This nonlinear function can be interpreted as a selection mechanism that decides whether a particular neuron should fire or not given its input. They are often placed directly after the convolutional layer to introduce non-linearity into the feature map.
 
-There are several commonly used activation functions such as the sigmoid, \ac{Tanh}, \ac{ReLU}, \ac{Leaky ReLU} and \ac{ELU} functions. The most commonly used function in neural networks is \ac{ReLU} (Equation \ref{eq:relu}) because it is very computationally efficient, activating only a few neurons per time, it does not saturate in the positive domain, and it converges faster than the tanh and sigmoid activation functions \cite{2018activation}.
+There are several commonly used activation functions such as the sigmoid, \ac{Tanh}, \ac{ReLU}, \ac{Leaky ReLU} and \ac{ELU} functions. The most commonly used function in neural networks is \ac{ReLU} (Equation \ref{eq:relu}) because it is very computationally efficient, activating only a few neurons per time, it does not saturate in the positive domain, and it converges faster than the \ac{Tanh} and sigmoid activation functions \cite{2018activation}.
 
 \begin{equation}
     relu(x) = \max{\{0,x\}}
@@ -72,7 +72,7 @@ There are several commonly used activation functions such as the sigmoid, \ac{Ta
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.75\textwidth]{Images/cnn_class.jpg}
-  \caption[Basic \ac{CNN} architecture for image classification.]{Basic \ac{CNN} architecture for image classification. Retrieved from \cite{image:CNN}}
+  \caption[Basic \ac{CNN} architecture for image classification.]{Basic \ac{CNN} architecture for image classification. Retrieved from \cite{image:CNN}.}
   \label{fig:cnn_class}
 \end{figure}
 
@@ -96,7 +96,7 @@ The \ac{3D} convolution kernel has one more depth than the \ac{2D} convolution k
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.65\textwidth]{Images/3dconv.jpg}
-  \caption[Illustration of a \ac{3D} convolution layer]{Illustration of a \ac{3D} convolution layer. Retrieved from \cite{CNN:3D}.}
+  \caption[Illustration of a \ac{3D} convolution layer.]{Illustration of a \ac{3D} convolution layer. Retrieved from \cite{CNN:3D}.}
   \label{fig:cnn_3D}
 \end{figure}
 
@@ -147,7 +147,7 @@ The loss function is computed by a pixel-wise softmax over the final feature map
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.85\textwidth]{Images/3dunet.jpg}
-  \caption[\ac{3D} U-Net architecture.]{\ac{3D} U-Net architecture. Retrieved from \cite{Unet:3D}.}
+  \caption[\ac{3D} U-Net architecture. Blue boxes represent feature maps. The number of channels is denoted above each feature map.]{\ac{3D} U-Net architecture. Blue boxes represent feature maps. The number of channels is denoted above each feature map. Retrieved from \cite{Unet:3D}.}
   \label{fig:3dUnet}
 \end{figure}
 
@@ -287,9 +287,9 @@ The conditional adversarial Loss is defined as follows:
 
 where $x$ is the input observed image, $y$ is the real target image, $z$ is a random noise vector and $G(x,z)$ is the output generated image.
 
-The generator model is trained using both the adversarial loss for the discriminator model and the $L_1$ or mean absolute pixel difference between the generated translation of the source image and the expected target image. The adversarial loss affects whether the generator model can output images that are plausible in the target domain, while the $L_1$ loss regularizes the generator model to output images that are plausible translations of the source image.
+The generator model is trained using both the adversarial loss for the discriminator model and the $\mathcal{L}_{1}$ or mean absolute pixel difference between the generated translation of the source image and the expected target image. The adversarial loss affects whether the generator model can output images that are plausible in the target domain, while the $\mathcal{L}_{1}$ loss regularizes the generator model to output images that are plausible translations of the source image.
 
-The L1 loss function is shown below:
+The $\mathcal{L}_{1}$ loss function is shown below:
 
 \begin{equation}
     \mathcal{L}_{1}(G) = \mathbb{E}_{x,y,z} [||y-G(x,z)||_1].
@@ -302,7 +302,7 @@ Combining these functions from \ref{eq:1} and \ref{eq:2}, results in the final o
     G^* = \arg \min_{G}\max_{D} \mathcal{L}_{cGAN}(G,D) + \lambda_1  \mathcal{L}_{1}(G)
 \end{equation}
 
-where $\lambda_1$ is a hyperparameter that controls the relative importance of the L1 loss term. 
+where $\lambda_1$ is a hyperparameter that controls the relative importance of the $\mathcal{L}_{1}$ loss term. 
 
 \subsection{Unsupervised GAN example: CycleGAN}
 \label{subsection:CycleGAN}
@@ -322,7 +322,7 @@ As can be seen in Figure \ref{fig:cyclegan}, CycleGAN consists of two generator 
 
 \subsubsection*{Loss function}
 
-The loss function used to train the generators consists of three parts: adversarial loss, cycle consistency, and identity loss. The adversarial loss  is applied to both generators. For the first \ac{GAN} (generator 1, discriminator 1), the adversarial loss is expressed as follows:
+The loss function used to train the generators consists of three parts: adversarial loss, cycle consistency loss, and identity loss. The adversarial loss  is applied to both generators. For the first \ac{GAN} (generator 1, discriminator 1), the adversarial loss is expressed as follows:
 
 \begin{equation} \mathcal{L}_{ GAN }(G_1,D_1,X,Y)=\mathbb{E}_{y\sim p_{data}(y)}[\log{D_1(y)}]+\mathbb{E}_{x\sim p_{data}(x)}[\log{(1-D_1(G_1(x)))}]. 
 \end{equation} 
@@ -332,14 +332,14 @@ For the second \ac{GAN} (generator 2, discriminator 2) is expressed as:
 \begin{equation} \mathcal{L}_{ GAN }(G_2,D_2,Y,X)=\mathbb{E}_{x\sim p_{data}(x)}[\log{D_2(x)}]+\mathbb{E}_{y\sim p_{data}(y)}[\log{(1-D_2(G(y)))}]. 
 \end{equation}
  
-As in the original \ac{GAN} model, the generators try to minimize these losses, while the respective discriminators try to maximize them. Cycle consistency loss is a new term introduced to ensure that we preserve the original image when translating it from one domain to another and back again. Therefore, it calculates the $L_1$ loss between the original image and the generated one in two directions: $x \rightarrow G_1(x) \rightarrow G_2(G_1(x)) \approx x$ and $y \rightarrow G_2(y) \rightarrow G_1(G_2(y)) \approx y$. The cycle consistency loss is expressed as follows:
+As in the original \ac{GAN} model, the generators try to minimize these losses, while the respective discriminators try to maximize them. Cycle consistency loss is a new term introduced to ensure that we preserve the original image when translating it from one domain to another and back again. Therefore, it calculates the $\mathcal{L}_{1}$ loss between the original image and the generated one in two directions: $x \rightarrow G_1(x) \rightarrow G_2(G_1(x)) \approx x$ and $y \rightarrow G_2(y) \rightarrow G_1(G_2(y)) \approx y$. The cycle consistency loss is expressed as follows:
 
 \begin{equation} 
 \mathcal{L}_{cyc} = \mathbb{E}_{x\sim p_{data}(x)} [||G_{2}(G_{1}(x))-x||_1] + \mathbb{E}_{y\sim p_{data}(y)} [||G_{1}(G_{2}(y))-y||_1].
 \label{eq:CCL}
 \end{equation}
 
-Finally, the identity loss is an additional optional term used mainly to preserve the color composition between input and output. It is computed by giving the generator an image of its target domain as input and computing the $L_1$ loss between input and the generated images. This loss is expressed as follows:
+Finally, the identity loss is an additional optional term used mainly to preserve the color composition between input and output. It is computed by giving the generator an image of its target domain as input and computing the $\mathcal{L}_{1}$ loss between input and the generated images. This loss is expressed as follows:
 
 \begin{equation} 
 \mathcal{L}_{id}(G_1,G_2) = \mathbb{E}_{y\sim p_{data}(y)} [||G_{1}(y)-y||_1] + \mathbb{E}_{x\sim p_{data}(x)} [||G_{2}(x)-x||_1].
