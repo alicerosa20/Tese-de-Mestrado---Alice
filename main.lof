@@ -20,72 +20,72 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{31}{figure.caption.64}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{31}{figure.caption.64}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{31}{figure.caption.64}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Example of synthetic \ac {3D} segmentation masks for: (a) 2 class segmentation task; (b) 3 class segmentation task.\relax }}{32}{figure.caption.65}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{32}{figure.caption.65}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{32}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces CycleGAN schematic for the proposed approach.\relax }}{32}{figure.caption.66}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Implemented CycleGAN generator architecture. The Residual Block consist of a \ac {3D} convolutional layer with instance normalization and \ac {ReLU} as the activation function, followed by a second convolutional layer also with instance normalization. The output of this block is the concatenation of the output of the second layer with the input layer of the block. $k=(x,y,z)$ denotes the size of the input image for the x, y and z axes.\relax }}{33}{figure.caption.68}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Implemented CycleGAN PatchGAN discriminator architecture. $k=(x,y,z)$ denotes the size of the input image for the x, y and z axes.\relax }}{33}{figure.caption.69}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Implemented \ac {3D} U-Net architecture. $k=(x,y,z)$ denotes the size of the input image for the x, y and z axes. $n$ denores the number of input/output channels.\relax }}{35}{figure.caption.71}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Implemented Vox2Vox generator architecture. $k=(x,y,z)$ denotes the size of the input image for the x, y and z axes. $n$ denores the number of input/output channels.\relax }}{36}{figure.caption.73}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Implemented Vox2Vox discriminator architecture. $k=(x,y,z)$ denotes the size of the input image for the x, y and z axes. $n$ denores the number of input/output channels.\relax }}{37}{figure.caption.74}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Example of synthetic \ac {3D} segmentation masks for: (a) 2 class segmentation task; (b) 3 class segmentation task.\relax }}{32}{figure.caption.66}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{32}{figure.caption.66}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{32}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces CycleGAN schematic for the proposed approach.\relax }}{32}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Implemented CycleGAN generator architecture. The Residual Block consist of a \ac {3D} convolutional layer with instance normalization and \ac {ReLU} as the activation function, followed by a second convolutional layer also with instance normalization. The output of this block is the concatenation of the output of the second layer with the input layer of the block. $k=(x,y,z)$ denotes the size of the input image for the x, y and z axes.\relax }}{33}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Implemented CycleGAN PatchGAN discriminator architecture. $k=(x,y,z)$ denotes the size of the input image for the x, y and z axes.\relax }}{33}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Implemented \ac {3D} U-Net architecture. $k=(x,y,z)$ denotes the size of the input image for the x, y and z axes. $n$ denores the number of input/output channels.\relax }}{35}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Implemented Vox2Vox generator architecture. $k=(x,y,z)$ denotes the size of the input image for the x, y and z axes. $n$ denores the number of input/output channels.\relax }}{36}{figure.caption.74}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Implemented Vox2Vox discriminator architecture. $k=(x,y,z)$ denotes the size of the input image for the x, y and z axes. $n$ denores the number of input/output channels.\relax }}{37}{figure.caption.75}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Experimental Results and Discussion}{39}{chapter.5}%
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Slice of a microscopic image from the dataset and corresponding intensity histograms of the red and green channels.\relax }}{41}{figure.caption.75}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Same image slice of Figure \ref {fig:micro} after percentile contrast stretching and corresponding intensity histograms of the red and green channels.\relax }}{42}{figure.caption.76}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces \ac {3D} visualization of crops used for testing the models: (a) and (e) original test crops; (b) and (f) pre-processed test crops; (c) and (g) 2 class ground truth masks; (d) and (h) 3 class ground truth masks.\relax }}{43}{figure.caption.77}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{figure.caption.77}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{figure.caption.77}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{43}{figure.caption.77}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{43}{figure.caption.77}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{43}{figure.caption.77}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{43}{figure.caption.77}%
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {}}}{43}{figure.caption.77}%
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {}}}{43}{figure.caption.77}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (d) 2 class ground truth masks; (b) and (e) \ac {3D} U-Net model tested on original test crops; (c) and (f) \ac {3D} U-Net model tested on pre-processed test crops.\relax }}{44}{figure.caption.81}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{figure.caption.81}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{figure.caption.81}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{44}{figure.caption.81}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{44}{figure.caption.81}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{44}{figure.caption.81}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{44}{figure.caption.81}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Example of ground truth mask imperfection highlighted by white circle; Example of digital noise highlighted by blue circles; and example of nondetection by \ac {3D} U-Net model highlighted by orange circle; (a) and (d) \ac {3D} microscopic section; (b) and (e) \ac {3D} U-Net segmentation mask; (c) and (f) \ac {3D} ground truth segmentation mask.\relax }}{46}{figure.caption.82}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{46}{figure.caption.82}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{46}{figure.caption.82}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{46}{figure.caption.82}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{46}{figure.caption.82}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{46}{figure.caption.82}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{46}{figure.caption.82}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 3 class ground truth masks; (b) and (d) \ac {3D} U-Net model tested on pre-processed test crops.\relax }}{47}{figure.caption.84}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{47}{figure.caption.84}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{47}{figure.caption.84}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{47}{figure.caption.84}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{47}{figure.caption.84}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 2 class ground truth masks; (b) and (d) 2 class Vox2Vox model tested on pre-processed test crops.\relax }}{49}{figure.caption.89}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{49}{figure.caption.89}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{49}{figure.caption.89}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{49}{figure.caption.89}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{49}{figure.caption.89}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 3 class ground truth masks; (b) and (d) 3 class Vox2Vox model tested on pre-processed test crops.\relax }}{50}{figure.caption.92}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{50}{figure.caption.92}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{50}{figure.caption.92}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{50}{figure.caption.92}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{50}{figure.caption.92}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (d) 2 class ground truth masks; (b) and (e) 2 class supervised CycleGAN tested on pre-processed test crops; (c) and (f) 2 class unsupervised CycleGAN model tested on pre-processed test crops.\relax }}{52}{figure.caption.96}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{52}{figure.caption.96}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{52}{figure.caption.96}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{52}{figure.caption.96}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{52}{figure.caption.96}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{52}{figure.caption.96}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{52}{figure.caption.96}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces (a) Example of ground truth mask; (b) Supervised CycleGAN segmentation mask; (c) Unsupervised CycleGAN segmentation mask.\relax }}{53}{figure.caption.97}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{53}{figure.caption.97}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{53}{figure.caption.97}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{53}{figure.caption.97}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 3 class ground truth masks; (b) and (d) \ac {3D} class unsupervised CycleGAN model tested on pre-processed test crops.\relax }}{54}{figure.caption.100}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{54}{figure.caption.100}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{54}{figure.caption.100}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{54}{figure.caption.100}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{54}{figure.caption.100}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Slice of a microscopic image from the dataset and corresponding intensity histograms of the red and green channels.\relax }}{41}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Same image slice of Figure \ref {fig:micro} after percentile contrast stretching and corresponding intensity histograms of the red and green channels.\relax }}{42}{figure.caption.77}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \ac {3D} visualization of crops used for testing the models: (a) and (e) original test crops; (b) and (f) pre-processed test crops; (c) and (g) 2 class ground truth masks; (d) and (h) 3 class ground truth masks.\relax }}{43}{figure.caption.78}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{figure.caption.78}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{figure.caption.78}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{43}{figure.caption.78}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{43}{figure.caption.78}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{43}{figure.caption.78}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{43}{figure.caption.78}%
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {}}}{43}{figure.caption.78}%
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {}}}{43}{figure.caption.78}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (d) 2 class ground truth masks; (b) and (e) \ac {3D} U-Net model tested on original test crops; (c) and (f) \ac {3D} U-Net model tested on pre-processed test crops.\relax }}{44}{figure.caption.82}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{figure.caption.82}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{figure.caption.82}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{44}{figure.caption.82}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{44}{figure.caption.82}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{44}{figure.caption.82}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{44}{figure.caption.82}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Example of ground truth mask imperfection highlighted by white circle; Example of digital noise highlighted by blue circles; and example of nondetection by \ac {3D} U-Net model highlighted by orange circle; (a) and (d) \ac {3D} microscopic section; (b) and (e) \ac {3D} U-Net segmentation mask; (c) and (f) \ac {3D} ground truth segmentation mask.\relax }}{46}{figure.caption.83}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{46}{figure.caption.83}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{46}{figure.caption.83}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{46}{figure.caption.83}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{46}{figure.caption.83}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{46}{figure.caption.83}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{46}{figure.caption.83}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 3 class ground truth masks; (b) and (d) \ac {3D} U-Net model tested on pre-processed test crops.\relax }}{47}{figure.caption.85}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{47}{figure.caption.85}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{47}{figure.caption.85}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{47}{figure.caption.85}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{47}{figure.caption.85}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 2 class ground truth masks; (b) and (d) 2 class Vox2Vox model tested on pre-processed test crops.\relax }}{49}{figure.caption.90}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{49}{figure.caption.90}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{49}{figure.caption.90}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{49}{figure.caption.90}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{49}{figure.caption.90}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 3 class ground truth masks; (b) and (d) 3 class Vox2Vox model tested on pre-processed test crops.\relax }}{50}{figure.caption.93}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{50}{figure.caption.93}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{50}{figure.caption.93}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{50}{figure.caption.93}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{50}{figure.caption.93}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (d) 2 class ground truth masks; (b) and (e) 2 class supervised CycleGAN tested on pre-processed test crops; (c) and (f) 2 class unsupervised CycleGAN model tested on pre-processed test crops.\relax }}{52}{figure.caption.97}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{52}{figure.caption.97}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{52}{figure.caption.97}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{52}{figure.caption.97}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{52}{figure.caption.97}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{52}{figure.caption.97}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{52}{figure.caption.97}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces (a) Example of ground truth mask; (b) Supervised CycleGAN segmentation mask; (c) Unsupervised CycleGAN segmentation mask.\relax }}{53}{figure.caption.98}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{53}{figure.caption.98}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{53}{figure.caption.98}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{53}{figure.caption.98}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 3 class ground truth masks; (b) and (d) \ac {3D} class unsupervised CycleGAN model tested on pre-processed test crops.\relax }}{54}{figure.caption.101}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{54}{figure.caption.101}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{54}{figure.caption.101}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{54}{figure.caption.101}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{54}{figure.caption.101}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Conclusion}{57}{chapter.6}%

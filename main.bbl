@@ -332,12 +332,18 @@ K.~W. Dunn, C.~Fu, D.~J. Ho, S.~Lee, S.~Han, P.~Salama, and E.~J. Delp,
   reports}, vol.~9, no.~1, pp. 1--15, 2019.
 
 \bibitem[Yao et~al.(2021{\natexlab{a}})Yao, Huang, Sun, and Jude]{adgan}
+\BIBentryALTinterwordspacing
 K.~Yao, K.~Huang, J.~Sun, and C.~Jude, ``{AD-GAN: End-to-end Unsupervised
-  Nuclei Segmentation with Aligned Disentangling Training},'' 2021.
+  Nuclei Segmentation with Aligned Disentangling Training},'' 2021. [Online].
+  Available: \url{https://arxiv.org/abs/2107.11022}
+\BIBentrySTDinterwordspacing
 
 \bibitem[Chu et~al.(2017)Chu, Zhmoginov, and Sandler]{lossy:cyclegan}
+\BIBentryALTinterwordspacing
 C.~Chu, A.~Zhmoginov, and M.~Sandler, ``{CycleGAN, a Master of
-  Steganography},'' 2017.
+  Steganography},'' 2017. [Online]. Available:
+  \url{https://arxiv.org/abs/1712.02950}
+\BIBentrySTDinterwordspacing
 
 \bibitem[Yao et~al.(2021{\natexlab{b}})Yao, Huang, Sun, Jing, Huang, and
   Jude]{dataset}

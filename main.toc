@@ -26,7 +26,6 @@
 \contentsline {subsection}{\numberline {3.4.2}Weakly Supervised / Unsupervised models}{24}{subsection.3.4.2}%
 \contentsline {chapter}{\numberline {4}Methodology}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Dataset}{30}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Synthetic segmentation masks}{31}{subsection.4.1.1}%
 \contentsline {section}{\numberline {4.2}Proposed Approach}{32}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Comparison between different approaches}{35}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}3D U-Net}{35}{subsection.4.3.1}%

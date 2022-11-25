@@ -1,56 +1,56 @@
-{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.1}{\ignorespaces Slice of a microscopic image from the dataset and corresponding intensity histograms of the red and green channels.\relax }}{\reset@font\mlffont 41}{figure.caption.75}}
-{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.2}{\ignorespaces Same image slice of Figure \ref {fig:micro} after percentile contrast stretching and corresponding intensity histograms of the red and green channels.\relax }}{\reset@font\mlffont 42}{figure.caption.76}}
-{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.3}{\ignorespaces \ac {3D} visualization of crops used for testing the models: (a) and (e) original test crops; (b) and (f) pre-processed test crops; (c) and (g) 2 class ground truth masks; (d) and (h) 3 class ground truth masks.\relax }}{\reset@font\mlffont 43}{figure.caption.77}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.77}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.77}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.77}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.77}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(e)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.77}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(f)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.77}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(g)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.77}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(h)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.77}}
-{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.4}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (d) 2 class ground truth masks; (b) and (e) \ac {3D} U-Net model tested on original test crops; (c) and (f) \ac {3D} U-Net model tested on pre-processed test crops.\relax }}{\reset@font\mlffont 44}{figure.caption.81}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 44}{figure.caption.81}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 44}{figure.caption.81}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 44}{figure.caption.81}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 44}{figure.caption.81}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(e)}{\ignorespaces {}}}{\reset@font\mlfSfont 44}{figure.caption.81}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(f)}{\ignorespaces {}}}{\reset@font\mlfSfont 44}{figure.caption.81}}
-{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.5}{\ignorespaces Example of ground truth mask imperfection highlighted by white circle; Example of digital noise highlighted by blue circles; and example of nondetection by \ac {3D} U-Net model highlighted by orange circle; (a) and (d) \ac {3D} microscopic section; (b) and (e) \ac {3D} U-Net segmentation mask; (c) and (f) \ac {3D} ground truth segmentation mask.\relax }}{\reset@font\mlffont 46}{figure.caption.82}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 46}{figure.caption.82}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 46}{figure.caption.82}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 46}{figure.caption.82}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 46}{figure.caption.82}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(e)}{\ignorespaces {}}}{\reset@font\mlfSfont 46}{figure.caption.82}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(f)}{\ignorespaces {}}}{\reset@font\mlfSfont 46}{figure.caption.82}}
-{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.6}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 3 class ground truth masks; (b) and (d) \ac {3D} U-Net model tested on pre-processed test crops.\relax }}{\reset@font\mlffont 47}{figure.caption.84}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 47}{figure.caption.84}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 47}{figure.caption.84}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 47}{figure.caption.84}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 47}{figure.caption.84}}
-{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.7}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 2 class ground truth masks; (b) and (d) 2 class Vox2Vox model tested on pre-processed test crops.\relax }}{\reset@font\mlffont 49}{figure.caption.89}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 49}{figure.caption.89}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 49}{figure.caption.89}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 49}{figure.caption.89}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 49}{figure.caption.89}}
-{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.8}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 3 class ground truth masks; (b) and (d) 3 class Vox2Vox model tested on pre-processed test crops.\relax }}{\reset@font\mlffont 50}{figure.caption.92}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 50}{figure.caption.92}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 50}{figure.caption.92}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 50}{figure.caption.92}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 50}{figure.caption.92}}
-{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.9}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (d) 2 class ground truth masks; (b) and (e) 2 class supervised CycleGAN tested on pre-processed test crops; (c) and (f) 2 class unsupervised CycleGAN model tested on pre-processed test crops.\relax }}{\reset@font\mlffont 52}{figure.caption.96}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 52}{figure.caption.96}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 52}{figure.caption.96}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 52}{figure.caption.96}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 52}{figure.caption.96}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(e)}{\ignorespaces {}}}{\reset@font\mlfSfont 52}{figure.caption.96}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(f)}{\ignorespaces {}}}{\reset@font\mlfSfont 52}{figure.caption.96}}
-{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.10}{\ignorespaces (a) Example of ground truth mask; (b) Supervised CycleGAN segmentation mask; (c) Unsupervised CycleGAN segmentation mask.\relax }}{\reset@font\mlffont 53}{figure.caption.97}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 53}{figure.caption.97}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 53}{figure.caption.97}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 53}{figure.caption.97}}
-{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.11}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 3 class ground truth masks; (b) and (d) \ac {3D} class unsupervised CycleGAN model tested on pre-processed test crops.\relax }}{\reset@font\mlffont 54}{figure.caption.100}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 54}{figure.caption.100}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 54}{figure.caption.100}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 54}{figure.caption.100}}
-{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 54}{figure.caption.100}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.1}{\ignorespaces Slice of a microscopic image from the dataset and corresponding intensity histograms of the red and green channels.\relax }}{\reset@font\mlffont 41}{figure.caption.76}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.2}{\ignorespaces Same image slice of Figure \ref {fig:micro} after percentile contrast stretching and corresponding intensity histograms of the red and green channels.\relax }}{\reset@font\mlffont 42}{figure.caption.77}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.3}{\ignorespaces \ac {3D} visualization of crops used for testing the models: (a) and (e) original test crops; (b) and (f) pre-processed test crops; (c) and (g) 2 class ground truth masks; (d) and (h) 3 class ground truth masks.\relax }}{\reset@font\mlffont 43}{figure.caption.78}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.78}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.78}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.78}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.78}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(e)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.78}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(f)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.78}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(g)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.78}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(h)}{\ignorespaces {}}}{\reset@font\mlfSfont 43}{figure.caption.78}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.4}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (d) 2 class ground truth masks; (b) and (e) \ac {3D} U-Net model tested on original test crops; (c) and (f) \ac {3D} U-Net model tested on pre-processed test crops.\relax }}{\reset@font\mlffont 44}{figure.caption.82}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 44}{figure.caption.82}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 44}{figure.caption.82}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 44}{figure.caption.82}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 44}{figure.caption.82}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(e)}{\ignorespaces {}}}{\reset@font\mlfSfont 44}{figure.caption.82}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(f)}{\ignorespaces {}}}{\reset@font\mlfSfont 44}{figure.caption.82}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.5}{\ignorespaces Example of ground truth mask imperfection highlighted by white circle; Example of digital noise highlighted by blue circles; and example of nondetection by \ac {3D} U-Net model highlighted by orange circle; (a) and (d) \ac {3D} microscopic section; (b) and (e) \ac {3D} U-Net segmentation mask; (c) and (f) \ac {3D} ground truth segmentation mask.\relax }}{\reset@font\mlffont 46}{figure.caption.83}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 46}{figure.caption.83}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 46}{figure.caption.83}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 46}{figure.caption.83}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 46}{figure.caption.83}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(e)}{\ignorespaces {}}}{\reset@font\mlfSfont 46}{figure.caption.83}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(f)}{\ignorespaces {}}}{\reset@font\mlfSfont 46}{figure.caption.83}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.6}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 3 class ground truth masks; (b) and (d) \ac {3D} U-Net model tested on pre-processed test crops.\relax }}{\reset@font\mlffont 47}{figure.caption.85}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 47}{figure.caption.85}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 47}{figure.caption.85}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 47}{figure.caption.85}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 47}{figure.caption.85}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.7}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 2 class ground truth masks; (b) and (d) 2 class Vox2Vox model tested on pre-processed test crops.\relax }}{\reset@font\mlffont 49}{figure.caption.90}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 49}{figure.caption.90}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 49}{figure.caption.90}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 49}{figure.caption.90}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 49}{figure.caption.90}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.8}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 3 class ground truth masks; (b) and (d) 3 class Vox2Vox model tested on pre-processed test crops.\relax }}{\reset@font\mlffont 50}{figure.caption.93}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 50}{figure.caption.93}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 50}{figure.caption.93}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 50}{figure.caption.93}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 50}{figure.caption.93}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.9}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (d) 2 class ground truth masks; (b) and (e) 2 class supervised CycleGAN tested on pre-processed test crops; (c) and (f) 2 class unsupervised CycleGAN model tested on pre-processed test crops.\relax }}{\reset@font\mlffont 52}{figure.caption.97}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 52}{figure.caption.97}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 52}{figure.caption.97}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 52}{figure.caption.97}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 52}{figure.caption.97}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(e)}{\ignorespaces {}}}{\reset@font\mlfSfont 52}{figure.caption.97}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(f)}{\ignorespaces {}}}{\reset@font\mlfSfont 52}{figure.caption.97}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.10}{\ignorespaces (a) Example of ground truth mask; (b) Supervised CycleGAN segmentation mask; (c) Unsupervised CycleGAN segmentation mask.\relax }}{\reset@font\mlffont 53}{figure.caption.98}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 53}{figure.caption.98}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 53}{figure.caption.98}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 53}{figure.caption.98}}
+{\reset@font\mlffont\mtc@string\contentsline{figure}{\noexpand \leavevmode \numberline {5.11}{\ignorespaces \ac {3D} visualization of segmentation masks: (a) and (c) 3 class ground truth masks; (b) and (d) \ac {3D} class unsupervised CycleGAN model tested on pre-processed test crops.\relax }}{\reset@font\mlffont 54}{figure.caption.101}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(a)}{\ignorespaces {}}}{\reset@font\mlfSfont 54}{figure.caption.101}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(b)}{\ignorespaces {}}}{\reset@font\mlfSfont 54}{figure.caption.101}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(c)}{\ignorespaces {}}}{\reset@font\mlfSfont 54}{figure.caption.101}}
+{\reset@font\mlfSfont\mtc@string\contentsline{subfigure}{\noexpand \leavevmode \numberline {(d)}{\ignorespaces {}}}{\reset@font\mlfSfont 54}{figure.caption.101}}

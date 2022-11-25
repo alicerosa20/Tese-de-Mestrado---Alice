@@ -30,7 +30,7 @@ An example of a \ac{3D} crop and its corresponding manually labelled segmentatio
 
 To use these crops to train the models, its necessary to divide them into equal sized patches. If the volumes are too small, not enough information can be learned. If the volumes are too large, training will take longer and could exceed GPU memory. Therefore, we set the size of these patches to 64x64x64. Since the $z$-axis of the original images has a size between 55 and 61, the crops had to be padded to get the 64 slices in the $z$-axis for the input images, for this purpose a reflection padding was applied.
 
-\subsection{Synthetic segmentation masks}
+\subsection*{Synthetic segmentation masks}
 \label{subsection:synthetic_masks}
 
 As mentioned earlier, the manually labelled segmentation masks are used for training the implemented supervised models. However, in order to train the proposed model in a non-supervised way, synthetic segmentation masks had to be created. 
@@ -92,13 +92,13 @@ The loss function used to train CycleGAN comprises four terms. These terms are d
 the other. First, the negative log likelihood objective from $\mathcal{L}_{GAN}$  (Equation \ref{eq:GAN}) is replaced by a least-squares loss, since according to \cite{cycleGAN:original}, this loss is more stable during training and produces higher quality results. Therefore, the adversarial loss for the first \ac{GAN} ($G_{S}, D_S$), for the already mentioned notation, is given by,
 
 \begin{equation}
-    \mathcal{L}_{adv}(G_{S},D_S) = \mathbb{E}_{s \sim p_{data}(s)} [(D_S(s)-1)^2] + \mathbb{E}_{i \sim p_{data}(i)} [(D_S(G_{S}(i)))^2].
+    \mathcal{L}_{adv}(G_{S},D_S) = \mathbb{E}_{s \sim p_{data}(s)} [(D_S(s))^2] + \mathbb{E}_{i \sim p_{data}(i)} [(D_S(G_{S}(i))-1)^2].
 \end{equation}
 
 The adversarial loss for the second \ac{GAN} ($G_{I}, D_I$), is written as,
 
 \begin{equation}
-    \mathcal{L}_{adv}(G_{I},D_I) = \mathbb{E}_{i \sim p_{data}(i)} [(D_I(i)-1)^2] + \mathbb{E}_{s \sim p_{data}(s)} [(D_I(G_{I}(s)))^2].
+    \mathcal{L}_{adv}(G_{I},D_I) = \mathbb{E}_{i \sim p_{data}(i)} [(D_I(i))^2] + \mathbb{E}_{s \sim p_{data}(s)} [(D_I(G_{I}(s))-1)^2].
 \end{equation}
 
 \textbf{Cycle consistency loss.} The cycle consistency loss, $\mathcal{L}_{cyc}$, was described in subsection \ref{subsection:CycleGAN} with an expression given by (\ref{eq:CCL}). Transferred to our notation, it has the following form,

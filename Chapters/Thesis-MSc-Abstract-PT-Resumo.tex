@@ -5,11 +5,11 @@
 % use \noindent in firts paragraph
 % reset acronyms
 \acresetall
-\noindent Nos últimos anos, têm sido propostos métodos de aprendizagem profunda para a segmentação de imagens microscópicas com o objectivo de quantificar e caracterizar células, núcleos e outras estruturas biológicas de forma eficiente e exata, uma vez que, esta informação é essencial, por exemplo, para o diagnóstico de doenças.
+\noindent Nos últimos anos, têm sido propostos métodos de aprendizagem profunda para a segmentação de imagens microscópicas com o objetivo de quantificar e caracterizar células, núcleos e outras estruturas biológicas de forma eficiente e exata, uma vez que, esta informação é essencial, por exemplo, para o diagnóstico de doenças.
 
 Neste trabalho, aborda-se a segmentação de núcleos e Golgi das células em imagens microscópicas tridimensionais (3D) fluorescentes como um problema de tradução não emparelhada de imagens. Para a realização desta tarefa, nós propomos a utilização do modelo CycleGAN uma vez que pode ser treinado de forma \textit{end-to-end} não-supervisionada. Com este modelo é possível reduzir significativamente o tempo de treino e de teste uma vez que não requer a utilização de máscaras de segmentação manualmente anotadas para o seu treino, em vez disso é treinado com máscaras sintetizadas.
 
-Adicionalmente, a deteção dos pares núcleo-Golgi é importante para o estudo da formação dos vasos sanguíneos, logo, o modelo proposto é extendido de modo a classificar uma terceira classe, os pares núcleo-Golgi.
+Adicionalmente, a deteção dos pares núcleo-Golgi é importante para o estudo da formação dos vasos sanguíneos, logo, o modelo proposto é estendido de modo a classificar uma terceira classe, os pares núcleo-Golgi.
 
 Os resultados experimentais obtidos com o modelo CycleGAN proposto são comparados com os obtidos com outros dois modelos de segmentação supervisionados, U-Net 3D e Vox2Vox. Com o modelo CycleGAN obteve-se os seguintes resultados: coeficiente Dice de 76.64\% para a classe do núcleo, 64.27\% para a classe do Golgi e 69.99\% para a classe de pares núcleo-Golgi, com uma diferença de apenas 1.11\%, 5.11\% e 6.02\%, respectivamente, dos melhores resultados obtidos com o modelo supervisionado U-Net 3D. Adicionalmente, o tempo necessário para treinar e testar o modelo U-Net é, aproximadamente, 5.78 vezes mais longo do que o tempo necessário para treinar e testar o modelo CycleGAN.
 
